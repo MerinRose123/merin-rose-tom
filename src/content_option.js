@@ -14,21 +14,21 @@ import awsicon from "./assets/images/awslogo.png";
 import javascripticon from "./assets/images/javascript.png";
 import nodejsicon from "./assets/images/nodejs.png";
 
-const logotext = "Nitheesh";
+const logotext = "Merin";
 const meta = {
-  title: "Nitheesh S Kumar",
-  description: "I’m Nitheesh S Kumar Full stack devloper,currently working in Envestnet",
+  title: "Merin Rose Tom",
+  description: "I’m Merin Rose Tom Full stack devloper,currently working in Oracle",
 };
 
 const introdata = {
-  title: "I’m Nitheesh S Kumar",
+  title: "I’m Merin Rose Tom",
   animated: {
-    first: "I love trekking",
-    second: "I design and develop Webapps",
-    third: "I architect on cloud",
+    first: "",
+    second: "I love Chess",
+    third: "",
   },
   description:
-    "Lead Software Engineer passionate about building scalable and efficient solutions. Enjoy working on projects that challenge me to think outside the box",
+    "Software Engineer passionate about building scalable and efficient solutions.",
   profie_pic: profilepic,
   skill_icons: [reacticon, gcpicon, awsicon, javascripticon, nodejsicon],
 };
@@ -36,18 +36,13 @@ const introdata = {
 const dataabout = {
   title: "A bit about me",
   aboutme:
-    "I have 5 years of experience building webapps for B2B and enterprise businesses using React and Node. I have worked on Financial, supply chain and CRM domains. Outside job, my fun includes trekking and hackathons.",
+    "I have 5 years of experience in the software engineering field primarily wrking with python and java. I have worked on ... Outside job, my fun includes Chess.",
 };
 const worktimeline = [
   {
-    jobtitle: "Associate Lead Engineer",
-    where: "Envestnet",
-    date: "2023-Present",
-  },
-  {
-    jobtitle: "Senior Engineer",
-    where: "Envestnet",
-    date: "2022-2023",
+    jobtitle: "Software Engineer",
+    where: "Oracle",
+    date: "2021-Present",
   },
   {
     jobtitle: "Software Engineer",
@@ -58,109 +53,67 @@ const worktimeline = [
 
 const skills = [
   {
-    name: "React",
+    name: "Python",
     value: 90,
   },
   {
-    name: "Javascript",
+    name: "Java",
     value: 85,
   },
   {
-    name: "Unit testing",
+    name: "Oracle Cloud Infrastrcuture",
     value: 80,
   },
   {
-    name: "AWS, Node",
+    name: "Shell Programming, Jenkins",
     value: 50,
   },
   {
-    name: "Java, Python",
+    name: "Javascript, Angular",
     value: 25,
   },
 ];
 
 const services = [
   {
-    title: "UI & UX Design",
-    description: "Developing responsive UI designs using Figma",
-  },
-  {
-    title: "Web Apps",
-    description: "Design and development of SPA Webapps using React and backend in Node",
-  },
-  {
-    title: "AWS Serverless",
-    description: "Develop microservices using lambda and integrating with other serverless services",
-  },
+    title: "Backend Development",
+    description: "Backend development using java and python",
+  }
 ];
 
 const dataportfolio = [
   {
-    img: Testgenr,
-    description: "Automatic testcase generator for jira stories- Atlassian Marketplace app.",
-    link: "https://github.com/Nitheeshskumar/TestGenR-ai",
+    img: ,
+    description: "Text editor using tkinter that converts Manglish to malayalam",
+    link: "https://github.com/MerinRose123/manglish_text_editor",
   },
   {
-    img: gmaps,
-    description: "React wrapper for Google Maps javascript sdk with utility functions.",
-    link: "https://github.com/Nitheeshskumar/react-gmap-plugin",
-  },
-  {
-    img: pettamo,
-    description: "Petcare solutions marketplace for providers and customers.",
-    link: "https://github.com/Nitheeshskumar/pettamo-mvp",
-  },
-  {
-    img: bakerbees,
-    description: "Ecommerce app (in Vue js) for Multiple categories under same business.",
-    link: "https://github.com/Nitheeshskumar/BakerbeeCart",
-  },
+    img: ,
+    description: "Caching in celery using LRU chache algorithm",
+    link: "https://github.com/MerinRose123/celery_caching_example",
+  }
 ];
 const certifications = [
   {
-    img: awssolution,
-    description: "Showcases knowledge and working skills across wide range of AWS services",
-    link: "https://www.credly.com/badges/7a234295-bad0-4982-9deb-1e37491d3200/public_url",
+    img: ,
+    description: "Oracle Cloud Infrastructure Foundations 2021 Certified Associate",
+    link: "https://www.linkedin.com/in/merin-rose-tom/details/certifications/",
   },
   {
-    img: gcpleader,
-    description: "Foundational knowledge on Google Cloud services",
-    link: "https://www.credential.net/e5552aa3-3d6b-4d58-9747-a87c6cb9418d",
-  },
-  {
-    img: gitlabteam,
-    description: "Kowledge on federation of ownership in an agile team",
-    link: "https://university.gitlab.com/c/8v7u1F5IQqCye7KLzlu7Ew",
-  },
-  {
-    img: positivepsy,
-    description: "Not optimistic always, but gives attention to positive things than worrying about negatives",
-    link: "https://github.com/Nitheeshskumar/BakerbeeCart",
-  },
-  {
-    img: others,
-    description: "Others: For my knowledge hunger",
-    link: "https://www.linkedin.com/in/nitheesh-s-kumar/details/certifications/",
-  },
+    img: ,
+    description: "Critical Thinking for Better Judgment and Decision-Making",
+    link: "https://www.linkedin.com/learning/certificates/668ea6612275f397d7e24601aec174698de12b86211f6a6dad57addab7b34c85?trk=backfilled_certificate",
+  }
 ];
 
 const otherAccomplishments = [
-  "Passed AWS Machine Learning Foundations scholarship from Udacity",
-  "Six-sigma white belt certification from Aveta Business Institute",
   "Oracle Cloud Infrastructure Foundations Associate certfication",
-  "Passed Blockchain Foundation program from Kerala Blockchain Academy",
-  "Completed Online course on Machine Learning from Stanford University",
-  "Received two Sponsor prize in Developer week Europe hackathon 2022: from LinearB and Agora.ai- Designed a petcare solution with live teleconsultation from vets",
-  "Finalist in HackKp, hackathon by Kerala Police and Cyberdom: Designed a paring space detection software using computer vision",
-  "Second prize in Astradb hackathon 2022",
   "Participated in IPL hackathon by IIT Madras: Prediciting the IPL winner from past data sets",
-  "Various recognition from Envestnet including Envestnet Security Champion award, Star of quarter, WOW award consecutively for 3 quarters",
-  "Conducted two bootcamps in React",
-  "Took session for AWS community memebers in Africa as part of Go Cloud Architects program",
+  "Appreciation for Excellent Performance from Inapp",
 ];
 const contactConfig = {
-  YOUR_EMAIL: "nitheesh.s.k1710@gmail.com",
-  YOUR_FONE: "+91 9746485532",
+  YOUR_EMAIL: "merin.pottananickal@gmail.com",
+  YOUR_FONE: "",
   //   description:
   //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
   // creat an emailjs.com account
@@ -171,9 +124,9 @@ const contactConfig = {
 };
 
 const socialprofils = {
-  github: "https://github.com/Nitheeshskumar",
+  github: "https://github.com/MerinRose123",
   //   facebook: "https://facebook.com",
-  linkedin: "https://www.linkedin.com/in/nitheesh-s-kumar/",
+  linkedin: "https://www.linkedin.com/in/merin-rose-tom/",
   //   twitter: "https://twitter.com",
 };
 export {
