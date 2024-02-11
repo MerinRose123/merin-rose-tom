@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/merin-rose-tom/static/css/main.8599313e.css",
+    "main.js": "/merin-rose-tom/static/js/main.61a3128e.js",
+    "static/media/bakerbeelogo.png": "/merin-rose-tom/static/media/bakerbeelogo.44dcb4119100b4f749d0.png",
+    "static/media/profilepic.jpeg": "/merin-rose-tom/static/media/profilepic.e437fb1056ed4a492fef.jpeg",
+    "static/media/solutionsarchitect.png": "/merin-rose-tom/static/media/solutionsarchitect.2f700af41e0006979be3.png",
+    "static/media/gmappluginlogo.png": "/merin-rose-tom/static/media/gmappluginlogo.1486de9e3b9ef14b036f.png",
+    "static/media/googlecloud.png": "/merin-rose-tom/static/media/googlecloud.e4dce2f1000a5dbc1839.png",
+    "static/media/others.png": "/merin-rose-tom/static/media/others.92aae9768c2e53eba83b.png",
+    "static/media/pettamologo.png": "/merin-rose-tom/static/media/pettamologo.04728578120268523da8.png",
+    "static/media/gitlab.png": "/merin-rose-tom/static/media/gitlab.da4f7b99baacece40361.png",
+    "static/media/PositivePsychology.png": "/merin-rose-tom/static/media/PositivePsychology.d8261782432bdb99d3de.png",
+    "static/media/testgenrlogo.png": "/merin-rose-tom/static/media/testgenrlogo.a1b76d89fa54e289122e.png",
+    "index.html": "/merin-rose-tom/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.8599313e.css",
+    "static/js/main.61a3128e.js"
+  ]
+}
