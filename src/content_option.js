@@ -83,24 +83,24 @@ const services = [
 
 const dataportfolio = [
   {
-    img: ,
+    img: Testgenr,
     description: "Text editor using tkinter that converts Manglish to malayalam",
     link: "https://github.com/MerinRose123/manglish_text_editor",
   },
   {
-    img: ,
+    img: gmaps,
     description: "Caching in celery using LRU chache algorithm",
     link: "https://github.com/MerinRose123/celery_caching_example",
   }
 ];
 const certifications = [
   {
-    img: ,
+    img: awssolution,
     description: "Oracle Cloud Infrastructure Foundations 2021 Certified Associate",
     link: "https://www.linkedin.com/in/merin-rose-tom/details/certifications/",
   },
   {
-    img: ,
+    img: gcpleader,
     description: "Critical Thinking for Better Judgment and Decision-Making",
     link: "https://www.linkedin.com/learning/certificates/668ea6612275f397d7e24601aec174698de12b86211f6a6dad57addab7b34c85?trk=backfilled_certificate",
   }
