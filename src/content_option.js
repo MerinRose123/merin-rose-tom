@@ -1,18 +1,15 @@
-import Testgenr from "./assets/images/testgenrlogo.png";
-import pettamo from "./assets/images/pettamologo.png";
-import gmaps from "./assets/images/gmappluginlogo.png";
-import bakerbees from "./assets/images/bakerbeelogo.png";
 import profilepic from "./assets/images/profilepic.jpeg";
-import awssolution from "./assets/images/solutionsarchitect.png";
-import gcpleader from "./assets/images/googlecloud.png";
-import positivepsy from "./assets/images/PositivePsychology.png";
-import gitlabteam from "./assets/images/gitlab.png";
-import others from "./assets/images/others.png";
-import reacticon from "./assets/images/reacticon.png";
-import gcpicon from "./assets/images/gcpicon.png";
-import awsicon from "./assets/images/awslogo.png";
 import javascripticon from "./assets/images/javascript.png";
-import nodejsicon from "./assets/images/nodejs.png";
+import oracleicon from "./assets/images/oracle.png";
+import linkedinicon from "./assets/images/linkedin.png";
+import pythonicon from "./assets/images/python.png";
+import javaicon from "./assets/images/java.png";
+import tkinter from "./assets/images/tkinter.png";
+import cache from "./assets/images/cache.png";
+import oraclegenai from "./assets/images/oraclegenai.png";
+import oracleoci from "./assets/images/oracleoci.png";
+import medium from "./assets/images/medium.png";
+import leetcode from "./assets/images/leetcode.png";
 
 const logotext = "Merin";
 const meta = {
@@ -23,20 +20,20 @@ const meta = {
 const introdata = {
   title: "I’m Merin Rose Tom",
   animated: {
-    first: "",
-    second: "I love Chess",
-    third: "",
+    first: "Software Engineer @Oracle",
+    second: "Critical Thinker and Problem Solver",
+    third: "B-Tech from GEC Barton Hill,TVM",
   },
   description:
-    "Software Engineer passionate about building scalable and efficient solutions.",
+    "Results-oriented Full-stack Developer with 5+ years of experience in Python and Java. Proven ability to design, develop, and deploy robust software solutions.",
   profie_pic: profilepic,
-  skill_icons: [reacticon, gcpicon, awsicon, javascripticon, nodejsicon],
+  skill_icons: [oracleicon, javaicon, pythonicon, javascripticon],
 };
 
 const dataabout = {
   title: "A bit about me",
   aboutme:
-    "I have 5 years of experience in the software engineering field primarily wrking with python and java. I have worked on ... Outside job, my fun includes Chess.",
+    "Results-oriented Full-stack Developer with 5+ years of experience in Python and Java. Proven ability to design, develop, and deploy robust software solutions. Seeking a challenging role to leverage my technical expertise in driving innovation and delivering exceptional products. Outside job, my fun includes Chess, Badminton etc.",
 };
 const worktimeline = [
   {
@@ -61,11 +58,11 @@ const skills = [
     value: 85,
   },
   {
-    name: "Oracle Cloud Infrastrcuture",
+    name: "Oracle Cloud Infrastrcuture (OCI)",
     value: 80,
   },
   {
-    name: "Shell Programming, Jenkins",
+    name: "Jenkins, System Design",
     value: 50,
   },
   {
@@ -76,44 +73,46 @@ const skills = [
 
 const services = [
   {
-    title: "Backend Development",
-    description: "Backend development using java and python",
+    title: "Software Engineer",
+    description: "Backend development using java and python with 5 years of experience.",
   }
 ];
 
 const dataportfolio = [
   {
-    img: Testgenr,
-    description: "Text editor using tkinter that converts Manglish to malayalam",
+    img: tkinter,
+    description: "Text editor using python tkinter that converts Manglish to Malayalam",
     link: "https://github.com/MerinRose123/manglish_text_editor",
   },
   {
-    img: gmaps,
-    description: "Caching in celery using LRU chache algorithm",
+    img: cache,
+    description: "Caching in celery using LRU cache algorithm",
     link: "https://github.com/MerinRose123/celery_caching_example",
   }
 ];
 const certifications = [
   {
-    img: awssolution,
-    description: "Oracle Cloud Infrastructure Foundations 2021 Certified Associate",
-    link: "https://www.linkedin.com/in/merin-rose-tom/details/certifications/",
+    img: oraclegenai,
+    description: "Oracle Cloud Infrastructure 2024 Generative AI Certified Professional",
+    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=1F88D2A2340B4A44763D3AE7E9438741E7FD72D71CC9E463738CB8C2B4063802",
   },
   {
-    img: gcpleader,
-    description: "Critical Thinking for Better Judgment and Decision-Making",
-    link: "https://www.linkedin.com/learning/certificates/668ea6612275f397d7e24601aec174698de12b86211f6a6dad57addab7b34c85?trk=backfilled_certificate",
+    img: oracleoci,
+    description: "Oracle Cloud Infrastructure Foundations 2021 Certified Associate",
+    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=F54B19E4D4A7449C9F29671E0D412D38D8191C73E35574669B0EFEC23FC70D86",
   }
 ];
 
 const otherAccomplishments = [
-  "Oracle Cloud Infrastructure Foundations Associate certfication",
-  "Participated in IPL hackathon by IIT Madras: Prediciting the IPL winner from past data sets",
   "Appreciation for Excellent Performance from Inapp",
+  "All Kerala University Rank 3 (2015 - 2019)",
+  "Kerala Technological University Women’s Chess team Captain (2017 - 2018)",
+  "Participated in IPL hackathon by IIT Madras: Prediciting the IPL winner from past data sets",
+  "Certificate on Critical Thinking for Better Judgment and Decision- Making - LinkedIn (10/2020 - 7/2021)"
 ];
 const contactConfig = {
   YOUR_EMAIL: "merin.pottananickal@gmail.com",
-  YOUR_FONE: "",
+  YOUR_FONE: "9946040680",
   //   description:
   //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
   // creat an emailjs.com account
@@ -125,9 +124,9 @@ const contactConfig = {
 
 const socialprofils = {
   github: "https://github.com/MerinRose123",
-  //   facebook: "https://facebook.com",
   linkedin: "https://www.linkedin.com/in/merin-rose-tom/",
-  //   twitter: "https://twitter.com",
+  // leetcode: "https://leetcode.com/u/merin_tom/",
+  // medium: "https://medium.com/@merin-rose-tom",
 };
 export {
   meta,
