@@ -17,3 +17,4 @@ cd /Users/merin/workspace/merin-rose-tom/
 export PATH=/opt/homebrew/bin:$PATH
 npm run build
 npm run deploy
+
