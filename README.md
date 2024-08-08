@@ -9,6 +9,7 @@ Make the changes required ( Change the assets/images, content_option.js, package
 git status
 git add *
 git commit -m "Updating Redame"
+git push
 
 Below steps are for reflecting the changes in the portfolio website.
 
