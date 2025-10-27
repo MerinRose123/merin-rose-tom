@@ -1,7 +1,6 @@
 import profilepic from "./assets/images/profilepic.jpeg";
 import javascripticon from "./assets/images/javascript.png";
 import oracleicon from "./assets/images/oracle.png";
-import linkedinicon from "./assets/images/linkedin.png";
 import pythonicon from "./assets/images/python.png";
 import javaicon from "./assets/images/java.png";
 import tkinter from "./assets/images/tkinter.png";
@@ -10,6 +9,7 @@ import oraclegenai from "./assets/images/oraclegenai.png";
 import oracleoci from "./assets/images/oracleoci.png";
 import medium from "./assets/images/medium.png";
 import leetcode from "./assets/images/leetcode.png";
+import leetcode from "./assets/images/eventops.png";
 
 const logotext = "Merin";
 const meta = {
@@ -116,25 +116,20 @@ const dataportfolio = [
   {
     img: oracleicon,
     description: "PeopleSoft Cloud Manager: Engineered process automation for resource cleanup and prerequisite installation, saving 10% developer time. Implemented secure password management using OCI Vault, enhancing security by 30%. Built CI/CD pipeline with Jenkins, accelerating builds by 25%.",
-    link: "#", // Internal project, no public link
+    link: "https://docs.oracle.com/cd/E52319_01/infoportal/cloudmgr.html",
   },
   {
-    img: cache,
-    description: "Gordian - Piracy Detection System: Created automated PDF report generation system, boosting user experience by 20%. Analyzed 50,000+ data points using Python libraries for piracy trend insights. Developed responsive front-end with Angular and back-end with Django/Flask.",
-    link: "#", // Project link if available
+    img: eventops,
+    description: "EventOPS - Internal Event Management System: Built backend microservices with Django and Flask, optimizing efficiency by 15%. Established unit testing framework with multi-tenancy, advancing security by 30%.",
+    link: "https://eventops.com/", 
   },
   {
     img: tkinter,
-    description: "EventOPS - Internal Event Management System: Built backend microservices with Django and Flask, optimizing efficiency by 15%. Established unit testing framework with multi-tenancy, advancing security by 30%.",
-    link: "#", // Project link if available
-  },
-  {
-    img: pythonicon,
     description: "Manglish to Malayalam Text Editor: Python Tkinter application for converting Manglish text to Malayalam.",
     link: "https://github.com/MerinRose123/manglish_text_editor",
   },
   {
-    img: javaicon,
+    img: cache,
     description: "Celery Caching Example: Implementation of caching in Celery using LRU cache algorithm.",
     link: "https://github.com/MerinRose123/celery_caching_example",
   }
@@ -149,11 +144,6 @@ const certifications = [
     img: oracleoci,
     description: "Oracle Cloud Infrastructure Foundations 2021 Certified Associate",
     link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=F54B19E4D4A7449C9F29671E0D412D38D8191C73E35574669B0EFEC23FC70D86",
-  },
-  {
-    img: pythonicon,
-    description: "HackerRank Python Certificate",
-    link: "#", // Link if available
   }
 ];
 
@@ -167,7 +157,7 @@ const otherAccomplishments = [
 ];
 const contactConfig = {
   YOUR_EMAIL: "merin.pottananickal@gmail.com",
-  YOUR_FONE: "9946040680",
+  YOUR_FONE: "",
   //   description:
   //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
   // creat an emailjs.com account
