@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/merin-rose-tom/static/css/main.d3252236.css",
-    "main.js": "/merin-rose-tom/static/js/main.3aaf5b39.js",
+    "main.js": "/merin-rose-tom/static/js/main.79b0f453.js",
     "static/media/oracleoci.png": "/merin-rose-tom/static/media/oracleoci.c0a815f0e6ee00f03ce3.png",
     "static/media/oraclegenai.png": "/merin-rose-tom/static/media/oraclegenai.07dd7af43647414f8eb4.png",
     "static/media/profilepic.jpeg": "/merin-rose-tom/static/media/profilepic.89721440169f3aee2a71.jpeg",
@@ -9,14 +9,14 @@
     "static/media/python.png": "/merin-rose-tom/static/media/python.e2d1cf92a15559a191c4.png",
     "static/media/cache.png": "/merin-rose-tom/static/media/cache.9cd01bcc1340944bbf93.png",
     "static/media/java.png": "/merin-rose-tom/static/media/java.07fb54667c141c1de6f5.png",
-    "static/media/linkedin.png": "/merin-rose-tom/static/media/linkedin.02c4aef40ad1942c73c8.png",
     "static/media/oracle.png": "/merin-rose-tom/static/media/oracle.8991707e4be97e920175.png",
     "static/media/leetcode.png": "/merin-rose-tom/static/media/leetcode.b6e5fced21cd2137adb8.png",
+    "static/media/eventops.png": "/merin-rose-tom/static/media/eventops.c5f552abc02ab39635df.png",
     "static/media/medium.png": "/merin-rose-tom/static/media/medium.552f50e82b97f2ff7bba.png",
     "index.html": "/merin-rose-tom/index.html"
   },
   "entrypoints": [
     "static/css/main.d3252236.css",
-    "static/js/main.3aaf5b39.js"
+    "static/js/main.79b0f453.js"
   ]
 }
