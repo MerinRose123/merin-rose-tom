@@ -9,7 +9,7 @@ import oraclegenai from "./assets/images/oraclegenai.png";
 import oracleoci from "./assets/images/oracleoci.png";
 import medium from "./assets/images/medium.png";
 import leetcode from "./assets/images/leetcode.png";
-import leetcode from "./assets/images/eventops.png";
+import eventops from "./assets/images/eventops.png";
 
 const logotext = "Merin";
 const meta = {
