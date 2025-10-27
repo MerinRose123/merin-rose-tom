@@ -14,18 +14,18 @@ import leetcode from "./assets/images/leetcode.png";
 const logotext = "Merin";
 const meta = {
   title: "Merin Rose Tom",
-  description: "I’m Merin Rose Tom Full stack devloper,currently working in Oracle",
+  description: "Senior Application Engineer specializing in full-stack and backend development with over 6 years of experience",
 };
 
 const introdata = {
   title: "I’m Merin Rose Tom",
   animated: {
-    first: "Software Engineer @Oracle",
+    first: "Senior Application Engineer @Oracle",
     second: "Critical Thinker and Problem Solver",
-    third: "B-Tech from GEC Barton Hill,TVM",
+    third: "B-Tech IT, GPA 8.93, University Rank 3",
   },
   description:
-    "Results-oriented Full-stack Developer with 5+ years of experience in Python and Java. Proven ability to design, develop, and deploy robust software solutions.",
+    "A Senior Application Engineer with over 6 years of experience in full-stack and backend development. I specialize in building scalable cloud solutions and modernizing legacy systems using Python, Java, and PeopleCode. My strategic thinking, honed through competitive chess, enables me to architect robust solutions and optimize CI/CD pipelines for enhanced security.",
   profie_pic: profilepic,
   skill_icons: [oracleicon, javaicon, pythonicon, javascripticon],
 };
@@ -33,18 +33,28 @@ const introdata = {
 const dataabout = {
   title: "A bit about me",
   aboutme:
-    "Results-oriented Full-stack Developer with 5+ years of experience in Python and Java. Proven ability to design, develop, and deploy robust software solutions. Seeking a challenging role to leverage my technical expertise in driving innovation and delivering exceptional products. Outside job, my fun includes Chess, Badminton etc.",
+    "A Senior Application Engineer with over 6 years of experience in full-stack and backend development. I specialize in building scalable cloud solutions and modernizing legacy systems using Python, Java, and PeopleCode. My strategic thinking, honed through competitive chess, enables me to architect robust solutions and optimize CI/CD pipelines for enhanced security. Outside of work, I enjoy playing chess, badminton, and exploring new technologies.",
 };
 const worktimeline = [
   {
-    jobtitle: "Software Engineer",
+    jobtitle: "Senior Application Engineer | Full Stack Developer",
     where: "Oracle",
-    date: "2021-Present",
+    date: "2024-Present",
   },
   {
-    jobtitle: "Software Engineer",
+    jobtitle: "Software Engineer II | Full Stack Developer",
+    where: "Oracle",
+    date: "2021-2024",
+  },
+  {
+    jobtitle: "Software Engineer | Backend Developer",
     where: "InApp Information Technologies",
-    date: "2019-2021",
+    date: "2020-2021",
+  },
+  {
+    jobtitle: "Programmer Trainee | Python Programmer",
+    where: "InApp Information Technologies",
+    date: "2019-2020",
   },
 ];
 
@@ -58,35 +68,74 @@ const skills = [
     value: 85,
   },
   {
-    name: "Oracle Cloud Infrastrcuture (OCI)",
+    name: "Oracle Cloud Infrastructure (OCI)",
     value: 80,
   },
   {
-    name: "Jenkins, System Design",
-    value: 50,
+    name: "Django & Flask",
+    value: 75,
   },
   {
-    name: "Javascript, Angular",
-    value: 25,
+    name: "Jenkins & CI/CD",
+    value: 70,
+  },
+  {
+    name: "System Design & Architecture",
+    value: 70,
+  },
+  {
+    name: "Docker & Kubernetes",
+    value: 65,
+  },
+  {
+    name: "JavaScript & Angular",
+    value: 60,
+  },
+  {
+    name: "Databases (PostgreSQL, MySQL, MongoDB)",
+    value: 75,
   },
 ];
 
 const services = [
   {
-    title: "Software Engineer",
-    description: "Backend development using java and python with 5 years of experience.",
+    title: "Full-Stack & Backend Development",
+    description: "Specializing in Python, Java, and modern web frameworks like Django, Flask, and Angular for scalable applications.",
+  },
+  {
+    title: "Cloud Solutions & DevOps",
+    description: "Architecting cloud-native solutions on Oracle Cloud Infrastructure with CI/CD pipelines using Jenkins, Docker, and Kubernetes.",
+  },
+  {
+    title: "System Design & Optimization",
+    description: "Designing robust architectures, optimizing performance, and integrating third-party systems for enhanced functionality.",
   }
 ];
 
 const dataportfolio = [
   {
-    img: tkinter,
-    description: "Text editor using python tkinter that converts Manglish to Malayalam",
-    link: "https://github.com/MerinRose123/manglish_text_editor",
+    img: oracleicon,
+    description: "PeopleSoft Cloud Manager: Engineered process automation for resource cleanup and prerequisite installation, saving 10% developer time. Implemented secure password management using OCI Vault, enhancing security by 30%. Built CI/CD pipeline with Jenkins, accelerating builds by 25%.",
+    link: "#", // Internal project, no public link
   },
   {
     img: cache,
-    description: "Caching in celery using LRU cache algorithm",
+    description: "Gordian - Piracy Detection System: Created automated PDF report generation system, boosting user experience by 20%. Analyzed 50,000+ data points using Python libraries for piracy trend insights. Developed responsive front-end with Angular and back-end with Django/Flask.",
+    link: "#", // Project link if available
+  },
+  {
+    img: tkinter,
+    description: "EventOPS - Internal Event Management System: Built backend microservices with Django and Flask, optimizing efficiency by 15%. Established unit testing framework with multi-tenancy, advancing security by 30%.",
+    link: "#", // Project link if available
+  },
+  {
+    img: pythonicon,
+    description: "Manglish to Malayalam Text Editor: Python Tkinter application for converting Manglish text to Malayalam.",
+    link: "https://github.com/MerinRose123/manglish_text_editor",
+  },
+  {
+    img: javaicon,
+    description: "Celery Caching Example: Implementation of caching in Celery using LRU cache algorithm.",
     link: "https://github.com/MerinRose123/celery_caching_example",
   }
 ];
@@ -100,15 +149,21 @@ const certifications = [
     img: oracleoci,
     description: "Oracle Cloud Infrastructure Foundations 2021 Certified Associate",
     link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=F54B19E4D4A7449C9F29671E0D412D38D8191C73E35574669B0EFEC23FC70D86",
+  },
+  {
+    img: pythonicon,
+    description: "HackerRank Python Certificate",
+    link: "#", // Link if available
   }
 ];
 
 const otherAccomplishments = [
-  "Appreciation for Excellent Performance from Inapp",
+  "Oracle Fun@Work Club Member (2024 - 2025)",
+  "Appreciation for Excellent Performance from CEO of InApp (June 2021 - November 2021)",
   "All Kerala University Rank 3 (2015 - 2019)",
-  "Kerala Technological University Women’s Chess team Captain (2017 - 2018)",
-  "Participated in IPL hackathon by IIT Madras: Prediciting the IPL winner from past data sets",
-  "Certificate on Critical Thinking for Better Judgment and Decision- Making - LinkedIn (10/2020 - 7/2021)"
+  "Kerala Technological University Women’s Chess Team Captain & Champion (2017 - 2018)",
+  "Participated in IPL Hackathon by IIT Madras: Predicting the IPL winner from past data sets",
+  "Certificate on Critical Thinking for Better Judgment and Decision-Making - LinkedIn (10/2020 - 7/2021)"
 ];
 const contactConfig = {
   YOUR_EMAIL: "merin.pottananickal@gmail.com",
@@ -125,8 +180,8 @@ const contactConfig = {
 const socialprofils = {
   github: "https://github.com/MerinRose123",
   linkedin: "https://www.linkedin.com/in/merin-rose-tom/",
-  // leetcode: "https://leetcode.com/u/merin_tom/",
-  // medium: "https://medium.com/@merin-rose-tom",
+  leetcode: "https://leetcode.com/u/merin_tom/",
+  medium: "https://medium.com/@merin-rose-tom",
 };
 export {
   meta,
