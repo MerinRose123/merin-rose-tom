@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/merin-rose-tom/static/css/main.d3252236.css",
-    "main.js": "/merin-rose-tom/static/js/main.79b0f453.js",
+    "main.js": "/merin-rose-tom/static/js/main.4059d561.js",
     "static/media/oracleoci.png": "/merin-rose-tom/static/media/oracleoci.c0a815f0e6ee00f03ce3.png",
     "static/media/oraclegenai.png": "/merin-rose-tom/static/media/oraclegenai.07dd7af43647414f8eb4.png",
     "static/media/profilepic.jpeg": "/merin-rose-tom/static/media/profilepic.89721440169f3aee2a71.jpeg",
@@ -17,6 +17,6 @@
   },
   "entrypoints": [
     "static/css/main.d3252236.css",
-    "static/js/main.79b0f453.js"
+    "static/js/main.4059d561.js"
   ]
 }
