@@ -21,13 +21,13 @@ const introdata = {
   title: "I’m Merin Rose Tom",
   animated: {
     first: "Senior Application Engineer @Oracle",
-    second: "Critical Thinker and Problem Solver",
-    third: "B-Tech IT, GPA 8.93, University Rank 3",
+    second: "Backend & Full-Stack Developer",
+    third: "University Rank 3",
   },
   description:
     "A Senior Application Engineer with over 6 years of experience in full-stack and backend development. I specialize in building scalable cloud solutions and modernizing legacy systems using Python, Java, and PeopleCode. My strategic thinking, honed through competitive chess, enables me to architect robust solutions and optimize CI/CD pipelines for enhanced security.",
   profie_pic: profilepic,
-  skill_icons: [oracleicon, javaicon, pythonicon, javascripticon],
+  skill_icons: [oracleicon, javaicon, pythonicon, javascripticon, medium, leetcode],
 };
 
 const dataabout = {
@@ -37,17 +37,17 @@ const dataabout = {
 };
 const worktimeline = [
   {
-    jobtitle: "Senior Application Engineer | Full Stack Developer",
+    jobtitle: "Senior Application Engineer | Python, Java, Cloud",
     where: "Oracle",
-    date: "2024-Present",
+    date: "September 2024 - Present",
   },
   {
-    jobtitle: "Software Engineer II | Full Stack Developer",
+    jobtitle: "Software Engineer II | Backend Developer",
     where: "Oracle",
     date: "2021-2024",
   },
   {
-    jobtitle: "Software Engineer | Backend Developer",
+    jobtitle: "Software Engineer | Full Stack Developer",
     where: "InApp Information Technologies",
     date: "2020-2021",
   },
@@ -158,10 +158,6 @@ const otherAccomplishments = [
 const contactConfig = {
   YOUR_EMAIL: "merin.pottananickal@gmail.com",
   YOUR_FONE: "",
-  //   description:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-  // creat an emailjs.com account
-  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
   YOUR_SERVICE_ID: "service_w0691tq",
   YOUR_TEMPLATE_ID: "template_qmj4dpl",
   YOUR_USER_ID: "x08Iheqe-2VLaSPur",
