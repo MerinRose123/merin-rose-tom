@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/merin-rose-tom/static/css/main.d3252236.css",
-    "main.js": "/merin-rose-tom/static/js/main.4059d561.js",
+    "main.css": "/merin-rose-tom/static/css/main.2405eaea.css",
+    "main.js": "/merin-rose-tom/static/js/main.e76d7b39.js",
+    "static/media/badminton.png": "/merin-rose-tom/static/media/badminton.31395048dfe0e4a219de.png",
+    "static/media/pcm.png": "/merin-rose-tom/static/media/pcm.181e6a988dbef763668d.png",
     "static/media/oracleoci.png": "/merin-rose-tom/static/media/oracleoci.c0a815f0e6ee00f03ce3.png",
     "static/media/oraclegenai.png": "/merin-rose-tom/static/media/oraclegenai.07dd7af43647414f8eb4.png",
     "static/media/profilepic.jpeg": "/merin-rose-tom/static/media/profilepic.89721440169f3aee2a71.jpeg",
     "static/media/tkinter.png": "/merin-rose-tom/static/media/tkinter.96e5bcae1c874c8ba30d.png",
     "static/media/python.png": "/merin-rose-tom/static/media/python.e2d1cf92a15559a191c4.png",
+    "static/media/chess.jpg": "/merin-rose-tom/static/media/chess.99dcc0295a6b0c202ad8.jpg",
     "static/media/cache.png": "/merin-rose-tom/static/media/cache.9cd01bcc1340944bbf93.png",
     "static/media/java.png": "/merin-rose-tom/static/media/java.07fb54667c141c1de6f5.png",
     "static/media/oracle.png": "/merin-rose-tom/static/media/oracle.8991707e4be97e920175.png",
@@ -16,7 +19,7 @@
     "index.html": "/merin-rose-tom/index.html"
   },
   "entrypoints": [
-    "static/css/main.d3252236.css",
-    "static/js/main.4059d561.js"
+    "static/css/main.2405eaea.css",
+    "static/js/main.e76d7b39.js"
   ]
 }
