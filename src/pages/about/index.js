@@ -7,6 +7,7 @@ import {
   meta,
   worktimeline,
   skills,
+  detailedExperience,
   services,
 } from "../../content_option";
 
@@ -31,7 +32,9 @@ export const About = () => {
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <div>
-              <p>{dataabout.aboutme}</p>
+              {dataabout.aboutme.split('\n\n').map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
             </div>
           </Col>
         </Row>
@@ -53,6 +56,26 @@ export const About = () => {
                 })}
               </tbody>
             </table>
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Work Experience</h3>
+          </Col>
+          <Col lg="7">
+            {detailedExperience.map((data, i) => {
+              return (
+                <div className="experience py-2" key={i}>
+                  <h5 className="experience__title">{data.jobtitle}</h5>
+                  <p className="experience__company">{data.where} | {data.date}</p>
+                  <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                    {data.bullets.map((bullet, j) => (
+                      <li key={j}>{bullet}</li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
           </Col>
         </Row>
         <Row className="sec_sp">
@@ -80,7 +103,7 @@ export const About = () => {
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lang="5">
+          <Col lg="5">
             <h3 className="color_sec py-4">Services</h3>
           </Col>
           <Col lg="7">

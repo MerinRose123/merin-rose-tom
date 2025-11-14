@@ -1,6 +1,7 @@
 import profilepic from "./assets/images/profilepic.jpeg";
 import javascripticon from "./assets/images/javascript.png";
 import oracleicon from "./assets/images/oracle.png";
+import pcmicon from "./assets/images/pcm.png";
 import pythonicon from "./assets/images/python.png";
 import javaicon from "./assets/images/java.png";
 import tkinter from "./assets/images/tkinter.png";
@@ -10,6 +11,8 @@ import oracleoci from "./assets/images/oracleoci.png";
 import medium from "./assets/images/medium.png";
 import leetcode from "./assets/images/leetcode.png";
 import eventops from "./assets/images/eventops.png";
+// import hobbiesImg from "./assets/images/hobbies.png";
+// import chessImg from "./assets/images/chess.png";
 
 const logotext = "Merin";
 const meta = {
@@ -33,7 +36,7 @@ const introdata = {
 const dataabout = {
   title: "A bit about me",
   aboutme:
-    "A Senior Application Engineer with over 6 years of experience in full-stack and backend development. I specialize in building scalable cloud solutions and modernizing legacy systems using Python, Java, and PeopleCode. My strategic thinking, honed through competitive chess, enables me to architect robust solutions and optimize CI/CD pipelines for enhanced security. Outside of work, I enjoy playing chess, badminton, and exploring new technologies.",
+    "Results-oriented backend developer with full-stack exposure and 6 years of experience building efficient and innovative software solutions. Skilled in Python, Java, PeopleCode, Angular, Django, Flask, PostgreSQL, and Oracle Cloud Infrastructure (OCI). At Oracle, I develop and maintain PeopleSoft Cloud Manager, streamlining provisioning and management of PeopleSoft environments on OCI. I’ve led automation initiatives for internal builds and resource cleanup, implemented critical security features, and contributed to measurable improvements in code quality and efficiency—all while collaborating with clients to solve complex problems.\n\nPreviously at InApp Information Technologies, I developed full-stack solutions for event management and piracy detection projects, strengthening my expertise across both front-end and back-end technologies.\n\nGraduated as Third Rank Holder from APJ Abdul Kalam Technological University, with strong skills in data structures and algorithms. Experience as captain of the university women's chess team honed my strategic thinking and leadership, which I bring to every project. Passionate about learning, tackling challenging projects, and contributing to forward-thinking teams.",
 };
 const worktimeline = [
   {
@@ -68,11 +71,23 @@ const skills = [
     value: 85,
   },
   {
+    name: "PeopleCode",
+    value: 80,
+  },
+  {
     name: "Oracle Cloud Infrastructure (OCI)",
     value: 80,
   },
   {
     name: "Django & Flask",
+    value: 75,
+  },
+  {
+    name: "Databases (PostgreSQL, MySQL, MongoDB)",
+    value: 75,
+  },
+  {
+    name: "Data Structures & Algorithms",
     value: 75,
   },
   {
@@ -91,10 +106,6 @@ const skills = [
     name: "JavaScript & Angular",
     value: 60,
   },
-  {
-    name: "Databases (PostgreSQL, MySQL, MongoDB)",
-    value: 75,
-  },
 ];
 
 const services = [
@@ -112,15 +123,58 @@ const services = [
   }
 ];
 
+const detailedExperience = [
+  {
+    jobtitle: "Senior Application Engineer | Python, Java, Cloud",
+    where: "Oracle",
+    date: "September 2024 - Present",
+    bullets: [
+      "Enhanced and maintained PeopleSoft Cloud Manager, serving 200+ customers on Oracle Cloud Infrastructure (OCI)",
+      "Automated CI/CD pipelines, test frameworks, and resource cleanup using Jenkins and Shell, improving build speed by 25% and boosting code quality by 30%",
+      "Actively contributed to company culture as a member of the Fun@Work Club (2024–2025), leading initiatives impacting 450+ colleagues"
+    ]
+  },
+  {
+    jobtitle: "Software Engineer II | Backend Developer",
+    where: "Oracle",
+    date: "December 2021 - August 2024",
+    bullets: [
+      "Architected and modernized cloud-native solutions using Python, Java, and PeopleCode",
+      "Designed and implemented a secure password management feature using OCI Vault, improving security by 30%",
+      "Integrated OpenSearch and COBOL systems into PeopleSoft applications, ensuring seamless data flow and functionality"
+    ]
+  },
+  {
+    jobtitle: "Software Engineer | Full Stack Developer",
+    where: "InApp Information Technologies",
+    date: "July 2020 - November 2021",
+    bullets: [
+      "Developed a Python-based machine learning system using libraries like Pandas and NumPy to automatically detect piracy levels by comparing them against existing data",
+      "Designed and implemented backend architecture with Django and Flask, including PostgreSQL database modeling and asynchronous task management using Celery",
+      "Built a responsive front-end with Angular and JavaScript, creating secure authentication flows, data visualization dashboards, and error handling modules"
+    ]
+  },
+  {
+    jobtitle: "Programmer Trainee | Python Programmer",
+    where: "InApp Information Technologies",
+    date: "July 2019 - June 2020",
+    bullets: [
+      "Designed and implemented a unit testing framework leveraging Django multi-tenancy architecture, which strengthened security and improved handling of edge cases",
+      "Participated in the design and development of EventOPS – an internal event management system, supporting features such as task scheduling, conditional triggers, email automation, and role-based access management",
+      "Optimized application performance through database design, query optimization, and microservices-based architecture, resulting in faster response times and better scalability"
+    ]
+  }
+];
+
 const dataportfolio = [
   {
-    img: oracleicon,
-    description: "PeopleSoft Cloud Manager: Engineered process automation for resource cleanup and prerequisite installation, saving 10% developer time. Implemented secure password management using OCI Vault, enhancing security by 30%. Built CI/CD pipeline with Jenkins, accelerating builds by 25%.",
+    img: pcmicon,
+    description: "Engineered process automation for resource cleanup, saving 10% developer time. Implemented secure password management using OCI Vault, enhancing security by 30%. Built CI/CD pipeline with Jenkins, accelerating builds by 25%.",
     link: "https://docs.oracle.com/cd/E52319_01/infoportal/cloudmgr.html",
   },
   {
     img: eventops,
-    description: "EventOPS - Internal Event Management System: Built backend microservices with Django and Flask, optimizing efficiency by 15%. Established unit testing framework with multi-tenancy, advancing security by 30%.",
+    description: "Internal Event Management System: Built backend microservices with Django and Flask, optimizing efficiency by 15%. Established unit testing framework with multi-tenancy, advancing security by 30%.",
     link: "https://eventops.com/", 
   },
   {
@@ -153,7 +207,11 @@ const otherAccomplishments = [
   "All Kerala University Rank 3 (2015 - 2019)",
   "Kerala Technological University Women’s Chess Team Captain & Champion (2017 - 2018)",
   "Participated in IPL Hackathon by IIT Madras: Predicting the IPL winner from past data sets",
-  "Certificate on Critical Thinking for Better Judgment and Decision-Making - LinkedIn (10/2020 - 7/2021)"
+  "Certificate on Critical Thinking for Better Judgment and Decision-Making - LinkedIn (10/2020 - 7/2021)",
+  "HackerRank Python Certificate",
+  "Oracle Database Explorer",
+  "Training program for Lucideus Certified Cyber Security Expert, Grade 1 workshop",
+  "Industrial Automation Internship at Bosch Rexroth (June 2016)"
 ];
 const contactConfig = {
   YOUR_EMAIL: "merin.pottananickal@gmail.com",
@@ -175,6 +233,7 @@ export {
   dataportfolio,
   worktimeline,
   skills,
+  detailedExperience,
   services,
   introdata,
   contactConfig,
