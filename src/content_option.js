@@ -306,7 +306,7 @@ const otherAccomplishments = [
   "Participated in IPL Hackathon by IIT Madras: Predicting the IPL winner from past data sets"
 ];
 const contactConfig = {
-  YOUR_EMAIL: "merin.pottananickal@gmail.com",
+  YOUR_EMAIL: "",
   YOUR_FONE: "",
   YOUR_SERVICE_ID: "service_w0691tq",
   YOUR_TEMPLATE_ID: "template_qmj4dpl",
