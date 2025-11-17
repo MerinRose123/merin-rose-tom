@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext ,socialprofils } from "../content_option";
+import { logotext } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
@@ -17,50 +17,57 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link  className="navbar-brand nav_ac" to="/">
+          <Link className="navbar-brand nav_ac" to="/">
             {logotext}
           </Link>
-          <div className="d-flex align-items-center">
-          <Themetoggle />
-          <button className="menu__button  nav_ac" onClick={handleToggle}>
-            {!isActive ? <VscClose /> : <VscGrabber />}
-          </button>
-          
-          </div>
+          <nav className="d-flex align-items-center">
+            <ul className="horizontal_menu d-none d-lg-flex">
+              <li className="menu_item">
+                <Link to="/projects" className="nav_link">Projects</Link>
+              </li>
+              <li className="menu_item">
+                <Link to="/experience" className="nav_link">Experience</Link>
+              </li>
+              <li className="menu_item">
+                <Link to="/skills" className="nav_link">Skills</Link>
+              </li>
+              <li className="menu_item">
+                <Link to="/about" className="nav_link">About</Link>
+              </li>
+              <li className="menu_item">
+                <Link to="/hobbies" className="nav_link">Hobbies & Blogs</Link>
+              </li>
+            </ul>
+            <Themetoggle />
+            <button className="menu__button nav_ac d-lg-none" onClick={handleToggle}>
+              {!isActive ? <VscClose /> : <VscGrabber />}
+            </button>
+          </nav>
         </div>
 
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
+        <div className={`site__navigation d-lg-none ${!isActive ? "menu__opend" : ""}`}>
           <div className="bg__menu h-100">
             <div className="menu__wrapper">
               <div className="menu__container p-3">
                 <ul className="the_menu">
-                  <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} to="/projects" className="my-3">Projects</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3">Portfolio</Link>
+                    <Link onClick={handleToggle} to="/experience" className="my-3">Experience</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
+                    <Link onClick={handleToggle} to="/skills" className="my-3">Skills</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/hobbies" className="my-3">Hobbies</Link>
+                    <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
+                    <Link onClick={handleToggle} to="/hobbies" className="my-3">Hobbies & Blogs</Link>
                   </li>
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <div className="d-flex">
-              <a href={socialprofils.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href={socialprofils.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href={socialprofils.medium} target="_blank" rel="noopener noreferrer">Medium</a>
-              <a href={socialprofils.leetcode} target="_blank" rel="noopener noreferrer">LeetCode</a>
-            </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
           </div>
         </div>
       </header>
@@ -68,7 +75,6 @@ const Headermain = () => {
       <div className="br-bottom"></div>
       <div className="br-left"></div>
       <div className="br-right"></div>
-      
     </>
   );
 };

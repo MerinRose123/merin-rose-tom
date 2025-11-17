@@ -11,8 +11,12 @@ import oracleoci from "./assets/images/oracleoci.png";
 import medium from "./assets/images/medium.png";
 import leetcode from "./assets/images/leetcode.png";
 import eventops from "./assets/images/eventops.png";
-// import hobbiesImg from "./assets/images/hobbies.png";
-// import chessImg from "./assets/images/chess.png";
+import piracyGn from "./assets/images/piracy_gn.png";
+import hackerrankImg from "./assets/images/hackerrank.jpeg";
+import jenkinsImg from "./assets/images/jenkins.png";
+import badmintonImg from "./assets/images/badminton.png";
+import chessImg from "./assets/images/chess.jpg";
+import drawingImg from "./assets/images/drawing.jpg";
 
 const logotext = "Merin";
 const meta = {
@@ -28,7 +32,7 @@ const introdata = {
     third: "University Rank 3",
   },
   description:
-    "A Senior Application Engineer with over 6 years of experience in full-stack and backend development. I specialize in building scalable cloud solutions and modernizing legacy systems using Python, Java, and PeopleCode. My strategic thinking, honed through competitive chess, enables me to architect robust solutions and optimize CI/CD pipelines for enhanced security.",
+    "A Senior Application Engineer with over 6 years of experience in full-stack and backend development. I specialize in building scalable cloud solutions and modernizing legacy systems using Python and Java. My strategic thinking, honed through competitive chess, enables me to architect robust solutions and optimize CI/CD pipelines for enhanced security.",
   profie_pic: profilepic,
   skill_icons: [oracleicon, javaicon, pythonicon, javascripticon, medium, leetcode],
 };
@@ -108,6 +112,57 @@ const skills = [
   },
 ];
 
+const skillsCategories = [
+  {
+    title: "Programming Languages",
+    skills: [
+      { name: "Python", value: 90, icon: pythonicon },
+      { name: "Java", value: 85, icon: javaicon },
+      { name: "JavaScript", value: 60, icon: javascripticon },
+    ],
+  },
+  {
+    title: "Cloud & DevOps",
+    skills: [
+      { name: "Oracle Cloud Infrastructure (OCI)", value: 80, icon: oracleoci },
+      { name: "Jenkins & CI/CD", value: 70 },
+      { name: "Docker & Kubernetes", value: 65 },
+    ],
+  },
+  {
+    title: "Databases",
+    skills: [
+      { name: "PostgreSQL", value: 75 },
+      { name: "MySQL", value: 75 },
+      { name: "MongoDB", value: 75 },
+    ],
+  },
+  {
+    title: "Web Frameworks",
+    skills: [
+      { name: "Django", value: 75 },
+      { name: "Flask", value: 75 },
+      { name: "Angular", value: 60, icon: javascripticon },
+    ],
+  },
+  {
+    title: "Tools",
+    skills: [
+      { name: "Git", value: 85 },
+      { name: "VS Code", value: 90 },
+      { name: "Postman", value: 80 },
+    ],
+  },
+  {
+    title: "Concepts",
+    skills: [
+      { name: "Data Structures & Algorithms", value: 75, icon: leetcode },
+      { name: "System Design & Architecture", value: 70 },
+      { name: "Third Party Integration", value: 75 },
+    ],
+  },
+];
+
 const services = [
   {
     title: "Full-Stack & Backend Development",
@@ -168,25 +223,44 @@ const detailedExperience = [
 
 const dataportfolio = [
   {
+    title: "PeopleSoft Cloud Manager",
     img: pcmicon,
     description: "Engineered process automation for resource cleanup, saving 10% developer time. Implemented secure password management using OCI Vault, enhancing security by 30%. Built CI/CD pipeline with Jenkins, accelerating builds by 25%.",
     link: "https://docs.oracle.com/cd/E52319_01/infoportal/cloudmgr.html",
   },
   {
+    title: "EventOPS - Internal Event Management System",
     img: eventops,
-    description: "Internal Event Management System: Built backend microservices with Django and Flask, optimizing efficiency by 15%. Established unit testing framework with multi-tenancy, advancing security by 30%.",
-    link: "https://eventops.com/", 
+    description: "Built backend microservices with Django and Flask, optimizing efficiency by 15%. Established unit testing framework with multi-tenancy, advancing security by 30%.",
+    link: "https://eventops.com/",
   },
   {
-    img: tkinter,
-    description: "Manglish to Malayalam Text Editor: Python Tkinter application for converting Manglish text to Malayalam.",
-    link: "https://github.com/MerinRose123/manglish_text_editor",
-  },
-  {
-    img: cache,
-    description: "Celery Caching Example: Implementation of caching in Celery using LRU cache algorithm.",
-    link: "https://github.com/MerinRose123/celery_caching_example",
+    title: "Gordian - Piracy Detection System",
+    img: piracyGn,
+    description: "Created an automated PDF report generation system that outputs piracy detection results, boosting user experience by 20%. Designed front-end with Angular and assisted in developing the core piracy detection system. Analyzed and visualized over 50,000 data points using Python libraries like Pandas, NumPy, and Matplotlib.",
+    link: "https://in.linkedin.com/in/merin-rose-tom",
   }
+];
+
+const blogs = [
+  {
+    title: "Jenkins Email Notification With Parameters",
+    description: "Sending email notification in jenkins pipeline which includes environment parameters using python.",
+    image: jenkinsImg,
+    link: "https://blog.devops.dev/jenkins-email-notification-with-parameters-31c8076e3447",
+  },
+  {
+    title: "Build Your First Transliterator Text Editor with Python Tkinter",
+    description: "Python Tkinter application for converting Manglish text to Malayalam.",
+    image: tkinter,
+    link: "https://merin-rose-tom.medium.com/build-your-first-transliterator-text-editor-with-python-tkinter-dd2cd7b132bb",
+  },
+  {
+    title: "Caching in Celery Using LRUCache",
+    description: "Implementation of caching in Celery using LRU cache algorithm.",
+    image: cache,
+    link: "https://merin-rose-tom.medium.com/caching-in-celery-using-lrucache-357053251e96",
+  },
 ];
 const certifications = [
   {
@@ -198,7 +272,30 @@ const certifications = [
     img: oracleoci,
     description: "Oracle Cloud Infrastructure Foundations 2021 Certified Associate",
     link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=F54B19E4D4A7449C9F29671E0D412D38D8191C73E35574669B0EFEC23FC70D86",
+  },
+  {
+    img: hackerrankImg,
+    description: "HackerRank Python Certificate",
+    link: "https://www.hackerrank.com/certificates/1e0b601bd5eb",
   }
+];
+
+const hobbies = [
+  {
+    title: "Badminton",
+    description: "Badminton is my go-to sport for staying fit, having fun, and unwinding after a long day of coding!",
+    image: badmintonImg,
+  },
+  {
+    title: "Chess",
+    description: "As a university rank holder and team captain, chess sharpens my strategic thinking.",
+    image: chessImg,
+  },
+  {
+    title: "Drawing",
+    description: "Drawing allows me to express my creativity and relax through artistic expression.",
+    image: drawingImg,
+  },
 ];
 
 const otherAccomplishments = [
@@ -206,12 +303,7 @@ const otherAccomplishments = [
   "Appreciation for Excellent Performance from CEO of InApp (June 2021 - November 2021)",
   "All Kerala University Rank 3 (2015 - 2019)",
   "Kerala Technological University Women’s Chess Team Captain & Champion (2017 - 2018)",
-  "Participated in IPL Hackathon by IIT Madras: Predicting the IPL winner from past data sets",
-  "Certificate on Critical Thinking for Better Judgment and Decision-Making - LinkedIn (10/2020 - 7/2021)",
-  "HackerRank Python Certificate",
-  "Oracle Database Explorer",
-  "Training program for Lucideus Certified Cyber Security Expert, Grade 1 workshop",
-  "Industrial Automation Internship at Bosch Rexroth (June 2016)"
+  "Participated in IPL Hackathon by IIT Madras: Predicting the IPL winner from past data sets"
 ];
 const contactConfig = {
   YOUR_EMAIL: "merin.pottananickal@gmail.com",
@@ -233,6 +325,7 @@ export {
   dataportfolio,
   worktimeline,
   skills,
+  skillsCategories,
   detailedExperience,
   services,
   introdata,
@@ -240,5 +333,7 @@ export {
   socialprofils,
   logotext,
   certifications,
+  hobbies,
+  blogs,
   otherAccomplishments,
 };

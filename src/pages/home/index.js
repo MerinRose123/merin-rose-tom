@@ -38,17 +38,17 @@ export const Home = () => {
                   <img src={el} key={i} className="skill_icons" />
                 ))}
                 <div className="intro_btn-action pb-5">
-                  <Link to="/about" className="text_2">
+                  <Link to="/experience" className="text_2">
                     <div id="button_p" className="ac_btn btn">
-                      About Me
+                      Experience
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
                     </div>
                   </Link>
-                  <Link to="/portfolio">
+                  <Link to="/projects">
                     <div id="button_a" className="ac_btn btn ">
-                      My Portfolio
+                      My Projects
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
