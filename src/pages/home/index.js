@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
@@ -6,9 +6,29 @@ import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
+  useEffect(() => {
+    // Create floating particles
+    const createParticles = () => {
+      const particlesContainer = document.querySelector('.particles-container');
+      if (!particlesContainer) return;
+
+      for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 20 + 's';
+        particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+        particlesContainer.appendChild(particle);
+      }
+    };
+
+    createParticles();
+  }, []);
+
   return (
     <HelmetProvider>
       <section id="home" className="home">
+        <div className="particles-container"></div>
         <Helmet>
           <meta charSet="utf-8" />
           <title> {meta.title}</title>

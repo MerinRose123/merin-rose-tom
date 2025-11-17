@@ -70,6 +70,72 @@
     padding-bottom: 4px;
 }
 
+/* Achievement Badges */
+.achievements-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.achievement-badge {
+    display: flex;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.achievement-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.achievement-icon {
+    font-size: 2rem;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-content {
+    flex: 1;
+}
+
+.achievement-text {
+    font-size: 1rem;
+    color: var(--text-color-2);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* Interactive Elements */
+.service_ {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.service_:hover {
+    transform: translateX(5px);
+}
+
+.color_sec {
+    transition: color 0.3s ease;
+}
+
+.color_sec:hover {
+    color: var(--text-color-3) !important;
+}
+
 
 /*! CSS Used keyframes */
 

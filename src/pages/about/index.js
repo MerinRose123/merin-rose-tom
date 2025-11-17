@@ -57,11 +57,22 @@ export const About = () => {
             <h3 className="color_sec py-4">Achievements</h3>
           </Col>
           <Col lg="7">
-            <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
+            <div className="achievements-container">
               {otherAccomplishments.map((achievement, i) => (
-                <li key={i} className="mb-3">{achievement}</li>
+                <div key={i} className="achievement-badge">
+                  <div className="achievement-icon">
+                    {i === 0 && "🏆"}
+                    {i === 1 && "🎯"}
+                    {i === 2 && "👑"}
+                    {i === 3 && "♟️"}
+                    {i === 4 && "🏏"}
+                  </div>
+                  <div className="achievement-content">
+                    <span className="achievement-text">{achievement}</span>
+                  </div>
+                </div>
               ))}
-            </ul>
+            </div>
           </Col>
         </Row>
       </Container>
