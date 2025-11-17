@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/merin-rose-tom/static/css/main.2405eaea.css",
-    "main.js": "/merin-rose-tom/static/js/main.e76d7b39.js",
-    "static/media/badminton.png": "/merin-rose-tom/static/media/badminton.31395048dfe0e4a219de.png",
+    "main.css": "/merin-rose-tom/static/css/main.21875441.css",
+    "main.js": "/merin-rose-tom/static/js/main.d75a58ca.js",
+    "static/media/badminton.png": "/merin-rose-tom/static/media/badminton.e52c3263484035b756fa.png",
+    "static/media/jenkins.png": "/merin-rose-tom/static/media/jenkins.eef1d9420ca45196d8ae.png",
+    "static/media/piracy_gn.png": "/merin-rose-tom/static/media/piracy_gn.67578d20f2f96ea20b58.png",
     "static/media/pcm.png": "/merin-rose-tom/static/media/pcm.181e6a988dbef763668d.png",
     "static/media/oracleoci.png": "/merin-rose-tom/static/media/oracleoci.c0a815f0e6ee00f03ce3.png",
     "static/media/oraclegenai.png": "/merin-rose-tom/static/media/oraclegenai.07dd7af43647414f8eb4.png",
+    "static/media/drawing.jpg": "/merin-rose-tom/static/media/drawing.5da9654557f8091beefe.jpg",
     "static/media/profilepic.jpeg": "/merin-rose-tom/static/media/profilepic.89721440169f3aee2a71.jpeg",
     "static/media/tkinter.png": "/merin-rose-tom/static/media/tkinter.96e5bcae1c874c8ba30d.png",
     "static/media/python.png": "/merin-rose-tom/static/media/python.e2d1cf92a15559a191c4.png",
@@ -19,7 +22,7 @@
     "index.html": "/merin-rose-tom/index.html"
   },
   "entrypoints": [
-    "static/css/main.2405eaea.css",
-    "static/js/main.e76d7b39.js"
+    "static/css/main.21875441.css",
+    "static/js/main.d75a58ca.js"
   ]
 }
