@@ -37,21 +37,7 @@ export const About = () => {
           </Col>
         </Row>
 
-        <Row className="sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">Hire Me</h3>
-          </Col>
-          <Col lg="7">
-            {services.map((data, i) => {
-              return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
-                </div>
-              );
-            })}
-          </Col>
-        </Row>
+
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Achievements</h3>

@@ -165,12 +165,8 @@ const skillsCategories = [
 
 const services = [
   {
-    title: "Backend Developer",
-    description: "Expert in Python, Java, Django, Flask, and database technologies. Experienced in building scalable APIs, microservices, and system integrations.",
-  },
-  {
-    title: "Full Stack Developer",
-    description: "Proficient in Angular, JavaScript, and modern web development. Skilled in creating responsive, user-friendly applications with seamless front-end and back-end integration.",
+    title: "Backend & Full Stack Developer",
+    description: "Expert in Python, Java, Django, Flask, Angular, JavaScript, and database technologies. Skilled in building scalable APIs, microservices, responsive web applications, and seamless front-end/back-end integration.",
   },
   {
     title: "Cloud Solutions Architect",

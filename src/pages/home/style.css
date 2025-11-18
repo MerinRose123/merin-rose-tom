@@ -107,7 +107,6 @@ section {
   transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   cursor: pointer;
   border-radius: 0;
-  margin-right: 20px;
 }
 
 .ac_btn a {
@@ -163,6 +162,20 @@ section {
   z-index: -2;
   transition: all 0.7s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: -3;
+}
+
+/* Hero Button Actions */
+.intro_btn-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.intro_btn-action .ac_btn {
+  min-width: 140px;
+  text-align: center;
 }
 
 #button_p {
@@ -244,6 +257,59 @@ section {
   margin-right: 20px;
   margin-bottom: 30px;
   margin-top: 30px;
+}
+
+/* Hero Highlights */
+.hero-highlights {
+  margin: 20px 0;
+}
+
+.highlights-grid {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .highlights-grid {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+
+.highlight-box {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-color-2);
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.highlight-box:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icons-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px 0;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 /* Particle Animation Background */
@@ -338,5 +404,137 @@ section {
   }
   60% {
     transform: translateY(2px);
+  }
+}
+
+/* Section Spacing */
+.section-spacing {
+  padding: 80px 0;
+  background-color: var(--bg-color);
+}
+
+.section-spacing:nth-child(even) {
+  background-color: var(--primary-color);
+}
+
+/* Hire Me Section */
+.hire-me-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hire-intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hire-intro h3 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: var(--text-color-2);
+  font-family: Marcellus;
+}
+
+.hire-intro p {
+  font-size: 1.1rem;
+  color: var(--text-color-2);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.hire-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.hire-service-card {
+  background: var(--primary-color);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hire-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.service-title {
+  font-size: 1.3rem;
+  font-family: Marcellus;
+  color: var(--text-color-2);
+  margin-bottom: 15px;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: var(--text-color-2);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.hire-cta {
+  text-align: center;
+  padding: 40px 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 15px;
+  margin-top: 40px;
+}
+
+.cta-text {
+  font-size: 1.2rem;
+  color: var(--text-color-2);
+  margin-bottom: 20px;
+  font-family: Marcellus;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--text-color-3);
+  color: var(--primary-color);
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: Marcellus;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(204, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+  background: var(--text-color-2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .hire-services {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hire-service-card {
+    padding: 20px;
+  }
+
+  .hire-intro h3 {
+    font-size: 1.8rem;
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
   }
 }
