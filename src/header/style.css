@@ -8,7 +8,6 @@
     position: fixed;
     z-index: 1030;
     width: 100%;
-    background-color: var(--primary-color);
     padding: 5px 20px;
     box-sizing: border-box;
 }
