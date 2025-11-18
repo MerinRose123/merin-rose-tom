@@ -16,20 +16,11 @@ export const Skills = () => {
         {skillsCategories.map((category, index) => (
           <div key={index} className="skills_card">
             <h2 className="category_title">{category.title}</h2>
-            <div className="skills_list">
+            <div className="skills_grid">
               {category.skills.map((skill, idx) => (
                 <div key={idx} className="skill_item">
-                  <div className="skill_header">
-                    {skill.icon && <img src={skill.icon} alt={skill.name} className="skill_icon" />}
-                    <span className="skill_name">{skill.name}</span>
-                    <span className="skill_percentage">{skill.value}%</span>
-                  </div>
-                  <div className="progress_bar">
-                    <div
-                      className="progress_fill"
-                      style={{ width: `${skill.value}%` }}
-                    ></div>
-                  </div>
+                  {skill.icon && <img src={skill.icon} alt={skill.name} className="skill_icon" />}
+                  <span className="skill_name">{skill.name}</span>
                 </div>
               ))}
             </div>

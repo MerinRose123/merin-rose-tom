@@ -24,7 +24,6 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 15px 0;
-  overflow-x: auto;
 }
 
 .timeline::before {
@@ -33,15 +32,16 @@
   top: 50%;
   left: 0;
   right: 0;
-  height: 2px;
-  background: linear-gradient(to right, var(--text-color-2), rgba(255, 255, 255, 0.3));
+  height: 4px;
+  background: linear-gradient(to right, var(--text-color-3), var(--text-color-2), var(--text-color-3));
   transform: translateY(-50%);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(204, 0, 0, 0.3);
 }
 
 .timeline-container {
   display: flex;
   justify-content: space-between;
-  min-width: 900px;
   gap: 20px;
 }
 
@@ -69,12 +69,25 @@
   left: 50%;
   width: 12px;
   height: 12px;
-  background: var(--text-color-2);
+  background: var(--text-color-3);
   border-radius: 50%;
   border: 2px solid var(--primary-color);
   transform: translateX(-50%);
   z-index: 2;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1), 0 0 15px var(--text-color-3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1), 0 0 15px var(--text-color-3);
+  }
+  50% {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1), 0 0 25px var(--text-color-3), 0 0 35px var(--text-color-3);
+  }
+  100% {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1), 0 0 15px var(--text-color-3);
+  }
 }
 
 .timeline-item:nth-child(odd) .timeline-marker {
@@ -88,16 +101,33 @@
 }
 
 .timeline-content {
-  background: var(--primary-color);
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s ease;
+    background: var(--primary-color);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    animation: slideInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Staggered animation for timeline items */
+.timeline-item:nth-child(1) .timeline-content { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) .timeline-content { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) .timeline-content { animation-delay: 0.3s; }
+.timeline-item:nth-child(4) .timeline-content { animation-delay: 0.4s; }
+
+@keyframes slideInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .timeline-content:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 .timeline-job {
@@ -224,6 +254,23 @@
 }
 
 @media (max-width: 768px) {
+  .timeline {
+    padding-left: 30px;
+    position: relative;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--text-color-3), var(--text-color-2), var(--text-color-3));
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(204, 0, 0, 0.3);
+  }
+
   .timeline-container {
     flex-direction: column;
     min-width: unset;
@@ -232,12 +279,15 @@
   .timeline-item {
     margin-top: 40px !important;
     margin-bottom: 40px !important;
+    text-align: left;
+    padding-left: 40px;
   }
 
   .timeline-item:nth-child(odd) .timeline-marker,
   .timeline-item:nth-child(even) .timeline-marker {
-    top: 50%;
-    margin-top: -6px;
+    left: 7px;
+    top: 20px;
+    transform: translateX(0);
   }
 
   .timeline::before {
@@ -246,6 +296,7 @@
 
   .timeline-content {
     min-height: 100px;
+    margin-left: 0;
   }
 
   .experience-meta {

@@ -1,4 +1,4 @@
-import profilepic from "./assets/images/profilepic.jpeg";
+import profilepic from "./assets/images/profilepic.png";
 import javascripticon from "./assets/images/javascript.png";
 import oracleicon from "./assets/images/oracle.png";
 import pcmicon from "./assets/images/pcm.png";
@@ -165,16 +165,20 @@ const skillsCategories = [
 
 const services = [
   {
-    title: "Full-Stack & Backend Development",
-    description: "Specializing in Python, Java, and modern web frameworks like Django, Flask, and Angular for scalable applications.",
+    title: "Backend Developer",
+    description: "Expert in Python, Java, Django, Flask, and database technologies. Experienced in building scalable APIs, microservices, and system integrations.",
   },
   {
-    title: "Cloud Solutions & DevOps",
-    description: "Architecting cloud-native solutions on Oracle Cloud Infrastructure with CI/CD pipelines using Jenkins, Docker, and Kubernetes.",
+    title: "Full Stack Developer",
+    description: "Proficient in Angular, JavaScript, and modern web development. Skilled in creating responsive, user-friendly applications with seamless front-end and back-end integration.",
   },
   {
-    title: "System Design & Optimization",
-    description: "Designing robust architectures, optimizing performance, and integrating third-party systems for enhanced functionality.",
+    title: "Cloud Solutions Architect",
+    description: "Specialized in Oracle Cloud Infrastructure (OCI), AWS, and cloud-native architectures. Expertise in DevOps, CI/CD pipelines, and containerization technologies.",
+  },
+  {
+    title: "System Design & Optimization Engineer",
+    description: "Focused on designing robust system architectures, performance optimization, and implementing best practices for scalable, maintainable software solutions.",
   }
 ];
 
@@ -225,20 +229,35 @@ const dataportfolio = [
   {
     title: "PeopleSoft Cloud Manager",
     img: pcmicon,
-    description: "Engineered process automation for resource cleanup, saving 10% developer time. Implemented secure password management using OCI Vault, enhancing security by 30%. Built CI/CD pipeline with Jenkins, accelerating builds by 25%.",
+    description: "An orchestration tool for managing PeopleSoft environments on OCI.",
     link: "https://docs.oracle.com/cd/E52319_01/infoportal/cloudmgr.html",
+    bullets: [
+      "Enhanced and maintained PeopleSoft Cloud Manager, serving 200+ customers on Oracle Cloud Infrastructure (OCI)",
+      "Automated CI/CD pipelines, test frameworks, and resource cleanup using Jenkins and Shell, improving build speed by 25% and boosting code quality by 30%"
+    ]
   },
   {
-    title: "EventOPS - Internal Event Management System",
+    title: "EventOPS",
     img: eventops,
-    description: "Built backend microservices with Django and Flask, optimizing efficiency by 15%. Established unit testing framework with multi-tenancy, advancing security by 30%.",
+    description: "Internal event management system in Django, Flask and Angular.",
     link: "https://eventops.com/",
+    bullets: [
+      "Participated in the design and development of EventOPS – an internal event management system, supporting features such as task scheduling, conditional triggers, email automation, and role-based access management",
+      "Designed and implemented backend architecture with Django and Flask, including PostgreSQL database modeling and asynchronous task management using Celery",
+      "Built a responsive front-end with Angular and JavaScript, creating secure authentication flows, data visualization dashboards, and error handling modules"
+    ]
   },
   {
-    title: "Gordian - Piracy Detection System",
+    title: "Gordian",
     img: piracyGn,
-    description: "Created an automated PDF report generation system that outputs piracy detection results, boosting user experience by 20%. Designed front-end with Angular and assisted in developing the core piracy detection system. Analyzed and visualized over 50,000 data points using Python libraries like Pandas, NumPy, and Matplotlib.",
+    description: "Provides Building Intelligence™ Solutions for the construction lifecycle.",
     link: "https://in.linkedin.com/in/merin-rose-tom",
+    bullets: [
+      "Developed a Python-based machine learning system using libraries like Pandas and NumPy to automatically detect piracy levels by comparing them against existing data",
+      "Created an automated PDF report generation system that outputs piracy detection results, boosting user experience by 20%",
+      "Designed front-end with Angular and assisted in developing the core piracy detection system",
+      "Analyzed and visualized over 50,000 data points using Python libraries like Pandas, NumPy, and Matplotlib"
+    ]
   }
 ];
 

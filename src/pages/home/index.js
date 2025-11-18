@@ -2,10 +2,12 @@ import React, { useEffect } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
-import { introdata, meta } from "../../content_option";
-import { Link } from "react-router-dom";
+import { introdata, meta, otherAccomplishments } from "../../content_option";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Home = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     // Create floating particles
     const createParticles = () => {
@@ -24,6 +26,10 @@ export const Home = () => {
 
     createParticles();
   }, []);
+
+  const scrollToNext = () => {
+    navigate('/experience');
+  };
 
   return (
     <HelmetProvider>
@@ -74,6 +80,10 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+                </div>
+                <div className="scroll-indicator" onClick={scrollToNext} style={{cursor: 'pointer'}}>
+                  <span>Scroll to explore</span>
+                  <div className="scroll-arrow">↓</div>
                 </div>
               </div>
             </div>

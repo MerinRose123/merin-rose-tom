@@ -1,4 +1,5 @@
 .po_items_ho {
+    /* Using uniform-grid from global styles */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
@@ -115,6 +116,7 @@
 }
 
 .certifications-grid {
+    /* Using uniform-grid from global styles */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;

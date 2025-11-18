@@ -39,7 +39,7 @@ export const About = () => {
 
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Services</h3>
+            <h3 className="color_sec py-4">Hire Me</h3>
           </Col>
           <Col lg="7">
             {services.map((data, i) => {

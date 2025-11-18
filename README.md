@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with React, showcasing professional experience, projects, skills, and achievements as a Senior Application Engineer.
 
-![Portfolio Preview](https://merinrose123.github.io/merin-rose-tom/)
+![Portfolio URL] https://merinrose123.github.io/merin-rose-tom/
 
 ## ✨ Features
 
@@ -120,7 +120,7 @@ Edit `src/content_option.js` to customize:
 
 ### Visual Assets
 Replace images in `src/assets/images/`:
-- `profilepic.jpeg` - Professional headshot for home page
+- `profilepic.png` - Professional headshot for home page
 - Project screenshots and technology icons
 - Certification badges and achievement visuals
 
