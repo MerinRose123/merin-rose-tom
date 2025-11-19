@@ -209,7 +209,7 @@ export const Home = () => {
                 <div className="hire-me-content">
                   <div className="hire-intro">
                     <h3 className="color_sec py-4">Let's Build Something Amazing Together</h3>
-                    <p>I'm open to exciting opportunities in backend development, full-stack engineering, cloud solutions, and system architecture. With 6+ years of experience delivering high-quality solutions, I'm ready to contribute to your team's success.</p>
+                    <p>Excited to explore roles in backend engineering, cloud platforms, and high-scale system design. I bring strong problem-solving, clean architecture, and a get-things-done mindset.</p>
                   </div>
                   <div className="hire-services">
                     {services.map((data, i) => {

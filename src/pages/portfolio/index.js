@@ -105,13 +105,13 @@ export const Projects = () => {
                   style={{width: '24px', height: '24px'}}
                 />
                 <span style={{color: 'var(--text-color-2)', fontStyle: 'italic'}}>
-                  Associated with: {selectedProject?.title === 'PeopleSoft Cloud Manager' ? 'Oracle' : 'InApp Information Technologies'}
+                  Associated with {selectedProject?.title === 'PeopleSoft Cloud Manager' ? 'Oracle' : 'InApp Information Technologies'}
                 </span>
               </div>
               <span style={{color: 'var(--text-color-2)', fontSize: '0.9rem'}}>
                 {selectedProject?.title === 'PeopleSoft Cloud Manager' ? '2021 - Present' :
                  selectedProject?.title === 'EventOPS' ? '2019 - 2021' :
-                 '2019 - 2021'}
+                 '2020 - 2021'}
               </span>
             </div>
             <div style={{marginBottom: '20px'}}>

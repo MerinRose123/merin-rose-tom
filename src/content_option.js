@@ -14,6 +14,17 @@ import eventops from "./assets/images/eventops.png";
 import piracyGn from "./assets/images/piracy_gn.png";
 import hackerrankImg from "./assets/images/hackerrank.jpeg";
 import jenkinsImg from "./assets/images/jenkins.png";
+import jenkins_icon from "./assets/images/jenkins_icon.png";
+import docker from "./assets/images/docker.png";
+import postgresql from "./assets/images/postgresql.png";
+import mongodb from "./assets/images/mongodb.png";
+import django from "./assets/images/django.png";
+import flask from "./assets/images/flask.png";
+import git from "./assets/images/git.png";
+import postman from "./assets/images/postman.png";
+import shell from "./assets/images/shell.png";
+import system_design from "./assets/images/system_design.png";
+import third_party from "./assets/images/third_party.png";
 import badmintonImg from "./assets/images/badminton.png";
 import chessImg from "./assets/images/chess.jpg";
 import drawingImg from "./assets/images/drawing.jpg";
@@ -27,12 +38,12 @@ const meta = {
 const introdata = {
   title: "I’m Merin Rose Tom",
   animated: {
-    first: "Senior Application Engineer @Oracle",
-    second: "Backend & Full-Stack Developer",
+    first: "Backend & Full-Stack Developer",
+    second: "Senior Application Engineer",
     third: "University Rank 3",
   },
   description:
-    "A Senior Application Engineer with over 6 years of experience in full-stack and backend development. I specialize in building scalable cloud solutions and modernizing legacy systems using Python and Java. My strategic thinking, honed through competitive chess, enables me to architect robust solutions and optimize CI/CD pipelines for enhanced security.",
+    "I architect scalable cloud platforms, modernize enterprise systems, and bring chess-driven strategic thinking into every solution I build.",
   profie_pic: profilepic,
   skill_icons: [oracleicon, javaicon, pythonicon, javascripticon, medium, leetcode],
 };
@@ -40,7 +51,7 @@ const introdata = {
 const dataabout = {
   title: "A bit about me",
   aboutme:
-    "Results-oriented backend developer with full-stack exposure and 6 years of experience building efficient and innovative software solutions. Skilled in Python, Java, PeopleCode, Angular, Django, Flask, PostgreSQL, and Oracle Cloud Infrastructure (OCI). At Oracle, I develop and maintain PeopleSoft Cloud Manager, streamlining provisioning and management of PeopleSoft environments on OCI. I’ve led automation initiatives for internal builds and resource cleanup, implemented critical security features, and contributed to measurable improvements in code quality and efficiency—all while collaborating with clients to solve complex problems.\n\nPreviously at InApp Information Technologies, I developed full-stack solutions for event management and piracy detection projects, strengthening my expertise across both front-end and back-end technologies.\n\nGraduated as Third Rank Holder from APJ Abdul Kalam Technological University, with strong skills in data structures and algorithms. Experience as captain of the university women's chess team honed my strategic thinking and leadership, which I bring to every project. Passionate about learning, tackling challenging projects, and contributing to forward-thinking teams.",
+    "I’m a backend engineer who loves solving complex problems and building systems that scale. Over the past 6 years, I’ve worked across cloud automation, backend development, and full-stack engineering—currently contributing to PeopleSoft Cloud Manager at Oracle, where I improve automation, security, and performance for customers on OCI.\n\nEarlier at InApp, I helped build an ML-powered piracy detection system and a complete event management platform, which strengthened my full-stack and system design skills.\n\nI’m also a university rank holder and former chess team captain—chess honed my ability to think several steps ahead, a mindset I bring into architecture, debugging, and engineering decisions.",
 };
 const worktimeline = [
   {
@@ -65,56 +76,11 @@ const worktimeline = [
   },
 ];
 
-const skills = [
-  {
-    name: "Python",
-    value: 90,
-  },
-  {
-    name: "Java",
-    value: 85,
-  },
-  {
-    name: "PeopleCode",
-    value: 80,
-  },
-  {
-    name: "Oracle Cloud Infrastructure (OCI)",
-    value: 80,
-  },
-  {
-    name: "Django & Flask",
-    value: 75,
-  },
-  {
-    name: "Databases (PostgreSQL, MySQL, MongoDB)",
-    value: 75,
-  },
-  {
-    name: "Data Structures & Algorithms",
-    value: 75,
-  },
-  {
-    name: "Jenkins & CI/CD",
-    value: 70,
-  },
-  {
-    name: "System Design & Architecture",
-    value: 70,
-  },
-  {
-    name: "Docker & Kubernetes",
-    value: 65,
-  },
-  {
-    name: "JavaScript & Angular",
-    value: 60,
-  },
-];
+
 
 const skillsCategories = [
   {
-    title: "Programming Languages",
+    title: "Languages",
     skills: [
       { name: "Python", value: 90, icon: pythonicon },
       { name: "Java", value: 85, icon: javaicon },
@@ -122,43 +88,43 @@ const skillsCategories = [
     ],
   },
   {
+    title: "Frameworks",
+    skills: [
+      { name: "Django", value: 75 , icon: django },
+      { name: "Flask", value: 75 , icon: flask },
+      { name: "Angular", value: 60, icon: javascripticon },
+    ],
+  },
+  {
     title: "Cloud & DevOps",
     skills: [
-      { name: "Oracle Cloud Infrastructure (OCI)", value: 80, icon: oracleoci },
-      { name: "Jenkins & CI/CD", value: 70 },
-      { name: "Docker & Kubernetes", value: 65 },
+      { name: "Oracle Cloud Infrastructure", value: 80, icon: oracleoci },
+      { name: "Jenkins & CI/CD", value: 70 , icon: jenkins_icon },
+      { name: "Docker", value: 65 , icon: docker },
     ],
   },
   {
     title: "Databases",
     skills: [
-      { name: "PostgreSQL", value: 75 },
-      { name: "MySQL", value: 75 },
-      { name: "MongoDB", value: 75 },
+      { name: "PostgreSQL", value: 75 , icon: postgresql },
+      { name: "OracleDB", value: 75 , icon: oracleicon },
+      { name: "MongoDB", value: 75 , icon: mongodb },
     ],
   },
   {
-    title: "Web Frameworks",
+    title: "Tools & More",
     skills: [
-      { name: "Django", value: 75 },
-      { name: "Flask", value: 75 },
-      { name: "Angular", value: 60, icon: javascripticon },
-    ],
-  },
-  {
-    title: "Tools",
-    skills: [
-      { name: "Git", value: 85 },
-      { name: "VS Code", value: 90 },
-      { name: "Postman", value: 80 },
+      { name: "Git", value: 85 , icon: git },
+      { name: "Shell", value: 90 , icon: shell },
+      { name: "Postman", value: 80 , icon: postman },
     ],
   },
   {
     title: "Concepts",
     skills: [
       { name: "Data Structures & Algorithms", value: 75, icon: leetcode },
-      { name: "System Design & Architecture", value: 70 },
-      { name: "Third Party Integration", value: 75 },
+      { name: "System Design & Architecture", value: 70 , icon: system_design },
+      { name: "Third Party Integration", value: 75 , icon: third_party },
     ],
   },
 ];
@@ -225,34 +191,42 @@ const dataportfolio = [
   {
     title: "PeopleSoft Cloud Manager",
     img: pcmicon,
-    description: "An orchestration tool for managing PeopleSoft environments on OCI.",
+    description: "Cloud automation tool for managing PeopleSoft environments on OCI—improved security, CI/CD, and system performance.",
     link: "https://docs.oracle.com/cd/E52319_01/infoportal/cloudmgr.html",
     bullets: [
-      "Enhanced and maintained PeopleSoft Cloud Manager, serving 200+ customers on Oracle Cloud Infrastructure (OCI)",
-      "Automated CI/CD pipelines, test frameworks, and resource cleanup using Jenkins and Shell, improving build speed by 25% and boosting code quality by 30%"
+      "Enhanced and maintained core features of PeopleSoft Cloud Manager, a tool used by 200+ customers to deploy and manage PeopleSoft environments on Oracle Cloud Infrastructure (OCI).",
+      "Architected and implemented a secure password management feature using OCI Vault, improving credential security by 30%.",
+      "Automated CI/CD pipelines, build processes, and testing frameworks with Jenkins and Shell scripting, cutting build time by 25% and improving code quality by 30%.",
+      "Engineered common process automation for resource cleanup and prerequisite installation, saving ~10% of developer time and optimizing system performance.",
+      "Integrated third-party tools (OpenSearch, COBOL) with Cloud Manager to extend functionality and enable seamless data flow.",
+      "Partnered with QA, tools, and customer teams to resolve critical issues, improve scalability, and optimize system performance."
     ]
   },
   {
     title: "EventOPS",
     img: eventops,
-    description: "Internal event management system in Django, Flask and Angular.",
+    description: "Event management system with automated workflows, secure access control, and a scalable Django/Flask backend.",
     link: "https://eventops.com/",
     bullets: [
-      "Participated in the design and development of EventOPS – an internal event management system, supporting features such as task scheduling, conditional triggers, email automation, and role-based access management",
-      "Designed and implemented backend architecture with Django and Flask, including PostgreSQL database modeling and asynchronous task management using Celery",
-      "Built a responsive front-end with Angular and JavaScript, creating secure authentication flows, data visualization dashboards, and error handling modules"
+      "Built an internal event management system to handle space, equipment, people, budgeting, and reporting for organizational events.",
+      "Designed the backend microservices architecture with Python, Django, and Flask, ensuring scalability and modular development.",
+      "Developed front-end components with Angular, supporting data visualization, secure authentication, and user interactions.",
+      "Implemented a unit testing framework with Django multi-tenancy, improving system security and edge-case handling.",
+      "Created features for event scheduling, conditional task generation, and automated email notifications, streamlining event workflows.",
+      "Enhanced role-based access management to regulate permissions for different user types and safeguard data integrity.",
+      "Delivered optimizations in performance and debugging that improved overall system efficiency by ~15% and boosted internal operations by ~20%."
     ]
   },
   {
     title: "Gordian",
     img: piracyGn,
-    description: "Provides Building Intelligence™ Solutions for the construction lifecycle.",
+    description: "ML-powered document piracy detection system with automated reporting and large-scale data analysis.",
     link: "https://in.linkedin.com/in/merin-rose-tom",
     bullets: [
-      "Developed a Python-based machine learning system using libraries like Pandas and NumPy to automatically detect piracy levels by comparing them against existing data",
-      "Created an automated PDF report generation system that outputs piracy detection results, boosting user experience by 20%",
-      "Designed front-end with Angular and assisted in developing the core piracy detection system",
-      "Analyzed and visualized over 50,000 data points using Python libraries like Pandas, NumPy, and Matplotlib"
+      "Developed a Python-based machine learning system using libraries like Pandas and NumPy to automatically detect piracy levels by comparing them against existing data.",
+      "Created an automated PDF report generation system that outputs piracy detection results, boosting user experience by 20%.",
+      "Designed front-end with Angular and assisted in developing the core piracy detection system.",
+      "Analyzed and visualized over 50,000 data points using Python libraries like Pandas, NumPy, and Matplotlib."
     ]
   }
 ];
@@ -314,10 +288,10 @@ const hobbies = [
 ];
 
 const otherAccomplishments = [
-  "Oracle Fun@Work Club Member (2024 - 2025)",
-  "Appreciation for Excellent Performance from CEO of InApp (June 2021 - November 2021)",
   "All Kerala University Rank 3 (2015 - 2019)",
+  "Appreciation for Excellent Performance from CEO of InApp (June 2021 - November 2021)",
   "Kerala Technological University Women’s Chess Team Captain & Champion (2017 - 2018)",
+  "Oracle Fun@Work Club Member (2024 - 2025)",
   "Participated in IPL Hackathon by IIT Madras: Predicting the IPL winner from past data sets"
 ];
 const contactConfig = {
@@ -339,7 +313,6 @@ export {
   dataabout,
   dataportfolio,
   worktimeline,
-  skills,
   skillsCategories,
   detailedExperience,
   services,
