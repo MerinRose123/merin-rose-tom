@@ -3,6 +3,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta, otherAccomplishments, worktimeline, detailedExperience, dataportfolio, certifications, skillsCategories, services, blogs, hobbies, highlights, hireMe } from "../../content_option";
+import medium from "../../assets/images/medium.png";
 import { Link, useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { Experience } from "../experience";
@@ -151,7 +152,10 @@ export const Home = () => {
                       <div className="uniform-content">
                         <h3 className="uniform-title">{blog.title}</h3>
                         <p className="uniform-description">{blog.description}</p>
-                        <span className="uniform-link">Read More →</span>
+                        <span className="uniform-link">
+                          <img src={medium} alt="Medium" style={{width: '16px', height: '16px', marginRight: '5px'}} />
+                          Read on Medium →
+                        </span>
                       </div>
                     </div>
                   </a>
