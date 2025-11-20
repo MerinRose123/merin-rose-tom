@@ -8,7 +8,6 @@
     position: fixed;
     z-index: 1030;
     width: 100%;
-    padding: 5px 20px;
     box-sizing: border-box;
 }
 
@@ -16,7 +15,7 @@
     background-color: var(--primary-color);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 5px 15px;
+    padding: 5px 5px;
 }
 
 .header-right {
@@ -25,7 +24,7 @@
     background-color: var(--primary-color);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 5px 10px;
+    padding: 5px 5px;
 }
 
 .menu__opend .theme-toggle-wrapper {
@@ -34,6 +33,14 @@
 
 .menu__opend .header-right {
     padding: 5px;
+}
+
+.theme-toggle-wrapper {
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-wrapper:hover {
+    transform: scale(1.05);
 }
 
 .nav_ac {
@@ -49,10 +56,12 @@
     font-weight: bold;
     z-index: 1000;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .nav_ac:hover {
-    color: var(--text-color-2);
+    color: var(--text-color);
+    transform: scale(1.05);
 }
 
 .horizontal_menu {
@@ -113,7 +122,10 @@
 .menu__button:hover {
     color: var(--text-color);
     box-shadow: unset;
-    background: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
 .menu__button svg {

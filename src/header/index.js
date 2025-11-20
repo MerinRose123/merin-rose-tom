@@ -37,13 +37,13 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="header-left" onClick={scrollToHome} style={{cursor: 'pointer'}}>
-          <div className="nav_ac">{logotext}</div>
+          <div className="nav_ac" title="Home">{logotext}</div>
         </div>
         <div className="header-right">
-          <div className="theme-toggle-wrapper">
+          <div className="theme-toggle-wrapper" title="Toggle Theme">
             <Themetoggle />
           </div>
-          <button className="menu__button" onClick={handleToggle}>
+          <button className="menu__button" onClick={handleToggle} title={isActive ? "Open Menu" : "Close Menu"}>
             {!isActive ? <VscClose /> : <VscGrabber />}
           </button>
         </div>

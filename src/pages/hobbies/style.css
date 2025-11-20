@@ -4,9 +4,8 @@
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 30px;
   border: 1px solid rgba(255, 255, 255, 0.05);
-  min-height: 350px;
+  height: 100%;
 }
 
 .uniform-card:hover {

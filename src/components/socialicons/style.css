@@ -41,6 +41,10 @@
     transition: all .3s;
 }
 
+.stick_follow_icon ul li:hover {
+    transform: scale(1.1);
+}
+
 .stick_follow_icon p:after {
     top: 9px;
     right: -48px;

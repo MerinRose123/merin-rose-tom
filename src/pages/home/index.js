@@ -104,7 +104,7 @@ export const Home = () => {
                     </div>
                   </div>
                   <div onClick={() => scrollToSection('projects')} style={{cursor: 'pointer'}}>
-                    <div id="button_a" className="ac_btn btn ">
+                    <div id="button_a" className="ac_btn btn">
                       My Projects
                       <div className="ring one"></div>
                       <div className="ring two"></div>

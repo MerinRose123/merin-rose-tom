@@ -45,7 +45,7 @@ const introdata = {
   description:
     "I architect scalable cloud platforms, modernize enterprise systems, and bring chess-driven strategic thinking into every solution I build.",
   profie_pic: profilepic,
-  skill_icons: [oracleicon, javaicon, pythonicon, javascripticon, medium, leetcode],
+  skill_icons: [oracleicon, javaicon, pythonicon, javascripticon, leetcode],
 };
 
 const dataabout = {

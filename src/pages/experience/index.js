@@ -14,7 +14,7 @@ export const Experience = () => {
   const scrollToExperience = (index) => {
     const element = document.getElementById(`experience-${index}`);
     if (element) {
-      const headerOffset = 80; // Account for fixed header height
+      const headerOffset = 0;
       const elementPosition = element.offsetTop;
       const offsetPosition = elementPosition - headerOffset;
 
@@ -46,7 +46,7 @@ export const Experience = () => {
             <div className="timeline">
               <div className="timeline-container">
                 {worktimeline.map((data, i) => (
-                  <div key={i} className="timeline-item" onClick={() => scrollToExperience(i)} style={{cursor: 'pointer'}}>
+                  <div key={i} className="timeline-item" onClick={() => scrollToExperience(i)} style={{cursor: 'pointer'}} title={`${data.jobtitle} at ${data.where} (${data.date})`}>
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
                       <h3 className="timeline-job">{data.jobtitle}</h3>
