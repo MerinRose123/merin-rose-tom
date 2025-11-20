@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
-import { introdata, meta, otherAccomplishments, worktimeline, detailedExperience, dataportfolio, certifications, skillsCategories, services, blogs, hobbies } from "../../content_option";
+import { introdata, meta, otherAccomplishments, worktimeline, detailedExperience, dataportfolio, certifications, skillsCategories, services, blogs, hobbies, highlights, hireMe } from "../../content_option";
 import { Link, useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { Experience } from "../experience";
@@ -82,11 +82,9 @@ export const Home = () => {
                 <p className="mb-1x">{introdata.description}</p>
                 <div className="hero-highlights mb-3">
                   <div className="highlights-grid">
-                    <div className="highlight-box">Backend Developer (Python/Java)</div>
-                    <div className="highlight-box">6 years</div>
-                    <div className="highlight-box">Oracle Cloud</div>
-                    <div className="highlight-box">CI/CD Automation</div>
-                    <div className="highlight-box">System Design</div>
+                    {highlights.map((highlight, index) => (
+                      <div key={index} className="highlight-box">{highlight}</div>
+                    ))}
                   </div>
                 </div>
                 <div className="skill-icons-container">
@@ -208,8 +206,8 @@ export const Home = () => {
               <Col lg="12">
                 <div className="hire-me-content">
                   <div className="hire-intro">
-                    <h3 className="color_sec py-4">Let's Build Something Amazing Together</h3>
-                    <p>Excited to explore roles in backend engineering, cloud platforms, and high-scale system design. I bring strong problem-solving, clean architecture, and a get-things-done mindset.</p>
+                    <h3 className="color_sec py-4">{hireMe.title}</h3>
+                    <p>{hireMe.description}</p>
                   </div>
                   <div className="hire-services">
                     {services.map((data, i) => {

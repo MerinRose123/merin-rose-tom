@@ -48,6 +48,19 @@ const introdata = {
   skill_icons: [oracleicon, javaicon, pythonicon, javascripticon, leetcode],
 };
 
+const highlights = [
+  "Backend Developer (Python/Java)",
+  "6 years",
+  "Oracle Cloud",
+  "CI/CD Automation",
+  "System Design"
+];
+
+const hireMe = {
+  title: "Let's Build Something Amazing Together",
+  description: "Excited to explore roles in backend engineering, cloud platforms, and high-scale system design. I bring strong problem-solving, clean architecture, and a get-things-done mindset."
+};
+
 const dataabout = {
   title: "A bit about me",
   aboutme:
@@ -193,6 +206,7 @@ const dataportfolio = [
     img: pcmicon,
     description: "Cloud automation tool for managing PeopleSoft environments on OCI—improved security, CI/CD, and system performance.",
     link: "https://docs.oracle.com/cd/E52319_01/infoportal/cloudmgr.html",
+    skills: ['Python', 'Java', 'Oracle Cloud', 'CI/CD', 'Jenkins'],
     bullets: [
       "Enhanced and maintained core features of PeopleSoft Cloud Manager, a tool used by 200+ customers to deploy and manage PeopleSoft environments on Oracle Cloud Infrastructure (OCI).",
       "Architected and implemented a secure password management feature using OCI Vault, improving credential security by 30%.",
@@ -207,6 +221,7 @@ const dataportfolio = [
     img: eventops,
     description: "Event management system with automated workflows, secure access control, and a scalable Django/Flask backend.",
     link: "https://eventops.com/",
+    skills: ['Django', 'Flask', 'PostgreSQL', 'Angular', 'JavaScript'],
     bullets: [
       "Built an internal event management system to handle space, equipment, people, budgeting, and reporting for organizational events.",
       "Designed the backend microservices architecture with Python, Django, and Flask, ensuring scalability and modular development.",
@@ -222,6 +237,7 @@ const dataportfolio = [
     img: piracyGn,
     description: "ML-powered document piracy detection system with automated reporting and large-scale data analysis.",
     link: "https://in.linkedin.com/in/merin-rose-tom",
+    skills: ['Python', 'Machine Learning', 'Data Analysis', 'Angular', 'Pandas'],
     bullets: [
       "Developed a Python-based machine learning system using libraries like Pandas and NumPy to automatically detect piracy levels by comparing them against existing data.",
       "Created an automated PDF report generation system that outputs piracy detection results, boosting user experience by 20%.",
@@ -317,6 +333,8 @@ export {
   detailedExperience,
   services,
   introdata,
+  highlights,
+  hireMe,
   contactConfig,
   socialprofils,
   logotext,

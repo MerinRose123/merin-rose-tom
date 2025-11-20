@@ -125,48 +125,19 @@ export const Projects = () => {
             <div>
               <h6 style={{color: 'var(--text-color-2)', fontFamily: 'Marcellus', marginBottom: '10px'}}>Skills Acquired:</h6>
               <div style={{display: 'flex', flexWrap: 'wrap', gap: '10px'}}>
-                {selectedProject?.title === 'PeopleSoft Cloud Manager' ?
-                  ['Python', 'Java', 'Oracle Cloud', 'CI/CD', 'Jenkins'].map(skill => (
-                    <div key={skill} style={{
-                      background: 'var(--primary-color)',
-                      color: 'var(--text-color)',
-                      padding: '8px 12px',
-                      borderRadius: '8px',
-                      fontSize: '0.9rem',
-                      fontFamily: 'Marcellus',
-                      border: '1px solid var(--text-color-3)',
-                      display: 'inline-block',
-                      boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
-                    }}>{skill}</div>
-                  )) :
-                 selectedProject?.title === 'EventOPS' ?
-                  ['Django', 'Flask', 'PostgreSQL', 'Angular', 'JavaScript'].map(skill => (
-                    <div key={skill} style={{
-                      background: 'var(--primary-color)',
-                      color: 'var(--text-color)',
-                      padding: '8px 12px',
-                      borderRadius: '8px',
-                      fontSize: '0.9rem',
-                      fontFamily: 'Marcellus',
-                      border: '1px solid var(--text-color-3)',
-                      display: 'inline-block',
-                      boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
-                    }}>{skill}</div>
-                  )) :
-                  ['Python', 'Machine Learning', 'Data Analysis', 'Angular', 'Pandas'].map(skill => (
-                    <div key={skill} style={{
-                      background: 'var(--primary-color)',
-                      color: 'var(--text-color)',
-                      padding: '8px 12px',
-                      borderRadius: '8px',
-                      fontSize: '0.9rem',
-                      fontFamily: 'Marcellus',
-                      border: '1px solid var(--text-color-3)',
-                      display: 'inline-block',
-                      boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
-                    }}>{skill}</div>
-                  ))
-                }
+                {selectedProject?.skills?.map(skill => (
+                  <div key={skill} style={{
+                    background: 'var(--primary-color)',
+                    color: 'var(--text-color)',
+                    padding: '8px 12px',
+                    borderRadius: '8px',
+                    fontSize: '0.9rem',
+                    fontFamily: 'Marcellus',
+                    border: '1px solid var(--text-color-3)',
+                    display: 'inline-block',
+                    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
+                  }}>{skill}</div>
+                ))}
               </div>
             </div>
           </Modal.Body>
