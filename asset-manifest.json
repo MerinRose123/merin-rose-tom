@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/merin-rose-tom/static/css/main.e546942f.css",
+    "main.css": "/merin-rose-tom/static/css/main.f2bd722b.css",
     "main.js": "/merin-rose-tom/static/js/main.8111ba1a.js",
     "static/media/badminton.png": "/merin-rose-tom/static/media/badminton.e52c3263484035b756fa.png",
     "static/media/profilepic.png": "/merin-rose-tom/static/media/profilepic.037e59760e736f2f3928.png",
@@ -26,7 +26,7 @@
     "index.html": "/merin-rose-tom/index.html"
   },
   "entrypoints": [
-    "static/css/main.e546942f.css",
+    "static/css/main.f2bd722b.css",
     "static/js/main.8111ba1a.js"
   ]
 }
