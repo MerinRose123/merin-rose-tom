@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/merin-rose-tom/static/css/main.f2bd722b.css",
-    "main.js": "/merin-rose-tom/static/js/main.8111ba1a.js",
-    "static/media/badminton.png": "/merin-rose-tom/static/media/badminton.e52c3263484035b756fa.png",
-    "static/media/profilepic.png": "/merin-rose-tom/static/media/profilepic.037e59760e736f2f3928.png",
-    "static/media/jenkins.png": "/merin-rose-tom/static/media/jenkins.eef1d9420ca45196d8ae.png",
-    "static/media/piracy_gn.png": "/merin-rose-tom/static/media/piracy_gn.67578d20f2f96ea20b58.png",
-    "static/media/pcm.png": "/merin-rose-tom/static/media/pcm.181e6a988dbef763668d.png",
-    "static/media/oracleoci.png": "/merin-rose-tom/static/media/oracleoci.c0a815f0e6ee00f03ce3.png",
-    "static/media/oraclegenai.png": "/merin-rose-tom/static/media/oraclegenai.07dd7af43647414f8eb4.png",
-    "static/media/drawing.jpg": "/merin-rose-tom/static/media/drawing.5da9654557f8091beefe.jpg",
-    "static/media/third_party.png": "/merin-rose-tom/static/media/third_party.84bd088fb696c149d280.png",
-    "static/media/system_design.png": "/merin-rose-tom/static/media/system_design.0a71995ffc70701e4d7e.png",
-    "static/media/tkinter.png": "/merin-rose-tom/static/media/tkinter.96e5bcae1c874c8ba30d.png",
-    "static/media/python.png": "/merin-rose-tom/static/media/python.e2d1cf92a15559a191c4.png",
+    "main.css": "/merin-rose-tom/static/css/main.4c9db298.css",
+    "main.js": "/merin-rose-tom/static/js/main.b3f99af9.js",
+    "static/media/profilepic.jpeg": "/merin-rose-tom/static/media/profilepic.3a3aa8fe59e43548a990.jpeg",
+    "static/media/system_design.png": "/merin-rose-tom/static/media/system_design.f7e62cc2d7885fd699aa.png",
+    "static/media/python.png": "/merin-rose-tom/static/media/python.f7e50ee7098153d89455.png",
     "static/media/chess.jpg": "/merin-rose-tom/static/media/chess.99dcc0295a6b0c202ad8.jpg",
-    "static/media/cache.png": "/merin-rose-tom/static/media/cache.9cd01bcc1340944bbf93.png",
+    "static/media/jenkins.jpeg": "/merin-rose-tom/static/media/jenkins.b6f3ad4a5736eda6c835.jpeg",
+    "static/media/java.png": "/merin-rose-tom/static/media/java.e404d6854ca42d137637.png",
+    "static/media/oraclegenai.jpeg": "/merin-rose-tom/static/media/oraclegenai.8f5390df24df19bf3e13.jpeg",
+    "static/media/oracleoci.jpeg": "/merin-rose-tom/static/media/oracleoci.897358b62a774b2e87f5.jpeg",
+    "static/media/cache.png": "/merin-rose-tom/static/media/cache.8e08c9b93571de9b6e61.png",
+    "static/media/badminton.jpeg": "/merin-rose-tom/static/media/badminton.9c634d38849bccc859ce.jpeg",
+    "static/media/drawing.jpeg": "/merin-rose-tom/static/media/drawing.d320303b93978a120126.jpeg",
+    "static/media/pcm.jpeg": "/merin-rose-tom/static/media/pcm.48ee52a514113cb80c57.jpeg",
+    "static/media/tkinter.jpeg": "/merin-rose-tom/static/media/tkinter.84710ee8027a50980da0.jpeg",
     "static/media/shell.png": "/merin-rose-tom/static/media/shell.212a786c169db722eea4.png",
-    "static/media/java.png": "/merin-rose-tom/static/media/java.07fb54667c141c1de6f5.png",
-    "static/media/oracle.png": "/merin-rose-tom/static/media/oracle.8991707e4be97e920175.png",
+    "static/media/piracy_gn.jpeg": "/merin-rose-tom/static/media/piracy_gn.5719dce0e0aa807846c9.jpeg",
+    "static/media/third_party.jpeg": "/merin-rose-tom/static/media/third_party.a25abb67b3bbdca408d9.jpeg",
+    "static/media/oracle.png": "/merin-rose-tom/static/media/oracle.42071c28dd760de95124.png",
     "static/media/leetcode.png": "/merin-rose-tom/static/media/leetcode.b6e5fced21cd2137adb8.png",
     "static/media/eventops.png": "/merin-rose-tom/static/media/eventops.c5f552abc02ab39635df.png",
     "static/media/flask.png": "/merin-rose-tom/static/media/flask.be3e7ac66edd0e5265ca.png",
@@ -26,7 +26,7 @@
     "index.html": "/merin-rose-tom/index.html"
   },
   "entrypoints": [
-    "static/css/main.f2bd722b.css",
-    "static/js/main.8111ba1a.js"
+    "static/css/main.4c9db298.css",
+    "static/js/main.b3f99af9.js"
   ]
 }
