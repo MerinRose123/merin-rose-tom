@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/merin-rose-tom/static/css/main.4c9db298.css",
-    "main.js": "/merin-rose-tom/static/js/main.b3f99af9.js",
-    "static/media/profilepic.jpeg": "/merin-rose-tom/static/media/profilepic.3a3aa8fe59e43548a990.jpeg",
+    "main.js": "/merin-rose-tom/static/js/main.cd2ab8de.js",
+    "static/media/profilepic.jpeg": "/merin-rose-tom/static/media/profilepic.ddb883140c7174f28740.jpeg",
     "static/media/system_design.png": "/merin-rose-tom/static/media/system_design.f7e62cc2d7885fd699aa.png",
     "static/media/python.png": "/merin-rose-tom/static/media/python.f7e50ee7098153d89455.png",
     "static/media/chess.jpg": "/merin-rose-tom/static/media/chess.99dcc0295a6b0c202ad8.jpg",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.4c9db298.css",
-    "static/js/main.b3f99af9.js"
+    "static/js/main.cd2ab8de.js"
   ]
 }
