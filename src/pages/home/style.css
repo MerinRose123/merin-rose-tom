@@ -456,10 +456,6 @@ section {
   transform: scale(1.05);
 }
 
-.uniform-content {
-  padding: 20px;
-}
-
 .uniform-title {
   font-size: 1.2rem;
   font-family: Marcellus;

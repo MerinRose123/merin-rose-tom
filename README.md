@@ -2,7 +2,7 @@
 
 A modern, fully customizable portfolio website built with React. Perfect for developers, designers, and professionals to showcase their work and skills.
 
-![Portfolio Preview](src/assets/images/homepage.png)
+![Portfolio Preview](src/assets/images/homepage.jpeg)
 
 🌐 **Live Demo**: [https://merinrose123.github.io/merin-rose-tom/](https://merinrose123.github.io/merin-rose-tom/)
 
