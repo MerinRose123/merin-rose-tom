@@ -27,6 +27,8 @@ import third_party from "./assets/images/third_party.jpeg";
 import badmintonImg from "./assets/images/badminton.jpeg";
 import chessImg from "./assets/images/chess.jpg";
 import drawingImg from "./assets/images/drawing.jpeg";
+import smartapply_icon from "./assets/images/smartapply_icon.png";
+import angular_icon from "./assets/images/angular_icon.png";
 
 const logotext = "Merin";
 const meta = {
@@ -86,6 +88,11 @@ const worktimeline = [
     where: "InApp Information Technologies",
     date: "2019-2020",
   },
+  {
+    jobtitle: "Bachelor of Technology in Information Technology",
+    where: "APJ Abdul Kalam Technological University",
+    date: "2015 - 2019",
+  },
 ];
 
 
@@ -96,47 +103,51 @@ const skillsCategories = [
     skills: [
       { name: "Python", value: 90, icon: pythonicon },
       { name: "Java", value: 85, icon: javaicon },
+      { name: "SQL", value: 80, icon: postgresql },
       { name: "JavaScript", value: 60, icon: javascripticon },
     ],
   },
   {
     title: "Frameworks",
     skills: [
-      { name: "Django", value: 75 , icon: django },
-      { name: "Flask", value: 75 , icon: flask },
-      { name: "Angular", value: 60, icon: javascripticon },
+      { name: "Django", value: 75, icon: django },
+      { name: "Flask", value: 75, icon: flask },
+      { name: "Angular", value: 60, icon: angular_icon },
     ],
   },
   {
     title: "Cloud & DevOps",
     skills: [
       { name: "Oracle Cloud Infrastructure", value: 80, icon: oracleoci },
-      { name: "Jenkins & CI/CD", value: 70 , icon: jenkins_icon },
-      { name: "Docker", value: 65 , icon: docker },
+      { name: "Jenkins & CI/CD", value: 70, icon: jenkins_icon },
+      { name: "Nginx", value: 70, icon: third_party },
+      { name: "Docker", value: 65, icon: docker },
     ],
   },
   {
     title: "Databases",
     skills: [
-      { name: "PostgreSQL", value: 75 , icon: postgresql },
-      { name: "OracleDB", value: 75 , icon: oracleicon },
-      { name: "MongoDB", value: 75 , icon: mongodb },
+      { name: "PostgreSQL", value: 75, icon: postgresql },
+      { name: "OracleDB", value: 75, icon: oracleicon },
+      { name: "MongoDB", value: 75, icon: mongodb },
     ],
   },
   {
     title: "Tools & More",
     skills: [
-      { name: "Git", value: 85 , icon: git },
-      { name: "Shell", value: 90 , icon: shell },
-      { name: "Postman", value: 80 , icon: postman },
+      { name: "Git", value: 85, icon: git },
+      { name: "Shell", value: 90, icon: shell },
+      { name: "Jira", value: 80, icon: third_party },
+      { name: "Postman", value: 80, icon: postman },
     ],
   },
   {
     title: "Concepts",
     skills: [
       { name: "Data Structures & Algorithms", value: 75, icon: leetcode },
-      { name: "System Design & Architecture", value: 70 , icon: system_design },
-      { name: "Third Party Integration", value: 75 , icon: third_party },
+      { name: "System Design & Architecture", value: 70, icon: system_design },
+      { name: "Microservices", value: 75, icon: system_design },
+      { name: "Third Party Integration", value: 75, icon: third_party },
     ],
   },
 ];
@@ -162,8 +173,9 @@ const detailedExperience = [
     where: "Oracle",
     date: "September 2024 - Present",
     bullets: [
-      "Enhanced and maintained PeopleSoft Cloud Manager, serving 200+ customers on Oracle Cloud Infrastructure (OCI)",
-      "Automated CI/CD pipelines, test frameworks, and resource cleanup using Jenkins and Shell, improving build speed by 25% and boosting code quality by 30%",
+      "Enhanced and modernized core capabilities of PeopleSoft Cloud Manager—used by 200+ global customers—to streamline deployment, lifecycle management, and migration of PeopleSoft environments on Oracle Cloud Infrastructure (OCI).",
+      "Designed and delivered a secure password management system powered by OCI Vault, enabling centralized secret storage, automated rotation, and improving credential security by 30%.",
+      "Owned OCI-based image creation and smoke-test automation workflows, improving provisioning reliability and reducing bug leakage from development to QA.",
       "Actively contributed to company culture as a member of the Fun@Work Club (2024–2025), leading initiatives impacting 450+ colleagues"
     ]
   },
@@ -172,9 +184,10 @@ const detailedExperience = [
     where: "Oracle",
     date: "December 2021 - August 2024",
     bullets: [
-      "Architected and modernized cloud-native solutions using Python, Java, and PeopleCode",
-      "Designed and implemented a secure password management feature using OCI Vault, improving security by 30%",
-      "Integrated OpenSearch and COBOL systems into PeopleSoft applications, ensuring seamless data flow and functionality"
+      "Developed unified automation for resource cleanup, environment validation, and prerequisite installation, cutting manual developer effort by ~10% and improving operational consistency.",
+      "Integrated third-party systems—including OpenSearch and COBOL—into Cloud Manager, enabling seamless data flow, improved observability, and extended product functionality.",
+      "Collaborated closely with QA, Tools, Release, and customer teams to troubleshoot critical issues, improve scalability, and optimize overall system performance across OCI services.",
+      "Automated CI/CD pipelines, build workflows, and test execution using Jenkins and Shell scripting, reducing build times by 25% and increasing code quality and reliability by 30%."
     ]
   },
   {
@@ -184,7 +197,9 @@ const detailedExperience = [
     bullets: [
       "Developed a Python-based machine learning system using libraries like Pandas and NumPy to automatically detect piracy levels by comparing them against existing data",
       "Designed and implemented backend architecture with Django and Flask, including PostgreSQL database modeling and asynchronous task management using Celery",
-      "Built a responsive front-end with Angular and JavaScript, creating secure authentication flows, data visualization dashboards, and error handling modules"
+      "Built a responsive front-end with Angular and JavaScript, creating secure authentication flows, data visualization dashboards, and error handling modules",
+      "Tailored an automatic PDF report generation system to output the result of the piracy detection process which increased user experience by 20%.",
+      "Analyzed and visualized 50,000+ data points using Python (Pandas, NumPy, Matplotlib) to derive actionable insights."
     ]
   },
   {
@@ -192,9 +207,22 @@ const detailedExperience = [
     where: "InApp Information Technologies",
     date: "July 2019 - June 2020",
     bullets: [
-      "Designed and implemented a unit testing framework leveraging Django multi-tenancy architecture, which strengthened security and improved handling of edge cases",
-      "Participated in the design and development of EventOPS – an internal event management system, supporting features such as task scheduling, conditional triggers, email automation, and role-based access management",
-      "Optimized application performance through database design, query optimization, and microservices-based architecture, resulting in faster response times and better scalability"
+      "Developed a multi-tenant testing framework in Django, enabling isolated execution paths and improving test robustness by 30% across environments.",
+      "Built foundational components of EventOPS, including rule-based triggers, schedulers, and email automation, enhancing internal workflows and reducing manual efforts by 20%.",
+      "Spearheaded database and microservice optimizations, cutting API latency by 40% and enabling scalable deployment of high-traffic modules.",
+      "Leveraged version control (Git, ClearCase) and communication platforms (Slack, Jira) to facilitate eﬀective teamwork and project delivery."
+    ]
+  },
+  {
+    jobtitle: "Bachelor of Technology in Information Technology",
+    where: "APJ Abdul Kalam Technological University",
+    date: "2015 - 2019",
+    bullets: [
+      "Awarded University Rank 3 for exceptional academic performance (2015 – 2019).",
+      "University Women's Chess Team Captain & Champion (07/2017 - 07/2018): Captained and won the university women's chess championship, demonstrating leadership and strategic thinking.",
+      "College Class Representative (06/2018 - 06/2019): Led and organised class initiatives, facilitating collaboration among 60 students and serving as a liaison with faculty.",
+      "Institution: Government Engineering College, Barton Hill, Thiruvananthapuram, India",
+      "GPA: 8.93"
     ]
   }
 ];
@@ -203,16 +231,16 @@ const dataportfolio = [
   {
     title: "PeopleSoft Cloud Manager",
     img: pcmicon,
-    description: "Cloud automation tool for managing PeopleSoft environments on OCI—improved security, CI/CD, and system performance.",
+    description: "Cloud automation tool for managing PeopleSoft environments on OCI—streamlined deployment, lifecycle management, and migration.",
     link: "https://docs.oracle.com/cd/E52319_01/infoportal/cloudmgr.html",
     skills: ['Python', 'Java', 'Oracle Cloud', 'CI/CD', 'Jenkins'],
     bullets: [
-      "Enhanced and maintained core features of PeopleSoft Cloud Manager, a tool used by 200+ customers to deploy and manage PeopleSoft environments on Oracle Cloud Infrastructure (OCI).",
-      "Architected and implemented a secure password management feature using OCI Vault, improving credential security by 30%.",
-      "Automated CI/CD pipelines, build processes, and testing frameworks with Jenkins and Shell scripting, cutting build time by 25% and improving code quality by 30%.",
-      "Engineered common process automation for resource cleanup and prerequisite installation, saving ~10% of developer time and optimizing system performance.",
-      "Integrated third-party tools (OpenSearch, COBOL) with Cloud Manager to extend functionality and enable seamless data flow.",
-      "Partnered with QA, tools, and customer teams to resolve critical issues, improve scalability, and optimize system performance."
+      "Enhanced and modernized core capabilities of PeopleSoft Cloud Manager—used by 200+ global customers—to streamline deployment, lifecycle management, and migration of PeopleSoft environments on Oracle Cloud Infrastructure (OCI).",
+      "Designed and delivered a secure password management system powered by OCI Vault, enabling centralized secret storage, automated rotation, and improving credential security by 30%.",
+      "Automated CI/CD pipelines, build workflows, and test execution using Jenkins and Shell scripting, reducing build times by 25% and increasing code quality and reliability by 30%.",
+      "Developed unified automation for resource cleanup, environment validation, and prerequisite installation, cutting manual developer effort by ~10% and improving operational consistency.",
+      "Integrated third-party systems—including OpenSearch and COBOL—into Cloud Manager, enabling seamless data flow, improved observability, and extended product functionality.",
+      "Collaborated closely with QA, Tools, Release, and customer teams to troubleshoot critical issues, improve scalability, and optimize overall system performance across OCI services."
     ]
   },
   {
@@ -242,6 +270,33 @@ const dataportfolio = [
       "Created an automated PDF report generation system that outputs piracy detection results, boosting user experience by 20%.",
       "Designed front-end with Angular and assisted in developing the core piracy detection system.",
       "Analyzed and visualized over 50,000 data points using Python libraries like Pandas, NumPy, and Matplotlib."
+    ]
+  },
+  {
+    title: "Transliterator Text Editor - Side Project",
+    img: tkinter,
+    description: "Built a Python-based text editor using Tkinter that converts English input into the phonetic equivalent of Indian regional languages through transliteration.",
+    link: "https://merin-rose-tom.medium.com/build-your-first-transliterator-text-editor-with-python-tkinter-dd2cd7b132bb",
+    skills: ['Python', 'Tkinter', 'indic-transliteration', 'Natural Language Processing'],
+    bullets: [
+      "Built a Python-based text editor using Tkinter that converts English input into the phonetic equivalent of Indian regional languages through transliteration.",
+      "Integrated the Indic Transliteration library to support 10+ languages including Malayalam, Hindi, Tamil, Telugu, Kannada, and Bengali.",
+      "Designed a real-time transliteration feature, triggered on space/enter, to improve typing speed for non-English users.",
+      "Implemented a language selection toolbox with dropdown options, giving users flexibility to switch languages dynamically.",
+      "Published a Medium blog post explaining the concept and implementation to help other developers build similar tools.",
+      "Planned future enhancements: menu bars, file operations, and text formatting options for a more complete editor experience."
+    ]
+  },
+  {
+    title: "SmartApply – Chrome Extension",
+    img: smartapply_icon,
+    description: "Chrome extension that auto-fills job applications using structured resume data, reducing manual input effort by 70%.",
+    link: "https://github.com/MerinRose123",
+    skills: ['JavaScript', 'Chrome Extension', 'DOM Parsing', 'Content Scripts'],
+    bullets: [
+      "Built a Chrome extension that auto-fills job applications using structured resume data, reducing manual input effort by 70%.",
+      "Implemented DOM parsing, content scripts, and form-field mapping to support major job portals.",
+      "Enabled dynamic field detection and fallback logic for sites with inconsistent HTML structures."
     ]
   }
 ];
@@ -303,7 +358,7 @@ const hobbies = [
 ];
 
 const otherAccomplishments = [
-  "All Kerala University Rank 3 (2015 - 2019)",
+  "All Kerala University Rank 3 (2015 - 2019): Achieved the honour from KTU for admirable academic performance.",
   "Appreciation for Excellent Performance from CEO of InApp (June 2021 - November 2021)",
   "Kerala Technological University Women’s Chess Team Captain & Champion (2017 - 2018)",
   "Oracle Fun@Work Club Member (2024 - 2025)",

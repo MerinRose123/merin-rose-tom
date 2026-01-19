@@ -26,12 +26,12 @@ export const Projects = () => {
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="12">
-            <h1 className="display-5 mb-4"> Projects </h1> <hr className="t_border my-4 ml-0 text-left" />
+            <h1 id="projects" className="display-5 mb-4"> Projects </h1> <hr className="t_border my-4 ml-0 text-left" />
             <Row className="mb-5">
               {dataportfolio.map((data, i) => {
                 return (
                   <Col lg="4" key={i}>
-                    <div className="uniform-card" onClick={() => handleShow(data)} style={{cursor: 'pointer'}}>
+                    <div className="uniform-card" onClick={() => handleShow(data)} style={{ cursor: 'pointer' }}>
                       <div className="uniform-image-container">
                         <img src={data.img} alt={data.title} className="uniform-image" />
                       </div>
@@ -50,12 +50,12 @@ export const Projects = () => {
 
         <Row className="mb-5">
           <Col lg="12">
-            <h1 className="display-5 mb-4"> Certifications </h1> <hr className="t_border my-4 ml-0 text-left" />
+            <h1 id="certifications" className="display-5 mb-4"> Certifications </h1> <hr className="t_border my-4 ml-0 text-left" />
             <Row>
               {certifications.map((data, i) => {
                 return (
                   <Col lg="4" key={i}>
-                    <a href={data.link} target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+                    <a href={data.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                       <div className="uniform-card">
                         <div className="uniform-image-container">
                           <img src={data.img} alt={data.title || "Certification"} className="uniform-image" />
@@ -75,8 +75,8 @@ export const Projects = () => {
 
         {/* Project Details Modal */}
         <Modal show={showModal} onHide={handleClose} size="lg" centered dialogClassName="custom-modal">
-          <Modal.Header style={{backgroundColor: 'var(--primary-color)', borderBottom: '1px solid var(--text-color-3)', position: 'relative'}}>
-            <Modal.Title style={{color: 'var(--text-color-2)', fontFamily: 'Marcellus'}}>{selectedProject?.title}</Modal.Title>
+          <Modal.Header style={{ backgroundColor: 'var(--primary-color)', borderBottom: '1px solid var(--text-color-3)', position: 'relative' }}>
+            <Modal.Title style={{ color: 'var(--text-color-2)', fontFamily: 'Marcellus' }}>{selectedProject?.title}</Modal.Title>
             <button
               type="button"
               className="close"
@@ -95,36 +95,36 @@ export const Projects = () => {
               ×
             </button>
           </Modal.Header>
-          <Modal.Body style={{backgroundColor: 'var(--primary-color)', color: 'var(--text-color)', padding: '30px'}}>
-            <p style={{fontSize: '1.1rem', marginBottom: '20px', color: 'var(--text-color-2)'}}>{selectedProject?.description}</p>
-            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px'}}>
-              <div style={{display: 'flex', alignItems: 'center', gap: '10px'}}>
+          <Modal.Body style={{ backgroundColor: 'var(--primary-color)', color: 'var(--text-color)', padding: '30px' }}>
+            <p style={{ fontSize: '1.1rem', marginBottom: '20px', color: 'var(--text-color-2)' }}>{selectedProject?.description}</p>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <img
                   src={selectedProject?.title === 'PeopleSoft Cloud Manager' ? oracleLogo : inappLogo}
                   alt={selectedProject?.title === 'PeopleSoft Cloud Manager' ? 'Oracle' : 'InApp'}
-                  style={{width: '24px', height: '24px'}}
+                  style={{ width: '24px', height: '24px' }}
                 />
-                <span style={{color: 'var(--text-color-2)', fontStyle: 'italic'}}>
+                <span style={{ color: 'var(--text-color-2)', fontStyle: 'italic' }}>
                   Associated with {selectedProject?.title === 'PeopleSoft Cloud Manager' ? 'Oracle' : 'InApp Information Technologies'}
                 </span>
               </div>
-              <span style={{color: 'var(--text-color-2)', fontSize: '0.9rem'}}>
+              <span style={{ color: 'var(--text-color-2)', fontSize: '0.9rem' }}>
                 {selectedProject?.title === 'PeopleSoft Cloud Manager' ? '2021 - Present' :
-                 selectedProject?.title === 'EventOPS' ? '2019 - 2021' :
-                 '2020 - 2021'}
+                  selectedProject?.title === 'EventOPS' ? '2019 - 2021' :
+                    '2020 - 2021'}
               </span>
             </div>
-            <div style={{marginBottom: '20px'}}>
-              <h6 style={{color: 'var(--text-color-2)', fontFamily: 'Marcellus', marginBottom: '10px'}}>Key Features & Achievements:</h6>
-              <ul style={{color: 'var(--text-color-2)', paddingLeft: '20px'}}>
+            <div style={{ marginBottom: '20px' }}>
+              <h6 style={{ color: 'var(--text-color-2)', fontFamily: 'Marcellus', marginBottom: '10px' }}>Key Features & Achievements:</h6>
+              <ul style={{ color: 'var(--text-color-2)', paddingLeft: '20px' }}>
                 {selectedProject?.bullets?.map((bullet, idx) => (
-                  <li key={idx} style={{marginBottom: '8px'}}>• {bullet}</li>
+                  <li key={idx} style={{ marginBottom: '8px' }}>• {bullet}</li>
                 ))}
               </ul>
             </div>
             <div>
-              <h6 style={{color: 'var(--text-color-2)', fontFamily: 'Marcellus', marginBottom: '10px'}}>Skills Acquired:</h6>
-              <div style={{display: 'flex', flexWrap: 'wrap', gap: '10px'}}>
+              <h6 style={{ color: 'var(--text-color-2)', fontFamily: 'Marcellus', marginBottom: '10px' }}>Skills Acquired:</h6>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                 {selectedProject?.skills?.map(skill => (
                   <div key={skill} style={{
                     background: 'var(--primary-color)',

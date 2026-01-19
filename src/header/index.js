@@ -5,7 +5,7 @@ import { logotext } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState(true);
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -22,21 +22,23 @@ const Headermain = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.offsetTop;
-      const offsetPosition = elementPosition - headerOffset;
+      setTimeout(() => {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }, 50);
     }
   };
 
   return (
     <>
       <header className="fixed-top site__header">
-        <div className="header-left" onClick={scrollToHome} style={{cursor: 'pointer'}}>
+        <div className="header-left" onClick={scrollToHome} style={{ cursor: 'pointer' }}>
           <div className="nav_ac" title="Home">{logotext}</div>
         </div>
         <div className="header-right">
@@ -48,7 +50,7 @@ const Headermain = () => {
           </button>
         </div>
 
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
+        <div className={`site__navigation ${isActive ? "" : "menu__opend"}`}>
           <div className="bg__menu h-100">
             <div className="menu__wrapper">
               <div className="menu__container p-3">
@@ -59,25 +61,28 @@ const Headermain = () => {
                 </div>
                 <ul className="the_menu">
                   <li className="menu_item">
-                    <span onClick={() => { scrollToSection('home'); handleToggle(); }} className="my-3" style={{cursor: 'pointer'}}>Home</span>
+                    <span onClick={() => { handleToggle(); scrollToSection('experience'); }} className="my-3" style={{ cursor: 'pointer' }}>Experience</span>
                   </li>
                   <li className="menu_item">
-                    <span onClick={() => { scrollToSection('experience'); handleToggle(); }} className="my-3" style={{cursor: 'pointer'}}>Experience</span>
+                    <span onClick={() => { handleToggle(); scrollToSection('projects'); }} className="my-3" style={{ cursor: 'pointer' }}>Projects</span>
                   </li>
                   <li className="menu_item">
-                    <span onClick={() => { scrollToSection('projects'); handleToggle(); }} className="my-3" style={{cursor: 'pointer'}}>Projects</span>
+                    <span onClick={() => { handleToggle(); scrollToSection('certifications'); }} className="my-3" style={{ cursor: 'pointer' }}>Certifications</span>
                   </li>
                   <li className="menu_item">
-                    <span onClick={() => { scrollToSection('skills'); handleToggle(); }} className="my-3" style={{cursor: 'pointer'}}>Skills</span>
+                    <span onClick={() => { handleToggle(); scrollToSection('skills'); }} className="my-3" style={{ cursor: 'pointer' }}>Skills</span>
                   </li>
                   <li className="menu_item">
-                    <span onClick={() => { scrollToSection('blogs'); handleToggle(); }} className="my-3" style={{cursor: 'pointer'}}>Blogs</span>
+                    <span onClick={() => { handleToggle(); scrollToSection('blogs'); }} className="my-3" style={{ cursor: 'pointer' }}>Blogs</span>
                   </li>
                   <li className="menu_item">
-                    <span onClick={() => { scrollToSection('about'); handleToggle(); }} className="my-3" style={{cursor: 'pointer'}}>About</span>
+                    <span onClick={() => { handleToggle(); scrollToSection('hobbies'); }} className="my-3" style={{ cursor: 'pointer' }}>Hobbies</span>
                   </li>
                   <li className="menu_item">
-                    <span onClick={() => { scrollToSection('hireme'); handleToggle(); }} className="my-3" style={{cursor: 'pointer'}}>Hire Me</span>
+                    <span onClick={() => { handleToggle(); scrollToSection('about'); }} className="my-3" style={{ cursor: 'pointer' }}>About Me</span>
+                  </li>
+                  <li className="menu_item">
+                    <span onClick={() => { handleToggle(); scrollToSection('hireme'); }} className="my-3" style={{ cursor: 'pointer' }}>Hire Me</span>
                   </li>
                 </ul>
               </div>

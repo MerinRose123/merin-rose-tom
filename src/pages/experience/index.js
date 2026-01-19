@@ -7,9 +7,6 @@ import oracleLogo from "../../assets/images/oracle.png";
 import inappLogo from "../../assets/images/inapp.jpeg";
 
 export const Experience = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const scrollToExperience = (index) => {
     const element = document.getElementById(`experience-${index}`);
@@ -35,7 +32,7 @@ export const Experience = () => {
         </Helmet>
         <Row className="mb-3 mt-3 pt-md-3">
           <Col lg="8">
-            <h1 className="display-5 mb-4">Work Experience</h1>
+            <h1 className="display-5 mb-4">Experience</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
@@ -46,13 +43,13 @@ export const Experience = () => {
             <div className="timeline">
               <div className="timeline-container">
                 {worktimeline.map((data, i) => (
-                  <div key={i} className="timeline-item" onClick={() => scrollToExperience(i)} style={{cursor: 'pointer'}} title={`${data.jobtitle} at ${data.where} (${data.date})`}>
+                  <div key={i} className="timeline-item" onClick={() => scrollToExperience(i)} style={{ cursor: 'pointer' }} title={`${data.jobtitle} at ${data.where} (${data.date})`}>
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
                       <h3 className="timeline-job">{data.jobtitle}</h3>
                       <p className="timeline-company">
-                        {data.where === 'Oracle' && <img src={oracleLogo} alt="Oracle" style={{width: '20px', height: '20px', marginRight: '8px'}} />}
-                        {data.where === 'InApp Information Technologies' && <img src={inappLogo} alt="InApp" style={{width: '20px', height: '20px', marginRight: '8px'}} />}
+                        {data.where === 'Oracle' && <img src={oracleLogo} alt="Oracle" style={{ width: '20px', height: '20px', marginRight: '8px' }} />}
+                        {data.where === 'InApp Information Technologies' && <img src={inappLogo} alt="InApp" style={{ width: '20px', height: '20px', marginRight: '8px' }} />}
                         {data.where}
                       </p>
                       <span className="timeline-date">{data.date}</span>
@@ -75,8 +72,8 @@ export const Experience = () => {
                     <h3 className="experience-role">{data.jobtitle}</h3>
                     <div className="experience-meta">
                       <span className="experience-company">
-                        {data.where === 'Oracle' && <img src={oracleLogo} alt="Oracle" style={{width: '24px', height: '24px', marginRight: '8px'}} />}
-                        {data.where === 'InApp Information Technologies' && <img src={inappLogo} alt="InApp" style={{width: '24px', height: '24px', marginRight: '8px'}} />}
+                        {data.where === 'Oracle' && <img src={oracleLogo} alt="Oracle" style={{ width: '24px', height: '24px', marginRight: '8px' }} />}
+                        {data.where === 'InApp Information Technologies' && <img src={inappLogo} alt="InApp" style={{ width: '24px', height: '24px', marginRight: '8px' }} />}
                         {data.where}
                       </span>
                       <span className="experience-date">{data.date}</span>

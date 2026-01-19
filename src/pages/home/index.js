@@ -37,14 +37,16 @@ export const Home = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.offsetTop;
-      const offsetPosition = elementPosition - headerOffset;
+      setTimeout(() => {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }, 50);
     }
   };
 
@@ -94,7 +96,7 @@ export const Home = () => {
                   ))}
                 </div>
                 <div className="intro_btn-action pb-5">
-                  <div onClick={() => scrollToSection('experience')} className="text_2" style={{cursor: 'pointer'}}>
+                  <div onClick={() => scrollToSection('experience')} className="text_2" style={{ cursor: 'pointer' }}>
                     <div id="button_p" className="ac_btn btn">
                       Experience
                       <div className="ring one"></div>
@@ -102,7 +104,7 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </div>
-                  <div onClick={() => scrollToSection('projects')} style={{cursor: 'pointer'}}>
+                  <div onClick={() => scrollToSection('projects')} style={{ cursor: 'pointer' }}>
                     <div id="button_a" className="ac_btn btn">
                       My Projects
                       <div className="ring one"></div>
@@ -144,7 +146,7 @@ export const Home = () => {
             <Row>
               {blogs.map((blog, index) => (
                 <Col lg="4" key={index}>
-                  <a href={blog.link} target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+                  <a href={blog.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                     <div className="uniform-card">
                       <div className="uniform-image-container">
                         <img src={blog.image} alt={blog.title} className="uniform-image" />
@@ -153,7 +155,7 @@ export const Home = () => {
                         <h3 className="uniform-title">{blog.title}</h3>
                         <p className="uniform-description">{blog.description}</p>
                         <span className="uniform-link">
-                          <img src={medium} alt="Medium" style={{width: '16px', height: '16px', marginRight: '5px'}} />
+                          <img src={medium} alt="Medium" style={{ width: '16px', height: '16px', marginRight: '5px' }} />
                           Read on Medium →
                         </span>
                       </div>
