@@ -1,10 +1,15 @@
 {
   "files": {
-    "main.css": "/merin-rose-tom/static/css/main.4c9db298.css",
-    "main.js": "/merin-rose-tom/static/js/main.cd2ab8de.js",
+    "main.css": "/merin-rose-tom/static/css/main.69cb1aff.css",
+    "main.js": "/merin-rose-tom/static/js/main.3fac4270.js",
+    "static/media/eventops.png": "/merin-rose-tom/static/media/eventops.98a3518ba1b505a516ba.png",
+    "static/media/angular_icon.png": "/merin-rose-tom/static/media/angular_icon.cda9c1f06db1947dba13.png",
+    "static/media/postgresql.png": "/merin-rose-tom/static/media/postgresql.e83c25224844ef13dc3a.png",
+    "static/media/python.png": "/merin-rose-tom/static/media/python.5f44e19a5d942104f4c1.png",
+    "static/media/smartapply_icon.png": "/merin-rose-tom/static/media/smartapply_icon.4094dfd3e6881d503ca5.png",
+    "static/media/django.png": "/merin-rose-tom/static/media/django.b06ad1912c89b41fa4a0.png",
     "static/media/profilepic.jpeg": "/merin-rose-tom/static/media/profilepic.ddb883140c7174f28740.jpeg",
     "static/media/system_design.png": "/merin-rose-tom/static/media/system_design.f7e62cc2d7885fd699aa.png",
-    "static/media/python.png": "/merin-rose-tom/static/media/python.f7e50ee7098153d89455.png",
     "static/media/chess.jpg": "/merin-rose-tom/static/media/chess.99dcc0295a6b0c202ad8.jpg",
     "static/media/jenkins.jpeg": "/merin-rose-tom/static/media/jenkins.b6f3ad4a5736eda6c835.jpeg",
     "static/media/java.png": "/merin-rose-tom/static/media/java.e404d6854ca42d137637.png",
@@ -20,13 +25,12 @@
     "static/media/third_party.jpeg": "/merin-rose-tom/static/media/third_party.a25abb67b3bbdca408d9.jpeg",
     "static/media/oracle.png": "/merin-rose-tom/static/media/oracle.42071c28dd760de95124.png",
     "static/media/leetcode.png": "/merin-rose-tom/static/media/leetcode.b6e5fced21cd2137adb8.png",
-    "static/media/eventops.png": "/merin-rose-tom/static/media/eventops.c5f552abc02ab39635df.png",
     "static/media/flask.png": "/merin-rose-tom/static/media/flask.be3e7ac66edd0e5265ca.png",
     "static/media/medium.png": "/merin-rose-tom/static/media/medium.552f50e82b97f2ff7bba.png",
     "index.html": "/merin-rose-tom/index.html"
   },
   "entrypoints": [
-    "static/css/main.4c9db298.css",
-    "static/js/main.cd2ab8de.js"
+    "static/css/main.69cb1aff.css",
+    "static/js/main.3fac4270.js"
   ]
 }
