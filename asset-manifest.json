@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/merin-rose-tom/static/css/main.69cb1aff.css",
-    "main.js": "/merin-rose-tom/static/js/main.3fac4270.js",
+    "main.css": "/merin-rose-tom/static/css/main.8c53787b.css",
+    "main.js": "/merin-rose-tom/static/js/main.a9e18521.js",
     "static/media/eventops.png": "/merin-rose-tom/static/media/eventops.98a3518ba1b505a516ba.png",
     "static/media/angular_icon.png": "/merin-rose-tom/static/media/angular_icon.cda9c1f06db1947dba13.png",
     "static/media/postgresql.png": "/merin-rose-tom/static/media/postgresql.e83c25224844ef13dc3a.png",
@@ -9,7 +9,11 @@
     "static/media/smartapply_icon.png": "/merin-rose-tom/static/media/smartapply_icon.4094dfd3e6881d503ca5.png",
     "static/media/django.png": "/merin-rose-tom/static/media/django.b06ad1912c89b41fa4a0.png",
     "static/media/profilepic.jpeg": "/merin-rose-tom/static/media/profilepic.ddb883140c7174f28740.jpeg",
+    "static/media/sql.png": "/merin-rose-tom/static/media/sql.cb230fd89a337bf8f0db.png",
+    "static/media/microservices.png": "/merin-rose-tom/static/media/microservices.1f8e9c501a4e5afb282b.png",
     "static/media/system_design.png": "/merin-rose-tom/static/media/system_design.f7e62cc2d7885fd699aa.png",
+    "static/media/jira.png": "/merin-rose-tom/static/media/jira.e5fbfc62bf2aaae74bb7.png",
+    "static/media/nginx.png": "/merin-rose-tom/static/media/nginx.1dbee1c5b4e79e444882.png",
     "static/media/chess.jpg": "/merin-rose-tom/static/media/chess.99dcc0295a6b0c202ad8.jpg",
     "static/media/jenkins.jpeg": "/merin-rose-tom/static/media/jenkins.b6f3ad4a5736eda6c835.jpeg",
     "static/media/java.png": "/merin-rose-tom/static/media/java.e404d6854ca42d137637.png",
@@ -30,7 +34,7 @@
     "index.html": "/merin-rose-tom/index.html"
   },
   "entrypoints": [
-    "static/css/main.69cb1aff.css",
-    "static/js/main.3fac4270.js"
+    "static/css/main.8c53787b.css",
+    "static/js/main.a9e18521.js"
   ]
 }
