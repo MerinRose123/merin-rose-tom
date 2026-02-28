@@ -21,6 +21,10 @@ import django from "./assets/images/django.png";
 import flask from "./assets/images/flask.png";
 import git from "./assets/images/git.png";
 import postman from "./assets/images/postman.png";
+import sqlicon from "./assets/images/sql.png";
+import nginxicon from "./assets/images/nginx.png";
+import jiraicon from "./assets/images/jira.png";
+import microservicesicon from "./assets/images/microservices.png";
 import shell from "./assets/images/shell.png";
 import system_design from "./assets/images/system_design.png";
 import third_party from "./assets/images/third_party.jpeg";
@@ -103,7 +107,7 @@ const skillsCategories = [
     skills: [
       { name: "Python", value: 90, icon: pythonicon },
       { name: "Java", value: 85, icon: javaicon },
-      { name: "SQL", value: 80, icon: postgresql },
+      { name: "SQL", value: 80, icon: sqlicon },
       { name: "JavaScript", value: 60, icon: javascripticon },
     ],
   },
@@ -120,7 +124,7 @@ const skillsCategories = [
     skills: [
       { name: "Oracle Cloud Infrastructure", value: 80, icon: oracleoci },
       { name: "Jenkins & CI/CD", value: 70, icon: jenkins_icon },
-      { name: "Nginx", value: 70, icon: third_party },
+      { name: "Nginx", value: 70, icon: nginxicon },
       { name: "Docker", value: 65, icon: docker },
     ],
   },
@@ -137,7 +141,7 @@ const skillsCategories = [
     skills: [
       { name: "Git", value: 85, icon: git },
       { name: "Shell", value: 90, icon: shell },
-      { name: "Jira", value: 80, icon: third_party },
+      { name: "Jira", value: 80, icon: jiraicon },
       { name: "Postman", value: 80, icon: postman },
     ],
   },
@@ -146,7 +150,7 @@ const skillsCategories = [
     skills: [
       { name: "Data Structures & Algorithms", value: 75, icon: leetcode },
       { name: "System Design & Architecture", value: 70, icon: system_design },
-      { name: "Microservices", value: 75, icon: system_design },
+      { name: "Microservices", value: 75, icon: microservicesicon },
       { name: "Third Party Integration", value: 75, icon: third_party },
     ],
   },
@@ -361,8 +365,7 @@ const otherAccomplishments = [
   "All Kerala University Rank 3 (2015 - 2019): Achieved the honour from KTU for admirable academic performance.",
   "Appreciation for Excellent Performance from CEO of InApp (June 2021 - November 2021)",
   "Kerala Technological University Women’s Chess Team Captain & Champion (2017 - 2018)",
-  "Oracle Fun@Work Club Member (2024 - 2025)",
-  "Participated in IPL Hackathon by IIT Madras: Predicting the IPL winner from past data sets"
+  "Oracle Fun@Work Club Member (2024 - 2025)"
 ];
 const contactConfig = {
   YOUR_EMAIL: "",
