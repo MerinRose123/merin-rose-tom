@@ -1,11 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { logotext } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
+const sectionIds = ['experience', 'projects', 'certifications', 'skills', 'blogs', 'hobbies', 'about', 'hireme'];
+
 const Headermain = () => {
   const [isActive, setActive] = useState(true);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [activeSection, setActiveSection] = useState('');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calculate scroll progress
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      setScrollProgress(progress);
+
+      // Determine active section
+      const headerOffset = 120;
+      let currentSection = '';
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= headerOffset && rect.bottom > headerOffset) {
+            currentSection = id;
+          }
+        }
+      }
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -35,8 +66,26 @@ const Headermain = () => {
     }
   };
 
+  const menuItems = [
+    { id: 'experience', label: 'Experience' },
+    { id: 'projects', label: 'Projects' },
+    { id: 'certifications', label: 'Certifications' },
+    { id: 'skills', label: 'Skills' },
+    { id: 'blogs', label: 'Blogs' },
+    { id: 'hobbies', label: 'Hobbies' },
+    { id: 'about', label: 'About Me' },
+    { id: 'hireme', label: 'Hire Me' },
+  ];
+
   return (
     <>
+      {/* Scroll Progress Bar */}
+      <div className="scroll-progress-container">
+        <div
+          className="scroll-progress-bar"
+          style={{ width: `${scrollProgress}%` }}
+        />
+      </div>
       <header className="fixed-top site__header">
         <div className="header-left" onClick={scrollToHome} style={{ cursor: 'pointer' }}>
           <div className="nav_ac" title="Home">{logotext}</div>
@@ -60,30 +109,17 @@ const Headermain = () => {
                   </button>
                 </div>
                 <ul className="the_menu">
-                  <li className="menu_item">
-                    <span onClick={() => { handleToggle(); scrollToSection('experience'); }} className="my-3" style={{ cursor: 'pointer' }}>Experience</span>
-                  </li>
-                  <li className="menu_item">
-                    <span onClick={() => { handleToggle(); scrollToSection('projects'); }} className="my-3" style={{ cursor: 'pointer' }}>Projects</span>
-                  </li>
-                  <li className="menu_item">
-                    <span onClick={() => { handleToggle(); scrollToSection('certifications'); }} className="my-3" style={{ cursor: 'pointer' }}>Certifications</span>
-                  </li>
-                  <li className="menu_item">
-                    <span onClick={() => { handleToggle(); scrollToSection('skills'); }} className="my-3" style={{ cursor: 'pointer' }}>Skills</span>
-                  </li>
-                  <li className="menu_item">
-                    <span onClick={() => { handleToggle(); scrollToSection('blogs'); }} className="my-3" style={{ cursor: 'pointer' }}>Blogs</span>
-                  </li>
-                  <li className="menu_item">
-                    <span onClick={() => { handleToggle(); scrollToSection('hobbies'); }} className="my-3" style={{ cursor: 'pointer' }}>Hobbies</span>
-                  </li>
-                  <li className="menu_item">
-                    <span onClick={() => { handleToggle(); scrollToSection('about'); }} className="my-3" style={{ cursor: 'pointer' }}>About Me</span>
-                  </li>
-                  <li className="menu_item">
-                    <span onClick={() => { handleToggle(); scrollToSection('hireme'); }} className="my-3" style={{ cursor: 'pointer' }}>Hire Me</span>
-                  </li>
+                  {menuItems.map((item) => (
+                    <li className="menu_item" key={item.id}>
+                      <span
+                        onClick={() => { handleToggle(); scrollToSection(item.id); }}
+                        className={`my-3 ${activeSection === item.id ? 'menu_active' : ''}`}
+                        style={{ cursor: 'pointer' }}
+                      >
+                        {item.label}
+                      </span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
