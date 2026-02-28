@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
@@ -14,6 +14,7 @@ import { Hobbies } from "../hobbies";
 
 export const Home = () => {
   const navigate = useNavigate();
+  const [showArrow, setShowArrow] = useState(true);
 
   useEffect(() => {
     // Create floating particles
@@ -32,6 +33,33 @@ export const Home = () => {
     };
 
     createParticles();
+
+    // Hide arrow on scroll
+    const handleScroll = () => {
+      setShowArrow(window.scrollY < 100);
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    // IntersectionObserver for scroll-triggered animations
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: '0px 0px -50px 0px' }
+    );
+
+    // Observe all animatable sections
+    const sections = document.querySelectorAll('.animate-on-scroll');
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      sections.forEach((section) => observer.unobserve(section));
+    };
   }, []);
 
   const scrollToSection = (sectionId) => {
@@ -119,23 +147,30 @@ export const Home = () => {
           </div>
         </div>
 
+        {/* Scroll Down Arrow */}
+        {showArrow && (
+          <div className="scroll-down-arrow" onClick={scrollToNext}>
+            <div className="arrow-icon">&#8964;</div>
+          </div>
+        )}
+
         {/* Work Experience Section */}
-        <section id="experience" className="section-spacing">
+        <section id="experience" className="section-spacing animate-on-scroll">
           <Experience />
         </section>
 
         {/* Projects & Certifications Section */}
-        <section id="projects" className="section-spacing">
+        <section id="projects" className="section-spacing animate-on-scroll">
           <Projects />
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="section-spacing">
+        <section id="skills" className="section-spacing animate-on-scroll">
           <Skills />
         </section>
 
         {/* Blogs Section */}
-        <section id="blogs" className="section-spacing">
+        <section id="blogs" className="section-spacing animate-on-scroll">
           <Container className="About-header">
             <Row className="mb-3 mt-3 pt-md-3">
               <Col lg="8">
@@ -168,7 +203,7 @@ export const Home = () => {
         </section>
 
         {/* Hobbies Section */}
-        <section id="hobbies" className="section-spacing">
+        <section id="hobbies" className="section-spacing animate-on-scroll">
           <Container className="About-header">
             <Row className="mb-3 mt-3 pt-md-3">
               <Col lg="8">
@@ -195,12 +230,12 @@ export const Home = () => {
         </section>
 
         {/* About Section */}
-        <section id="about" className="section-spacing">
+        <section id="about" className="section-spacing animate-on-scroll">
           <About />
         </section>
 
         {/* Hire Me Section */}
-        <section id="hireme" className="section-spacing">
+        <section id="hireme" className="section-spacing animate-on-scroll">
           <Container className="About-header">
             <Row className="mb-3 mt-3 pt-md-3">
               <Col lg="8">
