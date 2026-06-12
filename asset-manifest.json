@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/merin-rose-tom/static/css/main.8c53787b.css",
-    "main.js": "/merin-rose-tom/static/js/main.a9e18521.js",
+    "main.js": "/merin-rose-tom/static/js/main.bf22cc21.js",
     "static/media/eventops.png": "/merin-rose-tom/static/media/eventops.98a3518ba1b505a516ba.png",
     "static/media/angular_icon.png": "/merin-rose-tom/static/media/angular_icon.cda9c1f06db1947dba13.png",
     "static/media/postgresql.png": "/merin-rose-tom/static/media/postgresql.e83c25224844ef13dc3a.png",
@@ -35,6 +35,6 @@
   },
   "entrypoints": [
     "static/css/main.8c53787b.css",
-    "static/js/main.a9e18521.js"
+    "static/js/main.bf22cc21.js"
   ]
 }
