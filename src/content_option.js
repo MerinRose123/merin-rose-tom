@@ -37,14 +37,14 @@ import angular_icon from "./assets/images/angular_icon.png";
 const logotext = "Merin";
 const meta = {
   title: "Merin Rose Tom",
-  description: "Senior Application Engineer specializing in full-stack and backend development with over 6 years of experience",
+  description: "Senior Software Engineer specializing in full-stack and backend development with over 6 years of experience",
 };
 
 const introdata = {
   title: "I’m Merin Rose Tom",
   animated: {
     first: "Backend & Full-Stack Developer",
-    second: "Senior Application Engineer",
+    second: "Senior Software Engineer",
     third: "University Rank 3",
   },
   description:
@@ -73,14 +73,14 @@ const dataabout = {
 };
 const worktimeline = [
   {
-    jobtitle: "Senior Application Engineer | Python, Java, Cloud",
+    jobtitle: "Senior Software Engineer | Python, Java, Cloud",
     where: "Oracle",
     date: "September 2024 - Present",
   },
   {
-    jobtitle: "Software Engineer II | Backend Developer",
+    jobtitle: "Software Engineer II | Backend & Platform Engineering",
     where: "Oracle",
-    date: "2021-2024",
+    date: "December 2021 - August 2024",
   },
   {
     jobtitle: "Software Engineer | Full Stack Developer",
@@ -173,25 +173,29 @@ const services = [
 
 const detailedExperience = [
   {
-    jobtitle: "Senior Application Engineer | Python, Java, Cloud",
+    jobtitle: "Senior Software Engineer | Python, Java, Cloud",
     where: "Oracle",
     date: "September 2024 - Present",
     bullets: [
-      "Enhanced and modernized core capabilities of PeopleSoft Cloud Manager—used by 200+ global customers—to streamline deployment, lifecycle management, and migration of PeopleSoft environments on Oracle Cloud Infrastructure (OCI).",
-      "Designed and delivered a secure password management system powered by OCI Vault, enabling centralized secret storage, automated rotation, and improving credential security by 30%.",
-      "Owned OCI-based image creation and smoke-test automation workflows, improving provisioning reliability and reducing bug leakage from development to QA.",
-      "Actively contributed to company culture as a member of the Fun@Work Club (2024–2025), leading initiatives impacting 450+ colleagues"
+      "Architected and enhanced core backend and platform capabilities for PeopleSoft Cloud Manager, an enterprise cloud infrastructure management platform used by 200+ global customers to provision and manage environments on Oracle Cloud Infrastructure (OCI).",
+      "Designed and delivered a secure password management solution powered by OCI Vault, enabling centralized secret storage, automated credential rotation, and improving credential security by 30%.",
+      "Developed cloud lifecycle management capabilities spanning provisioning, cloning, scaling, upgrades, image creation, and environment orchestration for enterprise deployments on OCI.",
+      "Built scalable CI/CD and automation frameworks using Jenkins, Python, and Shell scripting, streamlining validation, testing, and release workflows to improve deployment reliability.",
+      "Led cross-functional initiatives involving Exadata, OpenSearch, Infrastructure-as-Code migrations, and OCI service integrations, driving platform evolution across multiple releases.",
+      "Contributed to company culture as a member of the Fun@Work Club (2024–2025), organizing initiatives that positively impacted 450+ employees."
     ]
   },
   {
-    jobtitle: "Software Engineer II | Backend Developer",
+    jobtitle: "Software Engineer II | Backend & Platform Engineering",
     where: "Oracle",
     date: "December 2021 - August 2024",
     bullets: [
-      "Developed unified automation for resource cleanup, environment validation, and prerequisite installation, cutting manual developer effort by ~10% and improving operational consistency.",
-      "Integrated third-party systems—including OpenSearch and COBOL—into Cloud Manager, enabling seamless data flow, improved observability, and extended product functionality.",
-      "Collaborated closely with QA, Tools, Release, and customer teams to troubleshoot critical issues, improve scalability, and optimize overall system performance across OCI services.",
-      "Automated CI/CD pipelines, build workflows, and test execution using Jenkins and Shell scripting, reducing build times by 25% and increasing code quality and reliability by 30%."
+      "Built and modernized backend platform capabilities using Python, Java, SQL, and Jenkins, improving lifecycle management for enterprise cloud environments on Oracle Cloud Infrastructure.",
+      "Owned the design and automation of OCI-based image creation, infrastructure provisioning, and smoke-test validation workflows, improving deployment reliability and reducing manual operational effort.",
+      "Engineered reusable automation services for resource cleanup, environment validation, and prerequisite installation, reducing developer effort by approximately 10% and improving operational consistency.",
+      "Integrated OpenSearch and COBOL systems into Cloud Manager, extending platform functionality and enabling advanced search, indexing, and observability capabilities.",
+      "Automated CI/CD pipelines, build workflows, and test execution using Jenkins and Shell scripting, reducing build times by 25% and improving release quality and engineering productivity.",
+      "Collaborated with QA, Release Engineering, and customer teams to resolve complex platform issues, improve scalability, and optimize performance across OCI services."
     ]
   },
   {
@@ -239,12 +243,18 @@ const dataportfolio = [
     link: "https://docs.oracle.com/cd/E52319_01/infoportal/cloudmgr.html",
     skills: ['Python', 'Java', 'Oracle Cloud', 'CI/CD', 'Jenkins'],
     bullets: [
-      "Enhanced and modernized core capabilities of PeopleSoft Cloud Manager—used by 200+ global customers—to streamline deployment, lifecycle management, and migration of PeopleSoft environments on Oracle Cloud Infrastructure (OCI).",
-      "Designed and delivered a secure password management system powered by OCI Vault, enabling centralized secret storage, automated rotation, and improving credential security by 30%.",
-      "Automated CI/CD pipelines, build workflows, and test execution using Jenkins and Shell scripting, reducing build times by 25% and increasing code quality and reliability by 30%.",
-      "Developed unified automation for resource cleanup, environment validation, and prerequisite installation, cutting manual developer effort by ~10% and improving operational consistency.",
-      "Integrated third-party systems—including OpenSearch and COBOL—into Cloud Manager, enabling seamless data flow, improved observability, and extended product functionality.",
-      "Collaborated closely with QA, Tools, Release, and customer teams to troubleshoot critical issues, improve scalability, and optimize overall system performance across OCI services."
+      "Architected and enhanced core backend and platform capabilities for PeopleSoft Cloud Manager, an enterprise cloud infrastructure management platform used by 200+ global customers to provision and manage environments on Oracle Cloud Infrastructure (OCI).",
+      "Designed and delivered a secure password management solution powered by OCI Vault, enabling centralized secret storage, automated credential rotation, and improving credential security by 30%.",
+      "Developed cloud lifecycle management capabilities spanning provisioning, cloning, scaling, upgrades, image creation, and environment orchestration for enterprise deployments on OCI.",
+      "Built scalable CI/CD and automation frameworks using Jenkins, Python, and Shell scripting, streamlining validation, testing, and release workflows to improve deployment reliability.",
+      "Led cross-functional initiatives involving Exadata, OpenSearch, Infrastructure-as-Code migrations, and OCI service integrations, driving platform evolution across multiple releases.",
+      "Contributed to company culture as a member of the Fun@Work Club (2024–2025), organizing initiatives that positively impacted 450+ employees.",
+      "Built and modernized backend platform capabilities using Python, Java, SQL, and Jenkins, improving lifecycle management for enterprise cloud environments on Oracle Cloud Infrastructure.",
+      "Owned the design and automation of OCI-based image creation, infrastructure provisioning, and smoke-test validation workflows, improving deployment reliability and reducing manual operational effort.",
+      "Engineered reusable automation services for resource cleanup, environment validation, and prerequisite installation, reducing developer effort by approximately 10% and improving operational consistency.",
+      "Integrated OpenSearch and COBOL systems into Cloud Manager, extending platform functionality and enabling advanced search, indexing, and observability capabilities.",
+      "Automated CI/CD pipelines, build workflows, and test execution using Jenkins and Shell scripting, reducing build times by 25% and improving release quality and engineering productivity.",
+      "Collaborated with QA, Release Engineering, and customer teams to resolve complex platform issues, improve scalability, and optimize performance across OCI services."
     ]
   },
   {
