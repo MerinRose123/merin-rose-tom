@@ -44,20 +44,43 @@ export const About = () => {
           </Col>
           <Col lg="7">
             <div className="achievements-container">
-              {otherAccomplishments.map((achievement, i) => (
-                <div key={i} className="achievement-badge">
-                  <div className="achievement-icon">
-                    {i === 0 && "🏆"}
-                    {i === 1 && "🎯"}
-                    {i === 2 && "👑"}
-                    {i === 3 && "♟️"}
-                    {i === 4 && "🏏"}
+              {otherAccomplishments.map((achievement, i) => {
+                const getIcon = (text) => {
+                  const lower = text.toLowerCase();
+                  if (lower.includes("speaker") || lower.includes("gitflow")) return "🎤";
+                  if (lower.includes("chess")) return "♟️";
+                  if (lower.includes("rank") || lower.includes("champion")) return "🏆";
+                  if (lower.includes("appreciation") || lower.includes("excellent")) return "🎯";
+                  if (lower.includes("fun") || lower.includes("club")) return "🎉";
+                  return "⭐";
+                };
+
+                const parts = achievement.split(/:(.+)/);
+                const title = parts[0];
+                const description = parts[1] ? parts[1].trim() : "";
+
+                return (
+                  <div key={i} className="achievement-badge">
+                    <div className="achievement-icon">
+                      {getIcon(achievement)}
+                    </div>
+                    <div className="achievement-content">
+                      {description ? (
+                        <>
+                          <h5 className="achievement-title-text" style={{ fontWeight: '700', marginBottom: '8px', color: 'var(--text-color)' }}>
+                            {title}
+                          </h5>
+                          <p className="achievement-text" style={{ whiteSpace: 'pre-line', margin: '0' }}>
+                            {description}
+                          </p>
+                        </>
+                      ) : (
+                        <span className="achievement-text" style={{ whiteSpace: 'pre-line' }}>{achievement}</span>
+                      )}
+                    </div>
                   </div>
-                  <div className="achievement-content">
-                    <span className="achievement-text">{achievement}</span>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </Col>
         </Row>

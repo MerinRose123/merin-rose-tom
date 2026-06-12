@@ -9,6 +9,7 @@ import inappLogo from "../../assets/images/inapp.jpeg";
 export const Projects = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedTag, setSelectedTag] = useState("All");
 
   const handleShow = (project) => {
     setSelectedProject(project);
@@ -16,6 +17,13 @@ export const Projects = () => {
   };
 
   const handleClose = () => setShowModal(false);
+
+  // Extract all unique skills across all projects
+  const filterTags = ["All", ...new Set(dataportfolio.flatMap(project => project.skills || []))];
+
+  const filteredProjects = selectedTag === "All"
+    ? dataportfolio
+    : dataportfolio.filter(project => project.skills && project.skills.includes(selectedTag));
 
   return (
     <HelmetProvider>
@@ -27,10 +35,35 @@ export const Projects = () => {
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="12">
             <h1 id="projects" className="display-5 mb-4"> Projects </h1> <hr className="t_border my-4 ml-0 text-left" />
+            
+            {/* Filter Buttons */}
+            <div className="portfolio-filters mb-4 d-flex flex-wrap gap-2 justify-content-start">
+              {filterTags.map((tag) => (
+                <button
+                  key={tag}
+                  onClick={() => setSelectedTag(tag)}
+                  className={`btn filter-btn ${selectedTag === tag ? 'active' : ''}`}
+                  style={{
+                    backgroundColor: selectedTag === tag ? 'var(--text-color)' : 'transparent',
+                    color: selectedTag === tag ? 'var(--primary-color)' : 'var(--text-color)',
+                    border: '1px solid var(--text-color-3)',
+                    borderRadius: '20px',
+                    padding: '6px 16px',
+                    fontSize: '0.9rem',
+                    transition: 'all 0.3s ease',
+                    fontFamily: 'Marcellus',
+                    boxShadow: selectedTag === tag ? '0 4px 10px rgba(0,0,0,0.15)' : 'none'
+                  }}
+                >
+                  {tag}
+                </button>
+              ))}
+            </div>
+
             <Row className="mb-5">
-              {dataportfolio.map((data, i) => {
+              {filteredProjects.map((data, i) => {
                 return (
-                  <Col lg="4" key={i}>
+                  <Col lg="4" key={i} className="mb-4">
                     <div className="uniform-card" onClick={() => handleShow(data)} style={{ cursor: 'pointer' }}>
                       <div className="uniform-image-container">
                         <img src={data.img} alt={data.title} className="uniform-image" />

@@ -372,10 +372,11 @@ const hobbies = [
 ];
 
 const otherAccomplishments = [
+  "Invited Speaker (Gitflow Session for 50+ Students): Delivered an online introductory session on Git, GitHub, and Gitflow workflows to 50+ students at Government Engineering College Barton Hill.",
   "All Kerala University Rank 3 (2015 - 2019): Achieved the honour from KTU for admirable academic performance.",
-  "Appreciation for Excellent Performance from CEO of InApp (June 2021 - November 2021)",
-  "Kerala Technological University Women’s Chess Team Captain & Champion (2017 - 2018)",
-  "Oracle Fun@Work Club Member (2024 - 2025)"
+  "CEO Performance Appreciation (2021): Received recognition and appreciation for excellent performance from the CEO of InApp.",
+  "University Chess Champion & Captain (2017 - 2018): Captained and won the Kerala Technological University Women's Chess Championship.",
+  "Oracle Fun@Work Club Organizer (2024 - 2025): Led employee engagement initiatives and events impacting 450+ colleagues."
 ];
 const contactConfig = {
   YOUR_EMAIL: "",
