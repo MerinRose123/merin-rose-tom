@@ -22,22 +22,23 @@ import flask from "./assets/images/flask.png";
 import git from "./assets/images/git.png";
 import postman from "./assets/images/postman.png";
 import sqlicon from "./assets/images/sql.png";
-import nginxicon from "./assets/images/nginx.png";
 import jiraicon from "./assets/images/jira.png";
 import microservicesicon from "./assets/images/microservices.png";
 import shell from "./assets/images/shell.png";
 import system_design from "./assets/images/system_design.png";
-import third_party from "./assets/images/third_party.jpeg";
 import badmintonImg from "./assets/images/badminton.jpeg";
 import chessImg from "./assets/images/chess.jpg";
 import drawingImg from "./assets/images/drawing.jpeg";
 import smartapply_icon from "./assets/images/smartapply_icon.png";
 import angular_icon from "./assets/images/angular_icon.png";
+import terraform_icon from "./assets/images/terraform.png";
+import redis_icon from "./assets/images/redis.png";
+import ai_workflow_icon from "./assets/images/ai_workflow.png";
 
 const logotext = "Merin";
 const meta = {
   title: "Merin Rose Tom",
-  description: "Senior Software Engineer specializing in full-stack and backend development with over 6 years of experience",
+  description: "Senior Software Engineer specializing in full-stack and backend development with over 7+ years of experience",
 };
 
 const introdata = {
@@ -55,7 +56,7 @@ const introdata = {
 
 const highlights = [
   "Backend Developer (Python/Java)",
-  "6 years",
+  "7+ years",
   "Oracle Cloud",
   "CI/CD Automation",
   "System Design"
@@ -69,7 +70,7 @@ const hireMe = {
 const dataabout = {
   title: "A bit about me",
   aboutme:
-    "I’m a backend engineer who loves solving complex problems and building systems that scale. Over the past 6 years, I’ve worked across cloud automation, backend development, and full-stack engineering—currently contributing to PeopleSoft Cloud Manager at Oracle, where I improve automation, security, and performance for customers on OCI.\n\nEarlier at InApp, I helped build an ML-powered piracy detection system and a complete event management platform, which strengthened my full-stack and system design skills.\n\nI’m also a university rank holder and former chess team captain—chess honed my ability to think several steps ahead, a mindset I bring into architecture, debugging, and engineering decisions.",
+    "I’m a backend engineer who loves solving complex problems and building systems that scale. Over the past 7+ years, I’ve worked across cloud automation, backend development, and full-stack engineering—currently contributing to PeopleSoft Cloud Manager at Oracle, where I improve automation, security, and performance for customers on OCI.\n\nEarlier at InApp, I helped build an ML-powered piracy detection system and a complete event management platform, which strengthened my full-stack and system design skills.\n\nI’m also a university rank holder and former chess team captain—chess honed my ability to think several steps ahead, a mindset I bring into architecture, debugging, and engineering decisions.",
 };
 const worktimeline = [
   {
@@ -112,10 +113,11 @@ const skillsCategories = [
     ],
   },
   {
-    title: "Frameworks",
+    title: "Frameworks & Libs",
     skills: [
       { name: "Django", value: 75, icon: django },
       { name: "Flask", value: 75, icon: flask },
+      { name: "Celery", value: 75, icon: pythonicon },
       { name: "Angular", value: 60, icon: angular_icon },
     ],
   },
@@ -123,16 +125,17 @@ const skillsCategories = [
     title: "Cloud & DevOps",
     skills: [
       { name: "Oracle Cloud Infrastructure", value: 80, icon: oracleoci },
+      { name: "Terraform (IaC)", value: 75, icon: terraform_icon },
       { name: "Jenkins & CI/CD", value: 70, icon: jenkins_icon },
-      { name: "Nginx", value: 70, icon: nginxicon },
       { name: "Docker", value: 65, icon: docker },
     ],
   },
   {
-    title: "Databases",
+    title: "Databases & Search",
     skills: [
-      { name: "PostgreSQL", value: 75, icon: postgresql },
       { name: "OracleDB", value: 75, icon: oracleicon },
+      { name: "PostgreSQL", value: 75, icon: postgresql },
+      { name: "Redis", value: 70, icon: redis_icon },
       { name: "MongoDB", value: 75, icon: mongodb },
     ],
   },
@@ -148,10 +151,10 @@ const skillsCategories = [
   {
     title: "Concepts",
     skills: [
+      { name: "System Design & Architecture", value: 75, icon: system_design },
+      { name: "AI Workflow Orchestration", value: 70, icon: ai_workflow_icon },
+      { name: "Microservices & REST APIs", value: 75, icon: microservicesicon },
       { name: "Data Structures & Algorithms", value: 75, icon: leetcode },
-      { name: "System Design & Architecture", value: 70, icon: system_design },
-      { name: "Microservices", value: 75, icon: microservicesicon },
-      { name: "Third Party Integration", value: 75, icon: third_party },
     ],
   },
 ];
@@ -178,9 +181,10 @@ const detailedExperience = [
     date: "September 2024 - Present",
     bullets: [
       "Architected and enhanced core backend and platform capabilities for PeopleSoft Cloud Manager, an enterprise cloud infrastructure management platform used by 200+ global customers to provision and manage environments on Oracle Cloud Infrastructure (OCI).",
-      "Designed and delivered a secure password management solution powered by OCI Vault, enabling centralized secret storage, automated credential rotation, and improving credential security by 30%.",
+      "Architected a secure credential management framework leveraging Cloud Vault, centralizing secrets storage and rotation, resulting in a 30% reduction in manual credential administration effort and strengthening platform security.",
       "Developed cloud lifecycle management capabilities spanning provisioning, cloning, scaling, upgrades, image creation, and environment orchestration for enterprise deployments on OCI.",
-      "Built scalable CI/CD and automation frameworks using Jenkins, Python, and Shell scripting, streamlining validation, testing, and release workflows to improve deployment reliability.",
+      "Solely owned and transformed CI/CD build infrastructure using Jenkins, engineering resource cleanup pipelines that reduced cloud costs by 25% and ensured nightly product automation remained available for release cycles.",
+      "Developed AI-powered workflows for debugging, log analysis, database inspection, and documentation generation, improving developer productivity by 30% across Java and Python codebases.",
       "Led cross-functional initiatives involving Exadata, OpenSearch, Infrastructure-as-Code migrations, and OCI service integrations, driving platform evolution across multiple releases.",
       "Contributed to company culture as a member of the Fun@Work Club (2024–2025), organizing initiatives that positively impacted 450+ employees."
     ]
@@ -206,7 +210,7 @@ const detailedExperience = [
       "Developed a Python-based machine learning system using libraries like Pandas and NumPy to automatically detect piracy levels by comparing them against existing data",
       "Designed and implemented backend architecture with Django and Flask, including PostgreSQL database modeling and asynchronous task management using Celery",
       "Built a responsive front-end with Angular and JavaScript, creating secure authentication flows, data visualization dashboards, and error handling modules",
-      "Tailored an automatic PDF report generation system to output the result of the piracy detection process which increased user experience by 20%.",
+      "Engineered an asynchronous Celery pipeline to generate PDF reports from 16GB+ datasets under memory constraints, leveraging a shared in-memory LRU Cache to eliminate redundant loads - improving user experience by 20%.",
       "Analyzed and visualized 50,000+ data points using Python (Pandas, NumPy, Matplotlib) to derive actionable insights."
     ]
   },
@@ -244,9 +248,10 @@ const dataportfolio = [
     skills: ['Python', 'Java', 'Oracle Cloud', 'CI/CD', 'Jenkins'],
     bullets: [
       "Architected and enhanced core backend and platform capabilities for PeopleSoft Cloud Manager, an enterprise cloud infrastructure management platform used by 200+ global customers to provision and manage environments on Oracle Cloud Infrastructure (OCI).",
-      "Designed and delivered a secure password management solution powered by OCI Vault, enabling centralized secret storage, automated credential rotation, and improving credential security by 30%.",
+      "Architected a secure credential management framework leveraging Cloud Vault, centralizing secrets storage and rotation, resulting in a 30% reduction in manual credential administration effort and strengthening platform security.",
       "Developed cloud lifecycle management capabilities spanning provisioning, cloning, scaling, upgrades, image creation, and environment orchestration for enterprise deployments on OCI.",
-      "Built scalable CI/CD and automation frameworks using Jenkins, Python, and Shell scripting, streamlining validation, testing, and release workflows to improve deployment reliability.",
+      "Solely owned and transformed CI/CD build infrastructure using Jenkins, engineering resource cleanup pipelines that reduced cloud costs by 25% and ensured nightly product automation remained available for release cycles.",
+      "Developed AI-powered workflows for debugging, log analysis, database inspection, and documentation generation, improving developer productivity by 30% across Java and Python codebases.",
       "Led cross-functional initiatives involving Exadata, OpenSearch, Infrastructure-as-Code migrations, and OCI service integrations, driving platform evolution across multiple releases.",
       "Contributed to company culture as a member of the Fun@Work Club (2024–2025), organizing initiatives that positively impacted 450+ employees.",
       "Built and modernized backend platform capabilities using Python, Java, SQL, and Jenkins, improving lifecycle management for enterprise cloud environments on Oracle Cloud Infrastructure.",
@@ -281,7 +286,7 @@ const dataportfolio = [
     skills: ['Python', 'Machine Learning', 'Data Analysis', 'Angular', 'Pandas'],
     bullets: [
       "Developed a Python-based machine learning system using libraries like Pandas and NumPy to automatically detect piracy levels by comparing them against existing data.",
-      "Created an automated PDF report generation system that outputs piracy detection results, boosting user experience by 20%.",
+      "Engineered an asynchronous Celery pipeline to generate PDF reports from 16GB+ datasets under memory constraints, leveraging a shared in-memory LRU Cache to eliminate redundant loads - improving user experience by 20%.",
       "Designed front-end with Angular and assisted in developing the core piracy detection system.",
       "Analyzed and visualized over 50,000 data points using Python libraries like Pandas, NumPy, and Matplotlib."
     ]
