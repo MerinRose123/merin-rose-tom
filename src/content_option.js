@@ -44,9 +44,10 @@ const meta = {
 const introdata = {
   title: "I’m Merin Rose Tom",
   animated: {
-    first: "Backend & Full-Stack Developer",
+    first: "Backend & Cloud Develper",
     second: "Senior Software Engineer",
     third: "University Rank 3",
+    fourth: "Professional Chess Player",
   },
   description:
     "I architect scalable cloud platforms, modernize enterprise systems, and bring chess-driven strategic thinking into every solution I build.",
@@ -55,11 +56,15 @@ const introdata = {
 };
 
 const highlights = [
-  "Backend Developer (Python/Java)",
   "7+ years",
+  "Python",
+  "Java",
   "Oracle Cloud",
-  "CI/CD Automation",
-  "System Design"
+  "CI/CD",
+  "System Design",
+  "Django",
+  "SQL",
+  "Terraform"
 ];
 
 const hireMe = {

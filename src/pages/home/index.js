@@ -1,8 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Typewriter from "typewriter-effect";
 import { introdata, meta, otherAccomplishments, worktimeline, detailedExperience, dataportfolio, certifications, skillsCategories, services, blogs, hobbies, highlights, hireMe } from "../../content_option";
+import { SiOracle, SiJavascript, SiLeetcode } from "react-icons/si";
+import { FaJava, FaPython } from "react-icons/fa";
 import medium from "../../assets/images/medium.png";
 import { Link, useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
@@ -15,8 +16,18 @@ import { Hobbies } from "../hobbies";
 export const Home = () => {
   const navigate = useNavigate();
   const [showArrow, setShowArrow] = useState(true);
+  const [animatedTextIndex, setAnimatedTextIndex] = useState(0);
+  const animatedTexts = [
+    introdata.animated.first,
+    introdata.animated.second,
+    introdata.animated.third,
+    introdata.animated.fourth
+  ].filter(Boolean);
 
   useEffect(() => {
+    const textInterval = setInterval(() => {
+      setAnimatedTextIndex((prev) => (prev + 1) % animatedTexts.length);
+    }, 3000);
     // Create floating particles
     const createParticles = () => {
       const particlesContainer = document.querySelector('.particles-container');
@@ -59,8 +70,9 @@ export const Home = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
       sections.forEach((section) => observer.unobserve(section));
+      clearInterval(textInterval);
     };
-  }, []);
+  }, [animatedTexts.length]);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -99,17 +111,10 @@ export const Home = () => {
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
-                <h2 className="mb-1x">{introdata.title}</h2>
-                <h1 className="fluidz-48 mb-1x">
-                  <Typewriter
-                    options={{
-                      strings: [introdata.animated.first, introdata.animated.second, introdata.animated.third],
-                      autoStart: true,
-                      loop: true,
-                      deleteSpeed: 10,
-                    }}
-                  />
-                </h1>
+                <h1 className="fluidz-48 mb-1x font-weight-bold" style={{ fontWeight: 800 }}>{introdata.title}</h1>
+                <h2 className="mb-1x text-rotator">
+                  {animatedTexts[animatedTextIndex]}
+                </h2>
                 <p className="mb-1x">{introdata.description}</p>
                 <div className="hero-highlights mb-3">
                   <div className="highlights-grid">
@@ -119,9 +124,11 @@ export const Home = () => {
                   </div>
                 </div>
                 <div className="skill-icons-container">
-                  {introdata.skill_icons.map((el, i) => (
-                    <img src={el} key={i} className="skill_icons" />
-                  ))}
+                  <SiOracle className="skill_icons_flat" color="#F80000" />
+                  <FaJava className="skill_icons_flat" color="#ED8B00" />
+                  <FaPython className="skill_icons_flat" color="#3776AB" />
+                  <SiJavascript className="skill_icons_flat" color="#F7DF1E" />
+                  <SiLeetcode className="skill_icons_flat" color="#FFA116" />
                 </div>
                 <div className="intro_btn-action pb-5">
                   <div onClick={() => scrollToSection('experience')} className="text_2" style={{ cursor: 'pointer' }}>
