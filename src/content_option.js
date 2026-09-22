@@ -44,7 +44,7 @@ const meta = {
 const introdata = {
   title: "I’m Merin Rose Tom",
   animated: {
-    first: "Backend & Cloud Developer",
+    first: "Backend, Cloud & Platform Engineer",
     second: "Senior Software Engineer",
     third: "University Rank 3",
     fourth: "Professional Chess Player",
@@ -170,7 +170,7 @@ const services = [
     description: "Expert in Python, Java, Django, Flask, Angular, JavaScript, and database technologies. Skilled in building scalable APIs, microservices, responsive web applications, and seamless front-end/back-end integration.",
   },
   {
-    title: "Platform and Infrastruture Engineer",
+    title: "Platform & Infrastructure Engineer",
     description: "Specialized in Oracle Cloud Infrastructure (OCI), AWS, and cloud-native architectures. Expertise in DevOps, CI/CD pipelines, and containerization technologies.",
   },
   {
