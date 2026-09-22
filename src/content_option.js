@@ -44,7 +44,7 @@ const meta = {
 const introdata = {
   title: "I’m Merin Rose Tom",
   animated: {
-    first: "Backend & Cloud Develper",
+    first: "Backend & Cloud Developer",
     second: "Senior Software Engineer",
     third: "University Rank 3",
     fourth: "Professional Chess Player",
@@ -170,7 +170,7 @@ const services = [
     description: "Expert in Python, Java, Django, Flask, Angular, JavaScript, and database technologies. Skilled in building scalable APIs, microservices, responsive web applications, and seamless front-end/back-end integration.",
   },
   {
-    title: "Cloud Solutions Architect",
+    title: "Platform and Infrastruture Engineer",
     description: "Specialized in Oracle Cloud Infrastructure (OCI), AWS, and cloud-native architectures. Expertise in DevOps, CI/CD pipelines, and containerization technologies.",
   },
   {
@@ -185,7 +185,7 @@ const detailedExperience = [
     where: "Oracle",
     date: "September 2024 - Present",
     bullets: [
-      "Architected and enhanced core backend and platform capabilities for PeopleSoft Cloud Manager, an enterprise cloud infrastructure management platform used by 200+ global customers to provision and manage environments on Oracle Cloud Infrastructure (OCI).",
+      "Architected and enhanced core backend and platform capabilities for PeopleSoft Cloud Manager, an enterprise cloud infrastructure management platform used by 2000+ global customers to provision and manage environments on Oracle Cloud Infrastructure (OCI).",
       "Architected a secure credential management framework leveraging Cloud Vault, centralizing secrets storage and rotation, resulting in a 30% reduction in manual credential administration effort and strengthening platform security.",
       "Developed cloud lifecycle management capabilities spanning provisioning, cloning, scaling, upgrades, image creation, and environment orchestration for enterprise deployments on OCI.",
       "Solely owned and transformed CI/CD build infrastructure using Jenkins, engineering resource cleanup pipelines that reduced cloud costs by 25% and ensured nightly product automation remained available for release cycles.",
@@ -252,7 +252,7 @@ const dataportfolio = [
     link: "https://docs.oracle.com/cd/E52319_01/infoportal/cloudmgr.html",
     skills: ['Python', 'Java', 'Oracle Cloud', 'CI/CD', 'Jenkins'],
     bullets: [
-      "Architected and enhanced core backend and platform capabilities for PeopleSoft Cloud Manager, an enterprise cloud infrastructure management platform used by 200+ global customers to provision and manage environments on Oracle Cloud Infrastructure (OCI).",
+      "Architected and enhanced core backend and platform capabilities for PeopleSoft Cloud Manager, an enterprise cloud infrastructure management platform used by 2000+ global customers to provision and manage environments on Oracle Cloud Infrastructure (OCI).",
       "Architected a secure credential management framework leveraging Cloud Vault, centralizing secrets storage and rotation, resulting in a 30% reduction in manual credential administration effort and strengthening platform security.",
       "Developed cloud lifecycle management capabilities spanning provisioning, cloning, scaling, upgrades, image creation, and environment orchestration for enterprise deployments on OCI.",
       "Solely owned and transformed CI/CD build infrastructure using Jenkins, engineering resource cleanup pipelines that reduced cloud costs by 25% and ensured nightly product automation remained available for release cycles.",
