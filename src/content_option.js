@@ -78,7 +78,7 @@ const hireMe = {
 const dataabout = {
   title: "A bit about me",
   aboutme:
-    "I’m a Senior Software Engineer with 7+ years of experience building scalable backend services, cloud applications, and reliable distributed systems. My work spans Python, Java, REST APIs, microservices, database design, cloud provisioning, CI/CD, and Infrastructure as Code.\n\nAt Oracle, I contribute to PeopleSoft Cloud Manager, an enterprise cloud infrastructure platform serving 2,000+ customers. I work on backend services, cloud lifecycle management, service integrations, secure cloud capabilities, and AI-agent workflows.\n\nPreviously at InApp, I built backend and full-stack applications using Python, Django, Flask, Celery, and Angular, including multi-tenant systems, asynchronous processing, analytics, and machine-learning pipelines. I enjoy solving engineering problems involving API design, performance, scalability, and production reliability.",
+    "I’m a Senior Software Engineer with 7+ years of experience building scalable backend services, cloud applications, and reliable distributed systems. My work spans Python, Java, REST APIs, microservices, database design, cloud provisioning, CI/CD, and Infrastructure as Code.\n\nAt Oracle, I contribute to PeopleSoft Cloud Manager, an enterprise cloud infrastructure management system serving 2,000+ customers. I work on backend services, cloud lifecycle management, service integrations, secure cloud capabilities, and AI-agent workflows.\n\nPreviously at InApp, I built backend and full-stack applications using Python, Django, Flask, Celery, and Angular, including multi-tenant systems, asynchronous processing, analytics, and machine-learning pipelines. I enjoy solving engineering problems involving API design, performance, scalability, and production reliability.",
 };
 const worktimeline = [
   {
@@ -182,8 +182,8 @@ const services = [
     description: "Builds scalable backend services and REST APIs with Python, Java, Django, Flask, microservices, and relational and NoSQL databases.",
   },
   {
-    title: "Platform & Infrastructure Engineer",
-    description: "Works across Oracle Cloud Infrastructure (OCI), AWS, Terraform/OpenTofu, cloud provisioning, CI/CD, and containerized services.",
+    title: "Cloud & Infrastructure Engineer",
+    description: "Builds backend systems on Oracle Cloud Infrastructure (OCI) and AWS, with experience in Terraform/OpenTofu, cloud provisioning, CI/CD, and containerized services.",
   },
   {
     title: "System Design & Optimization Engineer",
@@ -197,7 +197,7 @@ const detailedExperience = [
     where: "Oracle",
     date: "September 2024 - Present",
     bullets: [
-      "Built and operated backend services for PeopleSoft Cloud Manager, a distributed infrastructure-orchestration platform serving 2,000+ customers, using Python, Java, SQL, REST APIs, and Terraform/OpenTofu to automate environment lifecycles.",
+      "Built and operated backend services for PeopleSoft Cloud Manager, a distributed infrastructure-orchestration system serving 2,000+ customers, using Python, Java, SQL, REST APIs, and Terraform/OpenTofu to automate environment lifecycles.",
       "Architected an OCI Vault-based credential management framework, centralizing secret storage and automating credential rotation, recovery, and scaling-related updates to save 15 engineering hours per month.",
       "Developed cloud lifecycle management capabilities spanning provisioning, cloning, scaling, upgrades, image creation, and environment orchestration for enterprise deployments on OCI.",
       "Owned cloud automation and CI/CD capabilities that improved deployment reliability, engineering productivity, and cloud cost efficiency.",
@@ -275,7 +275,7 @@ const dataportfolio = [
     link: "https://docs.oracle.com/cd/E52319_01/infoportal/cloudmgr.html",
     skills: ['Python', 'Java', 'Oracle Cloud', 'CI/CD', 'Jenkins'],
     bullets: [
-      "Built and operated backend services for PeopleSoft Cloud Manager, a distributed infrastructure-orchestration platform serving 2,000+ customers.",
+      "Built and operated backend services for PeopleSoft Cloud Manager, a distributed infrastructure-orchestration system serving 2,000+ customers.",
       "Automated environment lifecycles with Python, Java, SQL, REST APIs, and Terraform/OpenTofu, covering provisioning, cloning, scaling, and upgrades.",
       "Built an OCI Vault-based credential framework that automates secret rotation, recovery, and scaling-related updates, saving 15 engineering hours per month.",
       "Developed LLM- and RAG-powered AI-agent workflows for debugging, log analysis, code review, database inspection, and documentation, improving productivity by 30%.",
