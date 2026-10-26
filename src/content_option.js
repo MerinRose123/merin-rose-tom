@@ -84,7 +84,7 @@ const worktimeline = [
   {
     jobtitle: "Senior Software Engineer | Python, Java, Cloud",
     where: "Oracle",
-    date: "September 2024 - Present",
+    date: "September 2024 - October 2026",
   },
   {
     jobtitle: "Software Engineer II | Backend & Infrastructure",
@@ -106,11 +106,6 @@ const worktimeline = [
     where: "APJ Abdul Kalam Technological University",
     date: "July 2015 - July 2019",
   },
-  {
-    jobtitle: "Student Intern on Industrial Automation",
-    where: "Bosch Rexroth",
-    date: "June 2016",
-  },
 ];
 
 
@@ -123,7 +118,6 @@ const skillsCategories = [
       { name: "Java", value: 85, icon: javaicon },
       { name: "SQL", value: 80, icon: sqlicon },
       { name: "JavaScript", value: 60, icon: javascripticon },
-      { name: "REST APIs", value: 80 },
     ],
   },
   {
@@ -139,9 +133,7 @@ const skillsCategories = [
     title: "Cloud & DevOps",
     skills: [
       { name: "Oracle Cloud Infrastructure", value: 80, icon: oracleoci },
-      { name: "AWS", value: 70 },
       { name: "Terraform (IaC)", value: 75, icon: terraform_icon },
-      { name: "OpenTofu", value: 70 },
       { name: "Jenkins & CI/CD", value: 70, icon: jenkins_icon },
       { name: "Docker", value: 65, icon: docker },
     ],
@@ -170,7 +162,6 @@ const skillsCategories = [
       { name: "System Design & Architecture", value: 75, icon: system_design },
       { name: "LLMs, RAG & AI Agents", value: 70, icon: ai_workflow_icon },
       { name: "Microservices & REST APIs", value: 75, icon: microservicesicon },
-      { name: "Distributed Systems", value: 75 },
       { name: "Data Structures & Algorithms", value: 75, icon: leetcode },
     ],
   },
@@ -195,7 +186,7 @@ const detailedExperience = [
   {
     jobtitle: "Senior Software Engineer | Python, Java, Cloud",
     where: "Oracle",
-    date: "September 2024 - Present",
+    date: "September 2024 - October 2026",
     bullets: [
       "Built and operated backend services for PeopleSoft Cloud Manager, a distributed infrastructure-orchestration system serving 2,000+ customers, using Python, Java, SQL, REST APIs, and Terraform/OpenTofu to automate environment lifecycles.",
       "Architected an OCI Vault-based credential management framework, centralizing secret storage and automating credential rotation, recovery, and scaling-related updates to save 15 engineering hours per month.",
@@ -213,9 +204,12 @@ const detailedExperience = [
     date: "November 2021 - August 2024",
     bullets: [
       "Owned cloud feature delivery from FDD/TDD through production rollout, writing technical designs, coordinating QA and release engineering, and handling post-release issues for enterprise customers.",
+      "Owned OCI image creation, infrastructure provisioning, and smoke-test validation workflows, improving deployment reliability and reducing manual operational effort.",
+      "Built reusable automation for resource cleanup, environment validation, and prerequisite installation, reducing developer effort by approximately 10%.",
       "Rebuilt CI/CD and infrastructure automation with Jenkins, Python, shell scripting, JUnit, Packer, and Gradle, reducing cloud costs by 25% and enabling reliable nightly releases.",
       "Embedded clustered OpenSearch in customer environments serving 2,000+ enterprise customers, adding node clustering for scalability and fault tolerance and reindexing support to keep search data current.",
-      "Modernized a legacy component from Python 2.7 to Python 3.11, owning dependency updates, bug fixes, edge-case handling, and functional validation end to end."
+      "Modernized a legacy component from Python 2.7 to Python 3.11, owning dependency updates, bug fixes, edge-case handling, and functional validation end to end.",
+      "Worked with QA, release engineering, and customer teams to resolve complex platform issues, improve scalability, and optimize OCI service performance."
     ]
   },
   {
@@ -237,6 +231,7 @@ const detailedExperience = [
       "Developed EventOPS, an event-management system with asynchronous task processing, rule-based triggers, email automation, and role-based access control, reducing manual event-management effort by 20%.",
       "Worked across the development lifecycle, gathering requirements, designing database schemas, and debugging production issues; tracked work in Jira and used Git and code reviews to maintain quality.",
       "Designed a multi-tenant Django testing framework using pytest, increasing test coverage by 30% and strengthening edge-case handling across environments.",
+      "Optimized databases and microservices, reducing API latency by 40% and enabling scalable deployment of high-traffic modules.",
       "Delivered responsive Angular and JavaScript features, including secure authentication, data-visualization dashboards, and error handling."
     ]
   },
@@ -249,22 +244,9 @@ const detailedExperience = [
       "University Women's Chess Team Captain & Champion (07/2017 - 07/2018): Captained and won the university women's chess championship, demonstrating leadership and strategic thinking.",
       "College Class Representative (06/2018 - 06/2019): Led and organised class initiatives, facilitating collaboration among 60 students and serving as a liaison with faculty.",
       "Institution: Government Engineering College, Barton Hill, Thiruvananthapuram, India",
+      "GPA: 8.93"
     ]
   },
-  {
-    jobtitle: "Student Intern on Industrial Automation",
-    where: "Bosch Rexroth",
-    date: "June 2016",
-    bullets: [
-      "Gained hands-on experience with hydraulics, pneumatics, sensors, basic PLC programming, and practical lab sessions involving industrial automation systems."
-    ]
-  },
-  {
-    jobtitle: "Higher Secondary Certificate (HSC), Computer Science",
-    where: "Holy Cross Higher Secondary School, Cherpunkal",
-    date: "July 2013 - July 2015",
-    bullets: []
-  }
 ];
 
 const dataportfolio = [

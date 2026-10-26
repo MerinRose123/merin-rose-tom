@@ -142,7 +142,7 @@ export const Projects = () => {
                 </span>
               </div>
               <span style={{ color: 'var(--text-color-2)', fontSize: '0.9rem' }}>
-                {selectedProject?.title === 'PeopleSoft Cloud Manager' ? 'November 2021 - Present' :
+                {selectedProject?.title === 'PeopleSoft Cloud Manager' ? 'November 2021 - October 2026' :
                   selectedProject?.title === 'EventOPS' ? 'July 2019 - June 2020' :
                     '2020 - 2021'}
               </span>
