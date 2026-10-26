@@ -99,6 +99,13 @@ export const ContactUs = () => {
               <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
                 {contactConfig.YOUR_EMAIL}
               </a>
+              {contactConfig.YOUR_LOCATION && (
+                <>
+                  <br />
+                  <br />
+                  <strong>Location:</strong> {contactConfig.YOUR_LOCATION}
+                </>
+              )}
               <br />
               <br />
               {contactConfig.hasOwnProperty("YOUR_FONE") ? (

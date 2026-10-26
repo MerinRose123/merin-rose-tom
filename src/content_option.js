@@ -38,19 +38,19 @@ import ai_workflow_icon from "./assets/images/ai_workflow.png";
 const logotext = "Merin";
 const meta = {
   title: "Merin Rose Tom",
-  description: "Senior Software Engineer specializing in full-stack and backend development with over 7+ years of experience",
+  description: "Senior Software Engineer with 7+ years of experience in backend engineering, cloud infrastructure, distributed systems, and AI workflows",
 };
 
 const introdata = {
   title: "I’m Merin Rose Tom",
   animated: {
-    first: "Backend, Cloud & Platform Engineer",
+    first: "Backend, Cloud & Infrastructure Engineer",
     second: "Senior Software Engineer",
     third: "University Rank 3",
     fourth: "Professional Chess Player",
   },
   description:
-    "I architect scalable cloud platforms, modernize enterprise systems, and bring chess-driven strategic thinking into every solution I build.",
+    "I build scalable backend services and cloud infrastructure, with a focus on distributed systems, APIs, reliability, and AI engineering.",
   profie_pic: profilepic,
   skill_icons: [oracleicon, javaicon, pythonicon, javascripticon, leetcode],
 };
@@ -60,6 +60,9 @@ const highlights = [
   "Python",
   "Java",
   "Oracle Cloud",
+  "AWS",
+  "REST APIs",
+  "Distributed Systems",
   "CI/CD",
   "System Design",
   "Django",
@@ -69,13 +72,13 @@ const highlights = [
 
 const hireMe = {
   title: "Let's Build Something Amazing Together",
-  description: "Excited to explore roles in backend engineering, cloud platforms, and high-scale system design. I bring strong problem-solving, clean architecture, and a get-things-done mindset."
+  description: "I’m interested in backend engineering, cloud infrastructure, distributed systems, and AI engineering. I bring experience in scalable APIs, system performance, reliability, and production troubleshooting."
 };
 
 const dataabout = {
   title: "A bit about me",
   aboutme:
-    "I’m a backend engineer who loves solving complex problems and building systems that scale. Over the past 7+ years, I’ve worked across cloud automation, backend development, and full-stack engineering—currently contributing to PeopleSoft Cloud Manager at Oracle, where I improve automation, security, and performance for customers on OCI.\n\nEarlier at InApp, I helped build an ML-powered piracy detection system and a complete event management platform, which strengthened my full-stack and system design skills.\n\nI’m also a university rank holder and former chess team captain—chess honed my ability to think several steps ahead, a mindset I bring into architecture, debugging, and engineering decisions.",
+    "I’m a Senior Software Engineer with 7+ years of experience building scalable backend services, cloud applications, and reliable distributed systems. My work spans Python, Java, REST APIs, microservices, database design, cloud provisioning, CI/CD, and Infrastructure as Code.\n\nAt Oracle, I contribute to PeopleSoft Cloud Manager, an enterprise cloud infrastructure platform serving 2,000+ customers. I work on backend services, cloud lifecycle management, service integrations, secure cloud capabilities, and AI-agent workflows.\n\nPreviously at InApp, I built backend and full-stack applications using Python, Django, Flask, Celery, and Angular, including multi-tenant systems, asynchronous processing, analytics, and machine-learning pipelines. I enjoy solving engineering problems involving API design, performance, scalability, and production reliability.",
 };
 const worktimeline = [
   {
@@ -84,24 +87,29 @@ const worktimeline = [
     date: "September 2024 - Present",
   },
   {
-    jobtitle: "Software Engineer II | Backend & Platform Engineering",
+    jobtitle: "Software Engineer II | Backend & Infrastructure",
     where: "Oracle",
-    date: "December 2021 - August 2024",
+    date: "November 2021 - August 2024",
   },
   {
     jobtitle: "Software Engineer | Full Stack Developer",
     where: "InApp Information Technologies",
-    date: "2020-2021",
+    date: "July 2020 - November 2021",
   },
   {
-    jobtitle: "Programmer Trainee | Python Programmer",
+    jobtitle: "Programmer Trainee | Python Developer",
     where: "InApp Information Technologies",
-    date: "2019-2020",
+    date: "July 2019 - June 2020",
   },
   {
     jobtitle: "Bachelor of Technology in Information Technology",
     where: "APJ Abdul Kalam Technological University",
-    date: "2015 - 2019",
+    date: "July 2015 - July 2019",
+  },
+  {
+    jobtitle: "Student Intern on Industrial Automation",
+    where: "Bosch Rexroth",
+    date: "June 2016",
   },
 ];
 
@@ -115,6 +123,7 @@ const skillsCategories = [
       { name: "Java", value: 85, icon: javaicon },
       { name: "SQL", value: 80, icon: sqlicon },
       { name: "JavaScript", value: 60, icon: javascripticon },
+      { name: "REST APIs", value: 80 },
     ],
   },
   {
@@ -130,7 +139,9 @@ const skillsCategories = [
     title: "Cloud & DevOps",
     skills: [
       { name: "Oracle Cloud Infrastructure", value: 80, icon: oracleoci },
+      { name: "AWS", value: 70 },
       { name: "Terraform (IaC)", value: 75, icon: terraform_icon },
+      { name: "OpenTofu", value: 70 },
       { name: "Jenkins & CI/CD", value: 70, icon: jenkins_icon },
       { name: "Docker", value: 65, icon: docker },
     ],
@@ -157,8 +168,9 @@ const skillsCategories = [
     title: "Concepts",
     skills: [
       { name: "System Design & Architecture", value: 75, icon: system_design },
-      { name: "AI Workflow Orchestration", value: 70, icon: ai_workflow_icon },
+      { name: "LLMs, RAG & AI Agents", value: 70, icon: ai_workflow_icon },
       { name: "Microservices & REST APIs", value: 75, icon: microservicesicon },
+      { name: "Distributed Systems", value: 75 },
       { name: "Data Structures & Algorithms", value: 75, icon: leetcode },
     ],
   },
@@ -166,12 +178,12 @@ const skillsCategories = [
 
 const services = [
   {
-    title: "Backend & Full Stack Developer",
-    description: "Expert in Python, Java, Django, Flask, Angular, JavaScript, and database technologies. Skilled in building scalable APIs, microservices, responsive web applications, and seamless front-end/back-end integration.",
+    title: "Backend & Distributed Systems Engineer",
+    description: "Builds scalable backend services and REST APIs with Python, Java, Django, Flask, microservices, and relational and NoSQL databases.",
   },
   {
     title: "Platform & Infrastructure Engineer",
-    description: "Specialized in Oracle Cloud Infrastructure (OCI), AWS, and cloud-native architectures. Expertise in DevOps, CI/CD pipelines, and containerization technologies.",
+    description: "Works across Oracle Cloud Infrastructure (OCI), AWS, Terraform/OpenTofu, cloud provisioning, CI/CD, and containerized services.",
   },
   {
     title: "System Design & Optimization Engineer",
@@ -185,26 +197,25 @@ const detailedExperience = [
     where: "Oracle",
     date: "September 2024 - Present",
     bullets: [
-      "Architected and enhanced core backend and platform capabilities for PeopleSoft Cloud Manager, an enterprise cloud infrastructure management platform used by 2000+ global customers to provision and manage environments on Oracle Cloud Infrastructure (OCI).",
-      "Architected a secure credential management framework leveraging Cloud Vault, centralizing secrets storage and rotation, resulting in a 30% reduction in manual credential administration effort and strengthening platform security.",
+      "Built and operated backend services for PeopleSoft Cloud Manager, a distributed infrastructure-orchestration platform serving 2,000+ customers, using Python, Java, SQL, REST APIs, and Terraform/OpenTofu to automate environment lifecycles.",
+      "Architected an OCI Vault-based credential management framework, centralizing secret storage and automating credential rotation, recovery, and scaling-related updates to save 15 engineering hours per month.",
       "Developed cloud lifecycle management capabilities spanning provisioning, cloning, scaling, upgrades, image creation, and environment orchestration for enterprise deployments on OCI.",
-      "Solely owned and transformed CI/CD build infrastructure using Jenkins, engineering resource cleanup pipelines that reduced cloud costs by 25% and ensured nightly product automation remained available for release cycles.",
-      "Developed AI-powered workflows for debugging, log analysis, database inspection, and documentation generation, improving developer productivity by 30% across Java and Python codebases.",
-      "Led cross-functional initiatives involving Exadata, OpenSearch, Infrastructure-as-Code migrations, and OCI service integrations, driving platform evolution across multiple releases.",
+      "Owned cloud automation and CI/CD capabilities that improved deployment reliability, engineering productivity, and cloud cost efficiency.",
+      "Developed LLM- and RAG-powered AI-agent workflows for debugging, log analysis, code review, database inspection, and documentation generation, increasing developer productivity by 30% across Java and Python codebases.",
+      "Built cloud-native services integrating OCI compute, storage, networking, IAM, databases, and secrets management.",
+      "Led cross-team delivery across multiple releases of Oracle Exadata and OpenSearch/Elasticsearch integrations and Terraform/OpenTofu migrations, coordinating product, QA, and release engineering.",
       "Contributed to company culture as a member of the Fun@Work Club (2024–2025), organizing initiatives that positively impacted 450+ employees."
     ]
   },
   {
-    jobtitle: "Software Engineer II | Backend & Platform Engineering",
+    jobtitle: "Software Engineer II | Backend & Infrastructure",
     where: "Oracle",
-    date: "December 2021 - August 2024",
+    date: "November 2021 - August 2024",
     bullets: [
-      "Built and modernized backend platform capabilities using Python, Java, SQL, and Jenkins, improving lifecycle management for enterprise cloud environments on Oracle Cloud Infrastructure.",
-      "Owned the design and automation of OCI-based image creation, infrastructure provisioning, and smoke-test validation workflows, improving deployment reliability and reducing manual operational effort.",
-      "Engineered reusable automation services for resource cleanup, environment validation, and prerequisite installation, reducing developer effort by approximately 10% and improving operational consistency.",
-      "Integrated OpenSearch and COBOL systems into Cloud Manager, extending platform functionality and enabling advanced search, indexing, and observability capabilities.",
-      "Automated CI/CD pipelines, build workflows, and test execution using Jenkins and Shell scripting, reducing build times by 25% and improving release quality and engineering productivity.",
-      "Collaborated with QA, Release Engineering, and customer teams to resolve complex platform issues, improve scalability, and optimize performance across OCI services."
+      "Owned cloud feature delivery from FDD/TDD through production rollout, writing technical designs, coordinating QA and release engineering, and handling post-release issues for enterprise customers.",
+      "Rebuilt CI/CD and infrastructure automation with Jenkins, Python, shell scripting, JUnit, Packer, and Gradle, reducing cloud costs by 25% and enabling reliable nightly releases.",
+      "Embedded clustered OpenSearch in customer environments serving 2,000+ enterprise customers, adding node clustering for scalability and fault tolerance and reindexing support to keep search data current.",
+      "Modernized a legacy component from Python 2.7 to Python 3.11, owning dependency updates, bug fixes, edge-case handling, and functional validation end to end."
     ]
   },
   {
@@ -212,35 +223,47 @@ const detailedExperience = [
     where: "InApp Information Technologies",
     date: "July 2020 - November 2021",
     bullets: [
-      "Developed a Python-based machine learning system using libraries like Pandas and NumPy to automatically detect piracy levels by comparing them against existing data",
-      "Designed and implemented backend architecture with Django and Flask, including PostgreSQL database modeling and asynchronous task management using Celery",
-      "Built a responsive front-end with Angular and JavaScript, creating secure authentication flows, data visualization dashboards, and error handling modules",
-      "Engineered an asynchronous Celery pipeline to generate PDF reports from 16GB+ datasets under memory constraints, leveraging a shared in-memory LRU Cache to eliminate redundant loads - improving user experience by 20%.",
-      "Analyzed and visualized 50,000+ data points using Python (Pandas, NumPy, Matplotlib) to derive actionable insights."
+      "Engineered an asynchronous Celery pipeline to generate PDF reports from 16GB+ datasets under memory constraints, using a shared LRU cache across concurrent tasks to eliminate redundant 30-minute data loads.",
+      "Designed a multi-tenant backend on AWS EC2 using Django and Flask, with PostgreSQL, Redis, and Celery-based asynchronous processing, establishing microservice patterns that improved operational efficiency by 15%.",
+      "Containerized services with Docker and routed traffic through an Nginx API gateway, standardizing local development and simplifying inter-service testing.",
+      "Implemented a Python machine-learning solution with Pandas and NumPy to analyze piracy patterns and automate piracy-level detection; analyzed and visualized 50,000+ data points using Matplotlib and MongoDB to support product decisions."
     ]
   },
   {
-    jobtitle: "Programmer Trainee | Python Programmer",
+    jobtitle: "Programmer Trainee | Python Developer",
     where: "InApp Information Technologies",
     date: "July 2019 - June 2020",
     bullets: [
-      "Developed a multi-tenant testing framework in Django, enabling isolated execution paths and improving test robustness by 30% across environments.",
-      "Built foundational components of EventOPS, including rule-based triggers, schedulers, and email automation, enhancing internal workflows and reducing manual efforts by 20%.",
-      "Spearheaded database and microservice optimizations, cutting API latency by 40% and enabling scalable deployment of high-traffic modules.",
-      "Leveraged version control (Git, ClearCase) and communication platforms (Slack, Jira) to facilitate eﬀective teamwork and project delivery."
+      "Developed EventOPS, an event-management system with asynchronous task processing, rule-based triggers, email automation, and role-based access control, reducing manual event-management effort by 20%.",
+      "Worked across the development lifecycle, gathering requirements, designing database schemas, and debugging production issues; tracked work in Jira and used Git and code reviews to maintain quality.",
+      "Designed a multi-tenant Django testing framework using pytest, increasing test coverage by 30% and strengthening edge-case handling across environments.",
+      "Delivered responsive Angular and JavaScript features, including secure authentication, data-visualization dashboards, and error handling."
     ]
   },
   {
     jobtitle: "Bachelor of Technology in Information Technology",
     where: "APJ Abdul Kalam Technological University",
-    date: "2015 - 2019",
+    date: "July 2015 - July 2019",
     bullets: [
-      "Awarded University Rank 3 for exceptional academic performance (2015 – 2019).",
+      "Awarded University Rank 3 (Top 1%) for academic performance (2015 - 2019).",
       "University Women's Chess Team Captain & Champion (07/2017 - 07/2018): Captained and won the university women's chess championship, demonstrating leadership and strategic thinking.",
       "College Class Representative (06/2018 - 06/2019): Led and organised class initiatives, facilitating collaboration among 60 students and serving as a liaison with faculty.",
       "Institution: Government Engineering College, Barton Hill, Thiruvananthapuram, India",
-      "GPA: 8.93"
     ]
+  },
+  {
+    jobtitle: "Student Intern on Industrial Automation",
+    where: "Bosch Rexroth",
+    date: "June 2016",
+    bullets: [
+      "Gained hands-on experience with hydraulics, pneumatics, sensors, basic PLC programming, and practical lab sessions involving industrial automation systems."
+    ]
+  },
+  {
+    jobtitle: "Higher Secondary Certificate (HSC), Computer Science",
+    where: "Holy Cross Higher Secondary School, Cherpunkal",
+    date: "July 2013 - July 2015",
+    bullets: []
   }
 ];
 
@@ -252,19 +275,11 @@ const dataportfolio = [
     link: "https://docs.oracle.com/cd/E52319_01/infoportal/cloudmgr.html",
     skills: ['Python', 'Java', 'Oracle Cloud', 'CI/CD', 'Jenkins'],
     bullets: [
-      "Architected and enhanced core backend and platform capabilities for PeopleSoft Cloud Manager, an enterprise cloud infrastructure management platform used by 2000+ global customers to provision and manage environments on Oracle Cloud Infrastructure (OCI).",
-      "Architected a secure credential management framework leveraging Cloud Vault, centralizing secrets storage and rotation, resulting in a 30% reduction in manual credential administration effort and strengthening platform security.",
-      "Developed cloud lifecycle management capabilities spanning provisioning, cloning, scaling, upgrades, image creation, and environment orchestration for enterprise deployments on OCI.",
-      "Solely owned and transformed CI/CD build infrastructure using Jenkins, engineering resource cleanup pipelines that reduced cloud costs by 25% and ensured nightly product automation remained available for release cycles.",
-      "Developed AI-powered workflows for debugging, log analysis, database inspection, and documentation generation, improving developer productivity by 30% across Java and Python codebases.",
-      "Led cross-functional initiatives involving Exadata, OpenSearch, Infrastructure-as-Code migrations, and OCI service integrations, driving platform evolution across multiple releases.",
-      "Contributed to company culture as a member of the Fun@Work Club (2024–2025), organizing initiatives that positively impacted 450+ employees.",
-      "Built and modernized backend platform capabilities using Python, Java, SQL, and Jenkins, improving lifecycle management for enterprise cloud environments on Oracle Cloud Infrastructure.",
-      "Owned the design and automation of OCI-based image creation, infrastructure provisioning, and smoke-test validation workflows, improving deployment reliability and reducing manual operational effort.",
-      "Engineered reusable automation services for resource cleanup, environment validation, and prerequisite installation, reducing developer effort by approximately 10% and improving operational consistency.",
-      "Integrated OpenSearch and COBOL systems into Cloud Manager, extending platform functionality and enabling advanced search, indexing, and observability capabilities.",
-      "Automated CI/CD pipelines, build workflows, and test execution using Jenkins and Shell scripting, reducing build times by 25% and improving release quality and engineering productivity.",
-      "Collaborated with QA, Release Engineering, and customer teams to resolve complex platform issues, improve scalability, and optimize performance across OCI services."
+      "Built and operated backend services for PeopleSoft Cloud Manager, a distributed infrastructure-orchestration platform serving 2,000+ customers.",
+      "Automated environment lifecycles with Python, Java, SQL, REST APIs, and Terraform/OpenTofu, covering provisioning, cloning, scaling, and upgrades.",
+      "Built an OCI Vault-based credential framework that automates secret rotation, recovery, and scaling-related updates, saving 15 engineering hours per month.",
+      "Developed LLM- and RAG-powered AI-agent workflows for debugging, log analysis, code review, database inspection, and documentation, improving productivity by 30%.",
+      "Led Exadata, OpenSearch/Elasticsearch, and Infrastructure-as-Code integrations across product releases."
     ]
   },
   {
@@ -290,10 +305,10 @@ const dataportfolio = [
     link: "https://in.linkedin.com/in/merin-rose-tom",
     skills: ['Python', 'Machine Learning', 'Data Analysis', 'Angular', 'Pandas'],
     bullets: [
-      "Developed a Python-based machine learning system using libraries like Pandas and NumPy to automatically detect piracy levels by comparing them against existing data.",
-      "Engineered an asynchronous Celery pipeline to generate PDF reports from 16GB+ datasets under memory constraints, leveraging a shared in-memory LRU Cache to eliminate redundant loads - improving user experience by 20%.",
-      "Designed front-end with Angular and assisted in developing the core piracy detection system.",
-      "Analyzed and visualized over 50,000 data points using Python libraries like Pandas, NumPy, and Matplotlib."
+      "Engineered an asynchronous Celery pipeline generating PDF reports from 16GB+ datasets, using a shared LRU cache to eliminate redundant 30-minute data loads.",
+      "Designed a multi-tenant backend on AWS EC2 using Django and Flask, with PostgreSQL, Redis, and Celery-based asynchronous processing.",
+      "Containerized services with Docker and routed traffic through an Nginx API gateway to integrate the microservice architecture.",
+      "Implemented a Python machine-learning solution for piracy detection and analyzed 50,000+ data points using Pandas, NumPy, Matplotlib, and MongoDB."
     ]
   },
   {
@@ -382,6 +397,7 @@ const hobbies = [
 ];
 
 const otherAccomplishments = [
+  "Top 20 Performer — Akamai EmpowHER Codeathon 2024",
   "Invited Speaker (Gitflow Session for 50+ Students): Delivered an online introductory session on Git, GitHub, and Gitflow workflows to 50+ students at Government Engineering College Barton Hill.",
   "All Kerala University Rank 3 (2015 - 2019): Achieved the honour from KTU for admirable academic performance.",
   "CEO Performance Appreciation (2021): Received recognition and appreciation for excellent performance from the CEO of InApp.",
@@ -389,7 +405,8 @@ const otherAccomplishments = [
   "Oracle Fun@Work Club Organizer (2024 - 2025): Led employee engagement initiatives and events impacting 450+ colleagues."
 ];
 const contactConfig = {
-  YOUR_EMAIL: "",
+  YOUR_EMAIL: "merin.pottananickal@gmail.com",
+  YOUR_LOCATION: "Bengaluru, Karnataka, India",
   YOUR_FONE: "",
   YOUR_SERVICE_ID: "service_w0691tq",
   YOUR_TEMPLATE_ID: "template_qmj4dpl",
