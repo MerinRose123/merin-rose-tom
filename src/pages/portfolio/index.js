@@ -132,19 +132,27 @@ export const Projects = () => {
             <p style={{ fontSize: '1.1rem', marginBottom: '20px', color: 'var(--text-color-2)' }}>{selectedProject?.description}</p>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <img
-                  src={selectedProject?.title === 'PeopleSoft Cloud Manager' ? oracleLogo : inappLogo}
-                  alt={selectedProject?.title === 'PeopleSoft Cloud Manager' ? 'Oracle' : 'InApp'}
-                  style={{ width: '24px', height: '24px' }}
-                />
+                {!['SmartApply – Chrome Extension', 'Transliterator Text Editor - Side Project'].includes(selectedProject?.title) && (
+                  <img
+                    src={selectedProject?.title === 'PeopleSoft Cloud Manager' ? oracleLogo : inappLogo}
+                    alt={selectedProject?.title === 'PeopleSoft Cloud Manager' ? 'Oracle' : 'InApp'}
+                    style={{ width: '24px', height: '24px' }}
+                  />
+                )}
                 <span style={{ color: 'var(--text-color-2)', fontStyle: 'italic' }}>
-                  Associated with {selectedProject?.title === 'PeopleSoft Cloud Manager' ? 'Oracle' : 'InApp Information Technologies'}
+                  {selectedProject?.title === 'PeopleSoft Cloud Manager'
+                    ? 'Associated with Oracle'
+                    : ['SmartApply – Chrome Extension', 'Transliterator Text Editor - Side Project'].includes(selectedProject?.title)
+                      ? 'Independent side project'
+                      : 'Associated with InApp Information Technologies'}
                 </span>
               </div>
               <span style={{ color: 'var(--text-color-2)', fontSize: '0.9rem' }}>
                 {selectedProject?.title === 'PeopleSoft Cloud Manager' ? 'November 2021 - October 2026' :
-                  selectedProject?.title === 'EventOPS' ? 'July 2019 - June 2020' :
-                    '2020 - 2021'}
+                  selectedProject?.title === 'EventOPS' ? 'September 2019 - November 2021' :
+                  selectedProject?.title === 'SmartApply – Chrome Extension' ? 'January 2026 - March 2026' :
+                  selectedProject?.title === 'Transliterator Text Editor - Side Project' ? 'June 2021 - October 2021' :
+                    'December 2020 - March 2021'}
               </span>
             </div>
             <div style={{ marginBottom: '20px' }}>
