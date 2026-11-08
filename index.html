@@ -97,25 +97,8 @@ body.c-on .c-dot,body.c-on .c-ring{opacity:1}
 .icon-btn:hover{transform:rotate(25deg)}
 .icon-btn svg{width:18px;height:18px}
 
-/* ---------- theme & colour picker ---------- */
+/* ---------- dial gradient follows the accent colours ---------- */
 #rg stop:nth-child(1){stop-color:var(--a1)}#rg stop:nth-child(2){stop-color:var(--a2)}#rg stop:nth-child(3){stop-color:var(--a3)}
-.look{position:relative}
-.look-panel{position:absolute;top:calc(100% + 10px);right:0;width:280px;padding:16px;border-radius:20px;background:var(--bg2);border:1px solid var(--card-b);box-shadow:0 30px 60px -20px rgba(0,0,0,.6);opacity:0;transform:translateY(-8px) scale(.97);transform-origin:top right;pointer-events:none;transition:opacity .2s,transform .3s cubic-bezier(.2,.8,.2,1);z-index:120}
-.look-panel.open{opacity:1;transform:none;pointer-events:auto}
-.look-panel h6{font:600 11px var(--bf);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
-.seg{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;border-radius:12px;background:var(--card);border:1px solid var(--card-b);margin-bottom:16px}
-.seg button{display:flex;align-items:center;justify-content:center;gap:7px;padding:8px;border:0;border-radius:9px;background:transparent;color:var(--muted);font:500 13px var(--bf);cursor:pointer;transition:.2s}
-.seg button svg{width:15px;height:15px}
-.seg button.on{background:var(--bg);color:var(--text);box-shadow:0 2px 8px rgba(0,0,0,.25)}
-.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.sw{display:flex;flex-direction:column;align-items:center;gap:6px;padding:0;border:0;background:none;cursor:pointer;color:var(--muted);font:500 11px var(--bf)}
-.sw i{width:40px;height:40px;border-radius:50%;border:2px solid transparent;box-shadow:inset 0 0 0 2px var(--bg2);transition:transform .25s,border-color .25s}
-.sw:hover i{transform:scale(1.08)}
-.sw.on i{border-color:var(--text)}
-.sw.on{color:var(--text)}
-.look-now{margin-top:14px;padding-top:12px;border-top:1px solid var(--card-b);font-size:12px;color:var(--muted)}
-.look-now b{color:var(--text);font-weight:600}
-@media(max-width:400px){.look-panel{width:calc(100vw - 32px)}}
 
 /* ---------- dock (fixed bottom nav) ---------- */
 .dock{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:95;display:flex;align-items:flex-end;gap:6px;padding:8px 10px;border-radius:24px;background:var(--glass);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--card-b);box-shadow:0 20px 50px -20px rgba(0,0,0,.6)}
@@ -172,7 +155,7 @@ body.c-on .c-dot,body.c-on .c-ring{opacity:1}
 .hero p.lead{color:var(--muted);font-size:16.5px;max-width:520px;margin-bottom:26px}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
 .socials{display:flex;gap:10px;margin-top:26px}
-.socials a{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;border:1px solid var(--card-b);background:var(--card);transition:transform .3s,border-color .3s,background .3s}
+.socials a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--card-b);background:var(--card);transition:transform .3s,border-color .3s,background .3s}
 .socials a:hover{transform:translateY(-5px) rotate(-6deg);border-color:var(--a1);background:rgba(var(--a1-rgb),.14)}
 .socials svg{width:19px;height:19px}
 .hero-visual{position:relative;width:min(360px,50vh,100%);aspect-ratio:1;justify-self:center}
@@ -187,21 +170,15 @@ body.c-on .c-dot,body.c-on .c-ring{opacity:1}
 .avatar .glare{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at var(--gx,50%) var(--gy,30%),rgba(255,255,255,.28),transparent 45%);mix-blend-mode:overlay;opacity:0;transition:opacity .3s;pointer-events:none}
 .hero-visual:hover .avatar .glare{opacity:1}
 /* tech-stack row under the hero text */
-.stack{display:flex;align-items:center;gap:14px;margin-top:22px;flex-wrap:wrap}
-.stack-label{font:600 11px var(--bf);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
-.stack-icons{display:flex;gap:10px;flex-wrap:wrap}
-.stack-ic{position:relative;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;padding:8px;background:var(--bg2);border:1px solid var(--card-b);transition:transform .3s cubic-bezier(.3,1.6,.5,1),border-color .3s,box-shadow .3s}
-.stack-ic img{width:100%;height:100%;object-fit:contain}
-.stack-ic:hover,.stack-ic:focus-visible{transform:translateY(-4px);border-color:rgba(var(--a2-rgb),.6);box-shadow:0 10px 24px -10px rgba(var(--a2-rgb),.6);outline:none}
-.stack-ic::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 9px);left:50%;transform:translate(-50%,5px);padding:5px 10px;border-radius:8px;white-space:nowrap;font:600 12px var(--bf);background:var(--text);color:var(--bg);opacity:0;pointer-events:none;transition:.2s}
-.stack-ic::before{content:"";position:absolute;bottom:calc(100% + 0px);left:50%;margin-left:-5px;border:5px solid transparent;border-top-color:var(--text);opacity:0;transition:.2s;pointer-events:none}
-.stack-ic:hover::after,.stack-ic:focus-visible::after{opacity:1;transform:translate(-50%,0)}
-.stack-ic:hover::before,.stack-ic:focus-visible::before{opacity:1}
+.stack{display:flex;flex-wrap:wrap;gap:8px;margin:-6px 0 26px;max-width:640px}
+.stack-ic{display:inline-flex;align-items:center;gap:8px;padding:5px 13px 5px 5px;border-radius:999px;background:rgba(var(--a2-rgb),.08);border:1px solid rgba(var(--a2-rgb),.22);font:500 13.5px var(--bf);color:var(--text);transition:transform .3s cubic-bezier(.3,1.6,.5,1),border-color .3s,background .3s}
+.stack-ic img{width:24px;height:24px;border-radius:50%;background:#fff;padding:3px;object-fit:contain}
+.stack-ic:hover{transform:translateY(-3px);border-color:rgba(var(--a2-rgb),.55);background:rgba(var(--a2-rgb),.14)}
 @media(max-width:900px){
   #home{height:auto;min-height:100svh;padding:90px 0 110px}
   .hero{grid-template-columns:1fr;gap:34px}
   .hero-visual{width:min(230px,58vw);order:-1;justify-self:center;margin-top:8px}
-  .stack-ic{width:38px;height:38px;padding:7px}}
+  .stack-ic{font-size:13px}}
 
 /* ---------- highlights strip ---------- */
 .strip{padding:26px 0;border-block:1px solid var(--card-b);background:var(--card)}
@@ -484,16 +461,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
 
 <div class="topbar"><div class="container">
   <a href="#home" class="logo" id="logo"></a>
-  <div class="look">
-    <button class="icon-btn" id="themeBtn" aria-label="Theme and colours" aria-expanded="false"></button>
-    <div class="look-panel" id="lookPanel" role="dialog" aria-label="Theme and colours">
-      <h6>Mode</h6>
-      <div class="seg" id="modeSeg"></div>
-      <h6>Accent colour</h6>
-      <div class="swatches" id="swatches"></div>
-      <div class="look-now" id="lookNow"></div>
-    </div>
-  </div>
+  <button class="icon-btn" id="themeBtn" aria-label="Switch dark / light mode"></button>
 </div></div>
 
 <div class="menu-scrim" id="menuScrim"></div>
@@ -540,47 +508,17 @@ const iconLabel = (src,skills) => { const f=src.split('/').pop().split('.')[0]; 
 const achIcon = t => /chess/i.test(t)?'♟️':/speak|session|talk|workshop/i.test(t)?'🎤':/rank|universit|gpa/i.test(t)?'🎓':/ceo|appreciation|award/i.test(t)?'🏅':/code|hack|athon|performer/i.test(t)?'💻':/club|organi[sz]|fun@|event/i.test(t)?'🎉':'🏆';
 const canHover = matchMedia('(hover:hover)').matches;
 
-/* theme */
-/* ---------- theme (dark / light) + accent palettes ----------
-   a1-a4 = accent colours; dark/light = page background + card background for each mode */
-const PALETTES={
-  aurora :{name:'Aurora',  a:['#8b5cf6','#ec4899','#06b6d4','#facc15'], dark:['#07070c','#0f0f1a'], light:['#f7f6fb','#ffffff']},
-  ocean  :{name:'Ocean',   a:['#3b82f6','#06b6d4','#10b981','#a5f3fc'], dark:['#050a14','#0b1322'], light:['#f3f7fc','#ffffff']},
-  sunset :{name:'Sunset',  a:['#f97316','#ef4444','#eab308','#fb7185'], dark:['#0d0806','#1a100c'], light:['#fdf8f4','#ffffff']},
-  emerald:{name:'Emerald', a:['#10b981','#14b8a6','#84cc16','#facc15'], dark:['#04100b','#0a1a14'], light:['#f3faf6','#ffffff']},
-  royal  :{name:'Royal',   a:['#6366f1','#8b5cf6','#c084fc','#f0abfc'], dark:['#07071a','#0f0f26'], light:['#f5f5fe','#ffffff']},
-  rose   :{name:'Rose',    a:['#f43f5e','#ec4899','#f59e0b','#fda4af'], dark:['#0e060a','#1a0d13'], light:['#fdf5f7','#ffffff']},
-  cyber  :{name:'Cyber',   a:['#22d3ee','#a3e635','#e879f9','#facc15'], dark:['#04090b','#0a1316'], light:['#f2fafb','#ffffff']},
-  slate  :{name:'Slate',   a:['#64748b','#0ea5e9','#94a3b8','#38bdf8'], dark:['#080a0d','#11151b'], light:['#f5f7fa','#ffffff']}
-};
-const themeBtn=document.getElementById('themeBtn'), lookPanel=document.getElementById('lookPanel');
-const hexRgb=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)).join(',');
-const DEFAULT_PALETTE='slate';   // change to any key in PALETTES
-let look={mode:'dark',palette:DEFAULT_PALETTE};
-try{ look.mode=localStorage.getItem('theme')||'dark'; look.palette=localStorage.getItem('palette')||DEFAULT_PALETTE; }catch(e){}
-if(!PALETTES[look.palette]) look.palette=DEFAULT_PALETTE;
-function applyLook(){
-  const root=document.documentElement, p=PALETTES[look.palette], [bg,bg2]=p[look.mode];
-  root.dataset.theme=look.mode;
-  p.a.forEach((c,i)=>root.style.setProperty('--a'+(i+1),c));
-  [0,1,2].forEach(i=>root.style.setProperty(`--a${i+1}-rgb`,hexRgb(p.a[i])));
-  root.style.setProperty('--bg',bg); root.style.setProperty('--bg2',bg2);
-  themeBtn.innerHTML=look.mode==='dark'?I.sun:I.moon;
-  document.querySelectorAll('#modeSeg button').forEach(b=>b.classList.toggle('on',b.dataset.mode===look.mode));
-  document.querySelectorAll('#swatches .sw').forEach(b=>b.classList.toggle('on',b.dataset.p===look.palette));
-  document.getElementById('lookNow').innerHTML=`Current: <b>${p.name}</b> · <b>${look.mode==='dark'?'Dark':'Light'}</b>`;
-  try{ localStorage.setItem('theme',look.mode); localStorage.setItem('palette',look.palette); }catch(e){}
+/* ---------- theme: dark / light (Slate colours are set in the :root CSS variables) ---------- */
+const themeBtn=document.getElementById('themeBtn');
+function setTheme(mode){
+  document.documentElement.dataset.theme=mode;
+  themeBtn.innerHTML=mode==='dark'?I.sun:I.moon;
+  themeBtn.setAttribute('aria-label',mode==='dark'?'Switch to light mode':'Switch to dark mode');
+  try{ localStorage.setItem('theme',mode); }catch(e){}
 }
-document.getElementById('modeSeg').innerHTML=`<button data-mode="dark">${I.moon}Dark</button><button data-mode="light">${I.sun}Light</button>`;
-document.getElementById('swatches').innerHTML=Object.entries(PALETTES).map(([k,p])=>`<button class="sw" data-p="${k}" title="${p.name}"><i style="background:conic-gradient(${p.a[0]} 0 33%,${p.a[1]} 0 66%,${p.a[2]} 0)"></i>${p.name}</button>`).join('');
-document.querySelectorAll('#modeSeg button').forEach(b=>b.onclick=()=>{look.mode=b.dataset.mode;applyLook();});
-document.querySelectorAll('#swatches .sw').forEach(b=>b.onclick=()=>{look.palette=b.dataset.p;applyLook();});
-const setLookOpen=o=>{lookPanel.classList.toggle('open',o);themeBtn.setAttribute('aria-expanded',o);};
-themeBtn.onclick=e=>{e.stopPropagation();setLookOpen(!lookPanel.classList.contains('open'));};
-lookPanel.addEventListener('click',e=>e.stopPropagation());
-document.addEventListener('click',()=>setLookOpen(false));
-addEventListener('keydown',e=>{if(e.key==='Escape')setLookOpen(false);});
-applyLook();
+let savedMode; try{ savedMode=localStorage.getItem('theme'); }catch(e){}
+setTheme(savedMode==='light'?'light':'dark');
+themeBtn.onclick=()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');
 
 /* Content comes from the data/*.js files loaded in <head> */
 if (window.PORTFOLIO && window.PORTFOLIO.meta) render(window.PORTFOLIO);
@@ -619,12 +557,12 @@ function render(d){
         <h1>${words.map((w,i)=>`<span class="word"><span class="${i>=words.length-3?'grad-text':''}">${esc(w)}</span></span>`).join(' ')}</h1>
         <div class="roles h-in"><span class="typed"></span><span class="caret"></span></div>
         <p class="lead h-in">${esc(d.intro.description)}</p>
+        <div class="stack h-in">${icons.map(src=>{const n=iconLabel(src,allSkills);return `<span class="stack-ic"><img src="${esc(src)}" alt="">${esc(n)}</span>`}).join('')}</div>
         <div class="hero-ctas h-in">
           <a href="#projects" class="btn btn-primary">View my work ${I.arrow}</a>
           <a href="#contact" class="btn btn-ghost">Get in touch</a>
         </div>
         <div class="socials h-in">${socialHTML}</div>
-        <div class="stack h-in"><span class="stack-label">Core stack</span><div class="stack-icons">${icons.map(src=>`<span class="stack-ic" tabindex="0" data-tip="${esc(iconLabel(src,allSkills))}"><img src="${esc(src)}" alt="${esc(iconLabel(src,allSkills))}"></span>`).join('')}</div></div>
       </div>
       <div class="hero-visual h-pic" id="heroVis">
         <div class="hv-tilt" id="hvTilt">
