@@ -10,7 +10,7 @@ window.PORTFOLIO = Object.assign(window.PORTFOLIO || {}, {
     {
       "title": "Harness Engineering: How to Train Your AI Dragon",
       "description": "How planning, independent checks, and feedback loops help AI agents catch mistakes and stay on course.",
-      "image": "assets/images/ai_workflow.png",
+      "image": "assets/images/harness_engineering.jpeg",
       "link": "https://medium.com/ai-in-plain-english/harness-engineering-how-to-train-your-ai-dragon-7c33a6b367f7"
     },
     {
