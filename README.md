@@ -11,7 +11,7 @@ A modern, fully customizable portfolio website built with plain HTML, CSS and Ja
 - **Modern Design**: Glassmorphism cards, gradient accents, animated background glow and grid
 - **Scroll Animations**: Sections reveal on scroll, timeline line draws itself, counters count up, project images open up, parallax effects
 - **Hover Effects**: Mouse-following spotlight on cards, holographic certificate cards with 3D tilt and shine, magnetic dock icons
-- **Interactive Hero**: Profile photo zooms in on hover; skill icons orbit around it, show tooltips on hover, and burst outward when the photo is clicked
+- **Hero Section**: Profile photo in a rotating gradient ring that zooms in on hover, typing job titles, and a "Core stack" icon row with hover tooltips
 - **Draggable Sliders**: The highlights strip and skill rows auto-scroll, pause on hover, and can be dragged or swiped with momentum
 - **Dock Navigation**: Fixed bottom navigation bar with macOS-style magnification on desktop and a tab bar + menu sheet on mobile
 - **Project Details Panel**: Click a project to open a slide-in panel with highlights and previous/next navigation
@@ -37,7 +37,7 @@ merin-rose-tom/
 ├── index.html               # The whole site: layout, styles and scripts
 ├── data/                    # All portfolio content — one file per section
 │   ├── site.js              # Page title, logo text, contact details, social links
-│   ├── hero.js              # Intro, typing job titles, orbit icons, highlights strip
+│   ├── hero.js              # Intro, typing job titles, core-stack icons, highlights strip
 │   ├── about.js             # About text & services
 │   ├── experience.js        # Career & education timeline with bullet points
 │   ├── skills.js            # Skill categories, names, levels (%) and icons
@@ -90,7 +90,7 @@ window.PORTFOLIO = Object.assign(window.PORTFOLIO || {}, {
   ```
 - **Other colours**: Text, borders and light-mode colours are CSS variables at the top of the `<style>` block in `index.html` (`:root` and `[data-theme="light"]`)
 - **Navigation**: The dock items are defined in the `nav` list inside `render()` in `index.html`; `MAIN` sets which 4 sections appear in the mobile tab bar
-- **Orbit icons**: Change `skillIcons` in `data/hero.js`; tooltip names come from the file name (or the matching skill in `skills.js`)
+- **Core stack icons**: Change `skillIcons` in `data/hero.js`; tooltip names come from the file name (or the matching skill in `skills.js`)
 - **Layout**: Each section's HTML is a template string inside `render()` in `index.html` — add a new `<section>` there and a matching data file in `data/` (and list it in the `<script>` tags in `<head>`)
 
 ## 🚀 Getting Started
