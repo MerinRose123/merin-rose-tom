@@ -11,11 +11,10 @@ window.PORTFOLIO = Object.assign(window.PORTFOLIO || {}, {
     "description": "I build scalable backend services and cloud infrastructure, with a focus on distributed systems, APIs, reliability, and AI engineering.",
     "profilePic": "assets/images/profilepic.jpeg",
     "skillIcons": [
-      "assets/images/oracle.png",
-      "assets/images/java.png",
       "assets/images/python.png",
-      "assets/images/javascript.png",
-      "assets/images/leetcode.png"
+      "assets/images/java.png",
+      "assets/images/oracle.png",
+      "assets/images/postgresql.png"
     ]
   },
   "highlights": [

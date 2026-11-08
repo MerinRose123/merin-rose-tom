@@ -106,8 +106,8 @@ body.c-on .c-dot,body.c-on .c-ring{opacity:1}
 .dock a svg{width:20px;height:20px}
 .dock a:hover{color:var(--text);background:var(--card)}
 .dock a.active{color:#fff;background:var(--grad)}
-.dock a::after{content:attr(data-label);position:absolute;bottom:calc(100% + 12px);left:50%;transform:translate(-50%,6px);padding:5px 10px;border-radius:8px;font-size:12px;font-weight:500;white-space:nowrap;background:var(--text);color:var(--bg);opacity:0;pointer-events:none;transition:.2s}
-.dock a:hover::after{opacity:1;transform:translate(-50%,0)}
+.dock a::after,.socials a::after{content:attr(data-label);position:absolute;bottom:calc(100% + 12px);left:50%;transform:translate(-50%,6px);padding:5px 10px;border-radius:8px;font-size:12px;font-weight:500;white-space:nowrap;background:var(--text);color:var(--bg);opacity:0;pointer-events:none;transition:.2s}
+.dock a:hover::after,.socials a:hover::after,.socials a:focus-visible::after{opacity:1;transform:translate(-50%,0)}
 .dock .sep{width:1px;height:28px;background:var(--card-b);margin:0 4px 8px}
 .dock .lbl,.dock .more,.menu-sheet{display:none}
 /* phones: tab bar (4 main sections + Menu) and a pop-up grid with every section */
@@ -155,7 +155,8 @@ body.c-on .c-dot,body.c-on .c-ring{opacity:1}
 .hero p.lead{color:var(--muted);font-size:16.5px;max-width:520px;margin-bottom:26px}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
 .socials{display:flex;gap:10px;margin-top:26px}
-.socials a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--card-b);background:var(--card);transition:transform .3s,border-color .3s,background .3s}
+.socials a{position:relative;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--card-b);background:var(--card);transition:transform .3s,border-color .3s,background .3s}
+.socials a::after{content:attr(aria-label);bottom:calc(100% + 8px)}
 .socials a:hover{transform:translateY(-5px) rotate(-6deg);border-color:var(--a1);background:rgba(var(--a1-rgb),.14)}
 .socials svg{width:19px;height:19px}
 .hero-visual{position:relative;width:min(360px,50vh,100%);aspect-ratio:1;justify-self:center}
@@ -503,7 +504,7 @@ const I = {
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const hostOf = u => { try { return new URL(u).hostname.replace('www.',''); } catch { return ''; } };
 const pad = n => String(n).padStart(2,'0');
-const iconLabel = (src,skills) => { const f=src.split('/').pop().split('.')[0]; const m={oracle:'Oracle',leetcode:'LeetCode',javascript:'JavaScript',python:'Python',java:'Java'};
+const iconLabel = (src,skills) => { const f=src.split('/').pop().split('.')[0]; const m={oracle:'Cloud',postgresql:'Database',leetcode:'LeetCode',javascript:'JavaScript',python:'Python',java:'Java'};
   return m[f] || (skills.find(k=>k.icon===src)||{}).name || f.charAt(0).toUpperCase()+f.slice(1); };
 const achIcon = t => /chess/i.test(t)?'♟️':/speak|session|talk|workshop/i.test(t)?'🎤':/rank|universit|gpa/i.test(t)?'🎓':/ceo|appreciation|award/i.test(t)?'🏅':/code|hack|athon|performer/i.test(t)?'💻':/club|organi[sz]|fun@|event/i.test(t)?'🎉':'🏆';
 const canHover = matchMedia('(hover:hover)').matches;
@@ -533,7 +534,8 @@ function render(d){
   document.getElementById('logo').innerHTML=`${esc(d.logo)}<b>.</b>`;
   document.getElementById('loaderName').textContent=d.logo;
   const s=d.social;
-  const socialHTML=Object.entries(s).map(([k,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener" aria-label="${k}">${I[k]||I.arrow}</a>`).join('');
+  const socialLabels={github:'GitHub',linkedin:'LinkedIn',leetcode:'LeetCode',medium:'Blog'};
+  const socialHTML=Object.entries(s).map(([k,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener" aria-label="${esc(socialLabels[k]||k)}">${I[k]||I.arrow}</a>`).join('');
   const words=d.intro.title.split(' ');
   const icons=d.intro.skillIcons;
   const allSkills=d.skills.flatMap(c=>c.skills);
@@ -596,8 +598,8 @@ function render(d){
     <div class="sec-head reveal"><div class="sec-tag">Journey</div><h2>Work & <span class="grad-text">Education</span></h2></div>
     <div class="timeline">
       <div class="tl-line"><i></i></div>
-      ${d.experience.map((e,i)=>`
-        <div class="tl-item reveal ${i===0?'open':''}">
+      ${d.experience.map(e=>`
+        <div class="tl-item reveal open">
           <div class="tl-dot"></div>
           <div class="card spot">
             <div class="tl-head"><div><h4>${esc(e.jobtitle)}</h4><div class="tl-where">${esc(e.where)}</div></div><div class="tl-date">${esc(e.date)}</div></div>
@@ -671,7 +673,7 @@ function render(d){
   </div></section>
 
   <section id="hobbies"><div class="container">
-    <div class="sec-head reveal"><div class="sec-tag">Beyond code</div><h2>Hobbies</h2></div>
+    <div class="sec-head reveal"><div class="sec-tag">Beyond code</div><h2>My Hobbies</h2></div>
     <div class="hobbies">${d.hobbies.map(h=>`<div class="hobby reveal"><img src="${esc(h.image)}" alt="${esc(h.title)}" loading="lazy"><div class="ov"><h4>${esc(h.title)}</h4><p>${esc(h.description)}</p></div></div>`).join('')}</div>
   </div></section>
 

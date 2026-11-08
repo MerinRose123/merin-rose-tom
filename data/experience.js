@@ -56,7 +56,7 @@ window.PORTFOLIO = Object.assign(window.PORTFOLIO || {}, {
     {
       "jobtitle": "Bachelor of Technology in Information Technology",
       "where": "APJ Abdul Kalam Technological University",
-      "date": "July 2015 - July 2019",
+      "date": "July 2015 - June 2019",
       "bullets": [
         "Awarded University Rank 3 (Top 1%) for academic performance (2015 - 2019).",
         "University Women's Chess Team Captain & Champion (07/2017 - 07/2018): Captained and won the university women's chess championship, demonstrating leadership and strategic thinking.",

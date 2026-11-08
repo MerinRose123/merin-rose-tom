@@ -9,9 +9,16 @@ window.PORTFOLIO = Object.assign(window.PORTFOLIO || {}, {
       "skills": [
         "Python",
         "Java",
-        "Oracle Cloud",
+        "Oracle Cloud (OCI)",
+        "Terraform/OpenTofu",
+        "Puppet",
+        "Jenkins",
+        "Platform Engineering",
+        "AI Agents",
+        "SQL",
+        "REST APIs",
         "CI/CD",
-        "Jenkins"
+        "OpenSearch/Elasticsearch"
       ],
       "bullets": [
         "Built and operated backend services for PeopleSoft Cloud Manager, a distributed infrastructure-orchestration system serving 2,000+ customers.",
@@ -27,19 +34,26 @@ window.PORTFOLIO = Object.assign(window.PORTFOLIO || {}, {
       "description": "Event management system with automated workflows, secure access control, and a scalable Django/Flask backend.",
       "link": "https://eventops.com/",
       "skills": [
+        "Python",
         "Django",
         "Flask",
+        "Microservices",
+        "Pytest",
+        "Multi-Tenancy",
         "PostgreSQL",
-        "Angular",
-        "JavaScript"
+        "SQL",
+        "RBAC",
+        "Celery",
+        "Redis",
+        "Asynchronous Processing"
       ],
       "bullets": [
         "Built an internal event management system to handle space, equipment, people, budgeting, and reporting for organizational events.",
         "Designed the backend microservices architecture with Python, Django, and Flask, ensuring scalability and modular development.",
-        "Developed front-end components with Angular, supporting data visualization, secure authentication, and user interactions.",
         "Implemented a unit testing framework with Django multi-tenancy, improving system security and edge-case handling.",
         "Created features for event scheduling, conditional task generation, and automated email notifications, streamlining event workflows.",
         "Enhanced role-based access management to regulate permissions for different user types and safeguard data integrity.",
+        "Earned the InApp CEO Appreciation Award for outstanding performance on EventOPS.",
         "Delivered optimizations in performance and debugging that improved overall system efficiency by ~15% and boosted internal operations by ~20%."
       ]
     },
@@ -50,16 +64,22 @@ window.PORTFOLIO = Object.assign(window.PORTFOLIO || {}, {
       "link": "https://in.linkedin.com/in/merin-rose-tom",
       "skills": [
         "Python",
+        "Flask",
         "Machine Learning",
         "Data Analysis",
         "Angular",
-        "Pandas"
+        "JavaScript",
+        "Celery",
+        "Redis",
+        "LRU Caching",
+        "Pandas / NumPy",
+        "Matplotlib",
+        "MongoDB"
       ],
       "bullets": [
         "Engineered an asynchronous Celery pipeline generating PDF reports from 16GB+ datasets, using a shared LRU cache to eliminate redundant 30-minute data loads.",
-        "Designed a multi-tenant backend on AWS EC2 using Django and Flask, with PostgreSQL, Redis, and Celery-based asynchronous processing.",
-        "Containerized services with Docker and routed traffic through an Nginx API gateway to integrate the microservice architecture.",
-        "Implemented a Python machine-learning solution for piracy detection and analyzed 50,000+ data points using Pandas, NumPy, Matplotlib, and MongoDB."
+        "Implemented a Python machine-learning solution for piracy detection and analyzed 50,000+ data points using Pandas, NumPy, Matplotlib, and MongoDB.",
+        "Delivered responsive Angular and JavaScript front-end features, including secure authentication flows, data-visualization dashboards, and error-handling modules."
       ]
     },
     {
@@ -91,7 +111,8 @@ window.PORTFOLIO = Object.assign(window.PORTFOLIO || {}, {
         "JavaScript",
         "Chrome Extension",
         "DOM Parsing",
-        "Content Scripts"
+        "Content Scripts",
+        "Form-Field Mapping"
       ],
       "bullets": [
         "Built a Chrome extension that auto-fills job applications using structured resume data, reducing manual input effort by 70%.",

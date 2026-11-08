@@ -21,7 +21,7 @@ window.PORTFOLIO = Object.assign(window.PORTFOLIO || {}, {
     "Top 20 Performer — Akamai EmpowHER Codeathon 2024",
     "Invited Speaker (Gitflow Session for 50+ Students): Delivered an online introductory session on Git, GitHub, and Gitflow workflows to 50+ students at Government Engineering College Barton Hill.",
     "All Kerala University Rank 3 (2015 - 2019): Achieved the honour from KTU for admirable academic performance.",
-    "CEO Performance Appreciation (2021): Received recognition and appreciation for excellent performance from the CEO of InApp.",
+    "InApp CEO Appreciation Award (2021): Recognized for outstanding performance on EventOPS.",
     "University Chess Champion & Captain (2017 - 2018): Captained and won the Kerala Technological University Women's Chess Championship.",
     "Oracle Fun@Work Club Organizer (2024 - 2025): Led employee engagement initiatives and events impacting 450+ colleagues."
   ]

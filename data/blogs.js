@@ -8,10 +8,10 @@ window.PORTFOLIO = Object.assign(window.PORTFOLIO || {}, {
       "link": "https://blog.devops.dev/jenkins-email-notification-with-parameters-31c8076e3447"
     },
     {
-      "title": "Build Your First Transliterator Text Editor with Python Tkinter",
-      "description": "Python Tkinter application for converting Manglish text to Malayalam.",
-      "image": "assets/images/tkinter.jpeg",
-      "link": "https://merin-rose-tom.medium.com/build-your-first-transliterator-text-editor-with-python-tkinter-dd2cd7b132bb"
+      "title": "Harness Engineering: How to Train Your AI Dragon",
+      "description": "How planning, independent checks, and feedback loops help AI agents catch mistakes and stay on course.",
+      "image": "assets/images/ai_workflow.png",
+      "link": "https://medium.com/ai-in-plain-english/harness-engineering-how-to-train-your-ai-dragon-7c33a6b367f7"
     },
     {
       "title": "Caching in Celery Using LRUCache",
