@@ -1,86 +1,99 @@
 # Software Developer Portfolio Website
 
-A modern, fully customizable portfolio website built with React. Perfect for developers, designers, and professionals to showcase their work and skills.
+A modern, fully customizable portfolio website built with plain HTML, CSS and JavaScript — no frameworks, no build step. Perfect for developers, designers, and professionals to showcase their work and skills.
 
-![Portfolio Preview](src/assets/images/homepage.jpeg)
+![Portfolio Preview](assets/images/preview.jpg)
 
 🌐 **Live Demo**: [https://merinrose123.github.io/merin-rose-tom/](https://merinrose123.github.io/merin-rose-tom/)
 
 ## ✨ Features
 
-- **Modern Design**: Clean, professional layout with smooth animations
-- **Responsive**: Works perfectly on desktop, tablet, and mobile
-- **Dark Theme**: Beautiful dark color scheme
-- **Interactive Elements**: Hover effects and smooth transitions
-- **Multiple Sections**: Home, About, Experience, Projects, Skills, Blogs & Hobbies
+- **Modern Design**: Glassmorphism cards, gradient accents, animated background glow and grid
+- **Scroll Animations**: Sections reveal on scroll, timeline line draws itself, counters count up, project images open up, parallax effects
+- **Hover Effects**: Mouse-following spotlight on cards, 3D tilt, holographic certificate cards, magnetic dock icons
+- **Interactive Hero**: Profile photo zooms in on hover; skill icons orbit around it, show tooltips on hover, and burst outward when the photo is clicked
+- **Draggable Sliders**: The highlights strip and skill rows auto-scroll, pause on hover, and can be dragged or swiped with momentum
+- **Dock Navigation**: Fixed bottom navigation bar with macOS-style magnification on desktop and a tab bar + menu sheet on mobile
+- **Project Details Panel**: Click a project to open a slide-in panel with highlights and previous/next navigation
+- **Dark & Light Themes**: Toggle in the top-right corner; your choice is remembered
+- **Responsive**: Works on desktop, tablet, and mobile (down to very small screens)
+- **Multiple Sections**: Home, About, Experience, Skills, Projects, Blogs, Certifications, Achievements, Hobbies & Contact
+- **Zero Setup**: Open `index.html` directly in a browser — no install, no server, no build
 
 ## 🛠️ Tech Stack
 
-- **React 18** - Frontend framework
-- **React Router** - Navigation
-- **Bootstrap** - Responsive components
-- **CSS3** - Custom styling and animations
+- **HTML5** - Single-page markup (`index.html`)
+- **CSS3** - Custom styling, CSS variables, animations (all inside `index.html`)
+- **Vanilla JavaScript** - Rendering and interactions (all inside `index.html`)
+- **GSAP + ScrollTrigger** - Scroll animations (loaded from CDN)
+- **Google Fonts** - Space Grotesk & Inter
 - **GitHub Pages** - Free hosting
 
 ## 📁 Project Structure
 
 ```
 merin-rose-tom/
-├── public/
-│   ├── index.html
-│   ├── manifest.json
-│   └── robots.txt
-├── src/
-│   ├── assets/
-│   │   └── images/          # Portfolio images and icons
-│   ├── components/
-│   │   └── themetoggle/     # Dark/light theme toggle
-│   ├── content_option.js    # All portfolio content and data
-│   ├── pages/
-│   │   ├── home/            # Landing page with hero section
-│   │   ├── about/           # Professional background & achievements
-│   │   ├── experience/      # Career timeline & detailed experience
-│   │   ├── portfolio/       # Projects & certifications showcase
-│   │   ├── skills/          # Technical skills with progress bars
-│   │   └── hobbies/         # Personal interests & technical blogs
-│   ├── app/
-│   │   ├── App.css          # Global styles
-│   │   └── routes.js        # Application routing configuration
-│   ├── hooks/               # Custom React hooks
-│   ├── index.css            # Global CSS variables and resets
-│   └── index.js             # Application entry point
-├── package.json
-├── README.md
-└── yarn.lock
+├── index.html               # The whole site: layout, styles and scripts
+├── data/                    # All portfolio content — one file per section
+│   ├── site.js              # Page title, logo text, contact details, social links
+│   ├── hero.js              # Intro, typing job titles, orbit icons, highlights strip
+│   ├── about.js             # About text & services
+│   ├── experience.js        # Career & education timeline with bullet points
+│   ├── skills.js            # Skill categories, names, levels (%) and icons
+│   ├── projects.js          # Projects, tags, links and detail-panel highlights
+│   ├── blogs.js             # Blog posts
+│   ├── achievements.js      # Certifications & achievements
+│   ├── hobbies.js           # Hobbies
+│   └── contact.js           # "Hire me" heading & text
+├── assets/
+│   └── images/              # Profile picture, project images, icons, favicon
+├── LICENSE
+└── README.md
 ```
 
 ## 🎨 How to Customize
 
-**Main file to edit: `src/content_option.js`**
+**Files to edit: everything in the `data/` folder**
 
-This file contains all your personal information, projects, skills, and content. Simply update the values in this file to customize your portfolio.
+Each file in `data/` holds the content for one section of the page. Open the file for the section you want to change, update the values, save, and refresh the browser.
+
+Each file looks like this — edit the values inside the braces just like JSON (keep the quotes and commas intact):
+
+```js
+window.PORTFOLIO = Object.assign(window.PORTFOLIO || {}, {
+  "blogs": [
+    {
+      "title": "Caching in Celery Using LRUCache",
+      "description": "Implementation of caching in Celery using LRU cache algorithm.",
+      "image": "assets/images/cache.png",
+      "link": "https://merin-rose-tom.medium.com/caching-in-celery-using-lrucache-357053251e96"
+    }
+  ]
+});
+```
 
 ### Key things to change:
-- **Personal info**: name, title, bio, contact details
-- **Projects**: add your projects with descriptions and skills used
-- **Skills**: update technical skills and proficiency levels
-- **Experience**: career timeline and detailed descriptions
-- **Social links**: GitHub, LinkedIn, etc.
-- **Images**: replace profile pic and project screenshots in `src/assets/images/`
+- **Personal info**: name, intro and typing job titles in `data/hero.js`; contact details in `data/site.js`
+- **Projects**: add your projects with descriptions, tags and highlights in `data/projects.js`
+- **Skills**: update categories, skills and levels (0–100) in `data/skills.js`
+- **Experience**: career timeline and bullet points in `data/experience.js`
+- **Certifications & achievements**: `data/achievements.js` — achievement icons and years are detected automatically from the text
+- **Social links**: GitHub, LinkedIn, LeetCode, Medium in `data/site.js`
+- **Images**: add images to `assets/images/` and reference them by path (e.g. `"assets/images/my-project.png"`)
 
 ### Advanced customization:
-- **Colors**: Edit CSS variables in `src/index.css`
-- **Styling**: Modify component styles in respective CSS files
-- **Layout**: Add new sections by creating components in `src/pages/`
+- **Colors**: Edit the CSS variables at the top of the `<style>` block in `index.html` (`--a1`, `--a2`, `--a3` are the accent colours; the `[data-theme="light"]` block holds light-mode colours)
+- **Navigation**: The dock items are defined in the `nav` list inside `render()` in `index.html`; `MAIN` sets which 4 sections appear in the mobile tab bar
+- **Orbit icons**: Change `skillIcons` in `data/hero.js`; tooltip names come from the file name (or the matching skill in `skills.js`)
+- **Layout**: Each section's HTML is a template string inside `render()` in `index.html` — add a new `<section>` there and a matching data file in `data/` (and list it in the `<script>` tags in `<head>`)
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **Node.js** (v14 or higher)
-- **npm** or **yarn** package manager
+- A modern web browser (Chrome, Edge, Firefox, Safari)
 - **Git** for version control
 
-### Installation
+### Run locally
 
 1. **Clone the repository**
    ```bash
@@ -88,42 +101,25 @@ This file contains all your personal information, projects, skills, and content.
    cd merin-rose-tom
    ```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+2. **Open the site**
 
-3. **Start development server**
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
+   Double-click `index.html` — that's it. No install or build needed.
 
-4. **Open browser**
-   ```
-   http://localhost:3000
-   ```
-
-### Build for Production
-
-```bash
-npm run build
-# or
-yarn build
-```
+   Prefer live reload while editing? Use the VS Code **Live Server** extension, or run `npx serve` in the folder.
 
 ### Deploy to GitHub Pages
 
-```bash
-npm run deploy
-# or
-yarn deploy
-```
+1. Push your changes to the `main` branch
+   ```bash
+   git add .
+   git commit -m "Update portfolio"
+   git push
+   ```
+2. On GitHub, go to **Settings → Pages**
+3. Under **Build and deployment**, set **Source** to **Deploy from a branch**, then choose **`main`** and **`/ (root)`**
+4. Save — the site will be live at `https://<your-username>.github.io/<repo-name>/` within a minute or two
 
-## � License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
