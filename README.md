@@ -10,12 +10,13 @@ A modern, fully customizable portfolio website built with plain HTML, CSS and Ja
 
 - **Modern Design**: Glassmorphism cards, gradient accents, animated background glow and grid
 - **Scroll Animations**: Sections reveal on scroll, timeline line draws itself, counters count up, project images open up, parallax effects
-- **Hover Effects**: Mouse-following spotlight on cards, 3D tilt, holographic certificate cards, magnetic dock icons
+- **Hover Effects**: Mouse-following spotlight on cards, holographic certificate cards with 3D tilt and shine, magnetic dock icons
 - **Interactive Hero**: Profile photo zooms in on hover; skill icons orbit around it, show tooltips on hover, and burst outward when the photo is clicked
 - **Draggable Sliders**: The highlights strip and skill rows auto-scroll, pause on hover, and can be dragged or swiped with momentum
 - **Dock Navigation**: Fixed bottom navigation bar with macOS-style magnification on desktop and a tab bar + menu sheet on mobile
 - **Project Details Panel**: Click a project to open a slide-in panel with highlights and previous/next navigation
-- **Dark & Light Themes**: Toggle in the top-right corner; your choice is remembered
+- **Themes & Colour Palettes**: Dark/light mode plus 8 accent palettes (Slate, Aurora, Ocean, Sunset, Emerald, Royal, Rose, Cyber) from the picker in the top-right corner. Slate is the default and each visitor's choice is remembered
+- **Themed Scrollbar**: Custom gradient scrollbar and text-selection colour that follow the active palette
 - **Responsive**: Works on desktop, tablet, and mobile (down to very small screens)
 - **Multiple Sections**: Home, About, Experience, Skills, Projects, Blogs, Certifications, Achievements, Hobbies & Contact
 - **Zero Setup**: Open `index.html` directly in a browser — no install, no server, no build
@@ -82,7 +83,12 @@ window.PORTFOLIO = Object.assign(window.PORTFOLIO || {}, {
 - **Images**: add images to `assets/images/` and reference them by path (e.g. `"assets/images/my-project.png"`)
 
 ### Advanced customization:
-- **Colors**: Edit the CSS variables at the top of the `<style>` block in `index.html` (`--a1`, `--a2`, `--a3` are the accent colours; the `[data-theme="light"]` block holds light-mode colours)
+- **Default colours**: Set `DEFAULT_PALETTE` in `index.html` (search for it) to any palette key: `slate`, `aurora`, `ocean`, `sunset`, `emerald`, `royal`, `rose`, `cyber`
+- **Palettes**: Each palette lives in the `PALETTES` list in `index.html` — `a` holds four accent colours, `dark` and `light` hold the page and card background for each mode. Edit one or add your own:
+  ```js
+  mytheme:{name:'My Theme', a:['#6366f1','#22d3ee','#a3e635','#facc15'], dark:['#07080c','#10121a'], light:['#f6f7fb','#ffffff']},
+  ```
+- **Other colours**: Text, borders and light-mode colours are CSS variables at the top of the `<style>` block in `index.html` (`:root` and `[data-theme="light"]`)
 - **Navigation**: The dock items are defined in the `nav` list inside `render()` in `index.html`; `MAIN` sets which 4 sections appear in the mobile tab bar
 - **Orbit icons**: Change `skillIcons` in `data/hero.js`; tooltip names come from the file name (or the matching skill in `skills.js`)
 - **Layout**: Each section's HTML is a template string inside `render()` in `index.html` — add a new `<section>` there and a matching data file in `data/` (and list it in the `<script>` tags in `<head>`)
